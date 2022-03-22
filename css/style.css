@@ -1,0 +1,42 @@
+:root {
+  --ff-cursive: "Parisienne", cursive;
+  --ff-sans: "Work Sans", Helvetica, Arial, sans-serif;
+
+  --fs-400: 1rem;
+
+  --section-spacer: 10.375rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: var(--ff-sans);
+  font-size: 1.4375em; /* 23px? */
+
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 77.785em;
+  padding: 0 1rem;
+}
+
+.flow-section {
+  margin-top: var(--section-spacer);
+}
+
+span.logo {
+  font-family: var(--ff-cursive);
+  font-weight: 400;
+  /* transform: rotate(345deg); */
+}
