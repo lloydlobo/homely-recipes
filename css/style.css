@@ -13,17 +13,20 @@ html {
 
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: var(--ff-sans);
   font-size: 1.4375em; /* 23px? */
 
-  overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+  padding-top: unset;
+
+  /* overflow-x: hidden; */
 }
 
 .container {
-  max-width: 75em;
+  margin: 0 auto;
+  max-width: 54.2em;
   padding: 0 1em;
-  /* margin: 0 auto; */
 }
 
 .flow-section {
