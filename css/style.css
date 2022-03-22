@@ -4,6 +4,65 @@
 
   --fs-400: 1rem;
 
+  /* color */
+  /* material-theme/sys/light/primary */
+  --primary: #9c413d;
+  --on-primary: #ffffff;
+  --primary-container: #ffdad5;
+  --on-primary-container: #410003;
+  --secondary: #775653;
+  --on-secondary: #ffffff;
+  --secondary-container: #ffdad7;
+  --on-secondary-container: #2c1513;
+  --tertiary: #725b2e;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #ffdea6;
+  --on-tertiary-container: #271900;
+  --error: #ba1b1b;
+  --on-error: #ffffff;
+  --error-container: #ffdad4;
+  --on-error-container: #410001;
+  /* color neutrals */
+  --background: #fcfcfc;
+  --on-background: #201a19;
+  --surface: #fcfcfc;
+  --on-surface: #201a19;
+  /* color surface */
+  --surface-variant: #f4dddb;
+  --on-surface-variant: #524342;
+  --outline: #857371;
+  /* color - read-only/surface/light */
+  --surface1: linear-gradient(
+      0deg,
+      rgba(156, 65, 61, 0.05),
+      rgba(156, 65, 61, 0.05)
+    ),
+    #fcfcfc; /* +5% Primary */
+  --surface2: linear-gradient(
+      0deg,
+      rgba(156, 65, 61, 0.08),
+      rgba(156, 65, 61, 0.08)
+    ),
+    #fcfcfc; /* +8`% Primary */
+  --surface3: linear-gradient(
+      0deg,
+      rgba(156, 65, 61, 0.11),
+      rgba(156, 65, 61, 0.11)
+    ),
+    #fcfcfc; /* +11% Primary */
+  --surface4: linear-gradient(
+      0deg,
+      rgba(156, 65, 61, 0.12),
+      rgba(156, 65, 61, 0.12)
+    ),
+    #fcfcfc; /* +12% Primary */
+  --surface5: linear-gradient(
+      0deg,
+      rgba(156, 65, 61, 0.14),
+      rgba(156, 65, 61, 0.14)
+    ),
+    #fcfcfc; /* +14% Primary */
+  /*  */
   --section-spacer: 10.375rem;
 }
 
@@ -38,7 +97,110 @@ span.logo {
   font-weight: 400;
   /* transform: rotate(345deg); */
 }
-/* css reset */
+
+/* * typography */
+.display-large {
+  font-weight: 900;
+  font-size: 221px;
+  line-height: 259px;
+  letter-spacing: 1.33px;
+  text-transform: uppercase;
+}
+
+.display-medium {
+  font-weight: 900;
+  font-size: 160px;
+  line-height: 224px;
+}
+
+.display-small {
+  font-weight: 900;
+  font-size: 98.8875px;
+  line-height: 224px;
+}
+
+.headline-large {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 76.046px;
+  line-height: 71px;
+  color: #201a19;
+}
+
+.headline-medium {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 71px;
+}
+
+.headline-small {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.title-large {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 120px;
+
+  letter-spacing: -0.25px;
+  text-transform: uppercase;
+}
+
+.title-medium {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+
+.title-small {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 55.6242px;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+
+.body-large {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.body-medium {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+}
+
+.body-small {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+/* * css reset */
 /* // credit: https://www.joshwcomeau.com/css/custom-css-reset/ */
 
 /*
