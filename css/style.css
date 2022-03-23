@@ -196,8 +196,16 @@ body {
   padding-top: unset;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   /* overflow-x: hidden; */
 }
+
+/* @media screen and (min-width: 160em) {
+  body {
+    grid-template-columns: 0.382fr 1fr;
+  }
+} */
 
 h1,
 h2,
@@ -219,6 +227,12 @@ p {
 
 /* * */
 /* * 1. composition */
+
+main {
+  display: grid;
+  /* grid-template-rows: repeat(auto-fit, minmax(900px, 25vw)); */
+  /* grid-template-areas: "header header" "title article" "nav article" "footer footer"; */
+}
 
 /* * */
 /* * 2. utility */
