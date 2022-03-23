@@ -101,8 +101,10 @@ span.logo {
 /* * typography */
 .display-large {
   font-weight: 900;
-  font-size: 221px;
-  line-height: 259px;
+  /* font-size: 221px; */
+  font-size: clamp(1em, 0.9rem + 14.3472vw, 14.7125rem);
+  /* line-height: 259px; */
+  line-height: 0.8;
   letter-spacing: 1.33px;
   text-transform: uppercase;
 }
