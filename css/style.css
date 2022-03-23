@@ -9,8 +9,6 @@
   --mdc-theme-primary: #9c413d;
   --mdc-theme-on-primary: #ffffff;
   --mdc-theme-primary-container: #ffdad5;
-  --mdc-theme-on-primary-container: #410003;
-  --mdc-theme-secondary: #775653;
   --mdc-theme-on-secondary: #ffffff;
   --mdc-theme-secondary-container: #ffdad7;
   --mdc-theme-on-secondary-container: #2c1513;
@@ -589,8 +587,33 @@ h3 {
 
 .container {
   margin: 0 auto;
-  max-width: 53.2em;
   padding: 0 1em;
+  max-width: 77.875rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .container {
+    margin: 0 auto;
+    /* max-width: 42.875rem; */
+    /* max-width: clamp(35.875rem, 90.5vw ,61.188rem); */
+    max-width: clamp(35.875rem, 88.101vw, 61.188rem);
+    padding: 0 1em;
+  }
+}
+@media screen and (min-width: 60rem) {
+  .container {
+    margin: 0 auto;
+    max-width: clamp(42.875rem, 87.5vw, 61.188rem);
+    padding: 0 1em;
+  }
+}
+@media screen and (min-width: 70rem) {
+  .container {
+    margin: 0 auto;
+    /* max-width: 77.875rem; */
+    max-width: clamp(56.188rem, 87vw, 77.875rem);
+    padding: 0 1em;
+  }
 }
 
 /* * */
