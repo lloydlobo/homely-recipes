@@ -66,7 +66,7 @@
   --section-spacer: 10.375rem;
 
   /* animate char on hover */ /* title, display */
-  --char-index: 5;
+  --char-index: 0;
 }
 
 /* html {
@@ -338,16 +338,224 @@ html:focus-within {
 /* * cube css */
 /* **** */
 
+/* * */
 /* * 1. composition */
 
+/* * */
 /* * 2. utility */
 
 .strong {
   font-weight: bold;
 }
+/* * flow */
+.flow > * + *,
+.post blockquote > * + * {
+  margin-top: var(--flow-space, clamp(1.09rem, 1rem + 0.47vw, 1.33rem));
+}
+.flow-space-0 {
+  --flow-space: 0;
+}
+.flow-space-300 {
+  --flow-space: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+}
+.flow-space-400 {
+  --flow-space: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+}
+.flow-space-500 {
+  --flow-space: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+}
+.flow-space-600 {
+  --flow-space: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+}
+.flow-space-700 {
+  --flow-space: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+}
+.flow-space-800 {
+  --flow-space: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+}
+.flow-space-900 {
+  --flow-space: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+}
+.flow-space-1000 {
+  --flow-space: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+}
+/* end of flow */
 
+/* * gap */
+.gap-top-0 {
+  margin-top: 0;
+}
+.gap-top-300 {
+  margin-top: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+}
+.gap-top-400 {
+  margin-top: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+}
+.gap-top-500 {
+  margin-top: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+}
+.gap-top-600 {
+  margin-top: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+}
+.gap-top-700 {
+  margin-top: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+}
+.gap-top-800 {
+  margin-top: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+}
+.gap-top-900 {
+  margin-top: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+}
+.gap-top-1000 {
+  margin-top: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+}
+.gap-bottom-0 {
+  margin-bottom: 0;
+}
+.gap-bottom-300 {
+  margin-bottom: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+}
+.gap-bottom-400 {
+  margin-bottom: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+}
+.gap-bottom-500 {
+  margin-bottom: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+}
+.gap-bottom-600 {
+  margin-bottom: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+}
+.gap-bottom-700 {
+  margin-bottom: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+}
+.gap-bottom-800 {
+  margin-bottom: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+}
+.gap-bottom-900 {
+  margin-bottom: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+}
+.gap-bottom-1000 {
+  margin-bottom: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+}
+.gap-left-0 {
+  margin-left: 0;
+}
+.gap-left-300 {
+  margin-left: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+}
+.gap-left-400 {
+  margin-left: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+}
+.gap-left-500 {
+  margin-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+}
+.gap-left-600 {
+  margin-left: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+}
+.gap-left-700 {
+  margin-left: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+}
+.gap-left-800 {
+  margin-left: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+}
+.gap-left-900 {
+  margin-left: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+}
+.gap-left-1000 {
+  margin-left: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+}
+.gap-right-0 {
+  margin-right: 0;
+}
+.gap-right-300 {
+  margin-right: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+}
+.gap-right-400 {
+  margin-right: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+}
+.gap-right-500 {
+  margin-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+}
+.gap-right-600 {
+  margin-right: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+}
+.gap-right-700 {
+  margin-right: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+}
+.gap-right-800 {
+  margin-right: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+}
+.gap-right-900 {
+  margin-right: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+}
+.gap-right-1000 {
+  margin-right: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+}
+/* end of gap */
+
+/* * widths */
+
+.leading-tight {
+  line-height: 1;
+}
+.measure-long {
+  max-width: 65ch;
+}
+.measure-medium {
+  max-width: 58ch;
+}
+.measure-short {
+  max-width: 50ch;
+}
+
+/* end of widths */
+
+/* * text font sizes */
+.text-0 {
+  font-size: 0;
+}
+.text-300 {
+  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+}
+.text-400 {
+  font-size: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+}
+.text-500 {
+  font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+}
+.text-600 {
+  font-size: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+}
+.text-700 {
+  font-size: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+}
+.text-800 {
+  font-size: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+}
+.text-900 {
+  font-size: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+}
+.text-1000 {
+  font-size: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+}
+
+/* end of text font sizes */
+
+/* * font-weight */
+.weight-regular {
+  font-weight: 400;
+}
+.weight-medium {
+  font-weight: 500;
+}
+.weight-bold {
+  font-weight: 700;
+}
+/* end of font-weight */
+
+/* * */
 /* * 3. block */
 
+/* * */
 /* * 4. exceptions */
 
 /* end of cube css */
