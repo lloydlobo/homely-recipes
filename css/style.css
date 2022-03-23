@@ -185,8 +185,9 @@ span.logo {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 900;
-  font-size: 55.6242px;
-  line-height: 72px;
+  /* font-size: 55.6242px; */
+  font-size: clamp(1.68056rem, 1rem + 2.75167vw, 3.4765rem);
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -302,3 +303,13 @@ h6 {
 /* * block */
 
 /* * exceptions */
+
+/* custom styling */
+
+/* * section - recipes - kitchen */
+.recipes__wrapper__contant__nutrition__item > * {
+  font-size: 16px;
+}
+.recipes__wrapper__contant__nutrition__item > * + * {
+  font-weight: bold;
+}
