@@ -69,9 +69,9 @@
   --char-index: 5;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   margin: 0;
@@ -81,7 +81,7 @@ body {
 
   text-rendering: optimizeSpeed;
   padding-top: unset;
-
+  line-height: 1.5;
   /* overflow-x: hidden; */
 }
 
@@ -218,8 +218,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.4px;
 }
-
-/* * css reset */
+/* * */
+/* * custom css reset */
+/* * */
 /* // credit: https://www.joshwcomeau.com/css/custom-css-reset/ */
 
 /*
@@ -291,18 +292,65 @@ h6 {
 #__next {
   isolation: isolate;
 }
+/* end of custom css reset */
 
-/* * composition */
+/* * cube css reset */
 
-/* * utility */
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+ol[role="list"],
+ul[role="list"] {
+  list-style: none;
+}
+html {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  ::after,
+  ::before {
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* end of cube css resets */
+
+/* **** */
+/* * cube css */
+/* **** */
+
+/* * 1. composition */
+
+/* * 2. utility */
 
 .strong {
   font-weight: bold;
 }
 
-/* * block */
+/* * 3. block */
 
-/* * exceptions */
+/* * 4. exceptions */
+
+/* end of cube css */
 
 /* * */
 /* * custom styling */
