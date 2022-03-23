@@ -92,25 +92,25 @@ body {
   margin-top: var(--section-spacer);
 }
 
-span.logo {
-  font-family: var(--ff-cursive);
-  font-weight: 400;
-  /* transform: rotate(345deg); */
-}
-
 /* * typography */
 .display-large {
   font-weight: 900;
-  font-size: 221px;
-  line-height: 259px;
+  /* font-size: 221px; */
+  font-size: clamp(1em, 0.9rem + 14.3472vw, 14.7125rem);
+  /* line-height: 259px; */
+  line-height: 0.8;
   letter-spacing: 1.33px;
   text-transform: uppercase;
 }
-
+/* 1.38125x less than large */
 .display-medium {
   font-weight: 900;
-  font-size: 160px;
-  line-height: 224px;
+  /* font-size: 160px; */
+  /* font-size: clamp(3.75rem , 1rem + 10vw, 10rem); */
+  font-size: clamp(2.65rem, 1rem + 8.6vw, 10rem);
+  /* line-height: 224px; */
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .display-small {
@@ -123,8 +123,10 @@ span.logo {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 76.046px;
-  line-height: 71px;
+  /* font-size: 76.046px; */
+  /* font-size: 4.752875rem; */
+  font-size: clamp(1.68056rem, 1rem + 4.16667vw, 4.752875rem);
+  line-height: 1.2;
   color: #201a19;
 }
 
@@ -140,8 +142,19 @@ span.logo {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
+  /* font-size: 36.8182px; */
+  font-size: clamp(1.68106rem, 1.68106rem + 0.688978vw, 2.3rem);
+  line-height: 44px;
+  /* font-size: 30px;
+  line-height: 36px; */
+}
+
+.sub-headline-medium {
+  font-size: clamp(1rem, 0.6rem + 1.025vw, 1.4375rem); /* 23px */
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
 }
 
 .title-large {
@@ -168,8 +181,9 @@ span.logo {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 900;
-  font-size: 55.6242px;
-  line-height: 72px;
+  /* font-size: 55.6242px; */
+  font-size: clamp(1.68056rem, 1rem + 2.75167vw, 3.4765rem);
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -186,7 +200,8 @@ span.logo {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 23px;
+  /* font-size: 23px; */
+  font-size: clamp(1.4375rem, 0.775rem + 0.618vw, 1.4375rem);
   line-height: 30px;
   letter-spacing: 0.25px;
 }
@@ -195,8 +210,8 @@ span.logo {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: clamp(1rem, 0.9rem + 0.25vw, 1.25rem);
+  line-height: 1.5;
   letter-spacing: 0.4px;
 }
 
@@ -220,10 +235,10 @@ span.logo {
 /*
   3. Allow percentage-based heights in the application
 */
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
 /*
   Typographic tweaks!
   4. Add accessible line-height
@@ -271,4 +286,38 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* * composition */
+
+/* * utility */
+
+.strong {
+  font-weight: bold;
+}
+
+/* * block */
+
+/* * exceptions */
+
+/* custom styling */
+span.logo {
+  font-family: var(--ff-cursive);
+  font-weight: 400;
+  /* transform: rotate(345deg); */
+  /* font-size: 72px; */
+  font-size: clamp(3.375rem, 1rem + 3.888888vw, 4.752875rem);
+  /* rotate: -8.35deg; */
+  /* 351.65deg */
+  transform: rotate(351.65deg);
+  /* ! for demo only */
+  display: grid;
+  place-items: center;
+}
+/* * section - recipes - kitchen */
+.recipes__wrapper__contant__nutrition__item > * {
+  font-size: 16px;
+}
+.recipes__wrapper__contant__nutrition__item > * + * {
+  font-weight: bold;
 }
