@@ -92,12 +92,6 @@ body {
   margin-top: var(--section-spacer);
 }
 
-span.logo {
-  font-family: var(--ff-cursive);
-  font-weight: 400;
-  /* transform: rotate(345deg); */
-}
-
 /* * typography */
 .display-large {
   font-weight: 900;
@@ -129,8 +123,10 @@ span.logo {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 76.046px;
-  line-height: 71px;
+  /* font-size: 76.046px; */
+  /* font-size: 4.752875rem; */
+  font-size: clamp(1.68056rem, 1rem + 4.16667vw, 4.752875rem);
+  line-height: 1.2;
   color: #201a19;
 }
 
@@ -239,10 +235,10 @@ span.logo {
 /*
   3. Allow percentage-based heights in the application
 */
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
 /*
   Typographic tweaks!
   4. Add accessible line-height
@@ -305,7 +301,19 @@ h6 {
 /* * exceptions */
 
 /* custom styling */
-
+span.logo {
+  font-family: var(--ff-cursive);
+  font-weight: 400;
+  /* transform: rotate(345deg); */
+  /* font-size: 72px; */
+  font-size: clamp(3.375rem, 1rem + 3.888888vw, 4.752875rem);
+  /* rotate: -8.35deg; */
+  /* 351.65deg */
+  transform: rotate(351.65deg);
+  /* ! for demo only */
+  display: grid;
+  place-items: center;
+}
 /* * section - recipes - kitchen */
 .recipes__wrapper__contant__nutrition__item > * {
   font-size: 16px;
