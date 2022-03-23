@@ -206,7 +206,12 @@ h3 {
 }
 
 p {
-  width: clamp(45ch, 50%, 75ch);
+  min-width: 12ch;
+}
+@media screen and (min-width: 40em) {
+  p {
+    width: clamp(45ch, 50%, 75ch);
+  }
 }
 /* **** */
 /* * cube css */
