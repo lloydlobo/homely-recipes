@@ -60,7 +60,7 @@
       rgba(156, 65, 61, 0.14)
     ),
     #fcfcfc; /* +14% Primary */
-  /*  */
+  /* section spacing  */
   --section-spacer: 10.375rem;
 
   /* animate char on hover */ /* title, display */
@@ -98,10 +98,10 @@ body {
   4. Add accessible line-height
   5. Improve text rendering
 */
-body {
+/* body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-}
+} */
 /*
   6. Improve media defaults
 */
@@ -135,7 +135,7 @@ h6 {
   overflow-wrap: break-word;
 }
 /*
-  9. Create a root stacking context
+9. Create a root stacking context
 */
 #root,
 #__next {
@@ -195,6 +195,7 @@ body {
   text-rendering: optimizeSpeed;
   padding-top: unset;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
   /* overflow-x: hidden; */
 }
 
