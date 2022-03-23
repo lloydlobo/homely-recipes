@@ -611,7 +611,9 @@ h3 {
   .container {
     margin: 0 auto;
     /* max-width: 77.875rem; */
-    max-width: clamp(56.188rem, 87vw, 77.875rem);
+    /* max-width: clamp(56.188rem, 87vw, 77.875rem); */
+    /* ! for demo 4k */
+    max-width: clamp(56.188rem, 87vw, 101.75rem);
     padding: 0 1em;
   }
 }
