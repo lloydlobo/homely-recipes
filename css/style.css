@@ -64,6 +64,9 @@
     #fcfcfc; /* +14% Primary */
   /*  */
   --section-spacer: 10.375rem;
+
+  /* animate char on hover */ /* title, display */
+  --char-index: 5;
 }
 
 html {
@@ -94,13 +97,14 @@ body {
 
 /* * typography */
 .display-large {
-  font-weight: 900;
+  /* font-weight: 900; */
   /* font-size: 221px; */
   font-size: clamp(1em, 0.9rem + 14.3472vw, 14.7125rem);
   /* line-height: 259px; */
   line-height: 0.8;
   letter-spacing: 1.33px;
   text-transform: uppercase;
+  font-variation-settings: "wght" var(--display-heading-weight, 900);
 }
 /* 1.38125x less than large */
 .display-medium {
@@ -300,7 +304,11 @@ h6 {
 
 /* * exceptions */
 
-/* custom styling */
+/* * */
+/* * custom styling */
+/* * */
+
+/* * header */
 span.logo {
   font-family: var(--ff-cursive);
   font-weight: 400;
@@ -313,6 +321,23 @@ span.logo {
   /* ! for demo only */
   display: grid;
   place-items: center;
+}
+
+/* nav title */
+div.nav__heading .char,
+h1.nav__heading {
+  /* font-family:var(--font-display); */
+  letter-spacing: -0.19ch;
+}
+.nav__heading.display-large.char:hover {
+  --display-heading-weight: 600;
+  transition-delay: 100ms; /* 0s */
+  letter-spacing: -0.21ch;
+}
+.nav__heading .display-large .char {
+  transition: 0.3s cubic-bezier(0.45, 0.05, 0.22, 1.3);
+  transition-delay: 0.2s;
+  cursor: ew-resize;
 }
 /* * section - recipes - kitchen */
 .recipes__wrapper__contant__nutrition__item > * {
