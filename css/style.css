@@ -743,7 +743,8 @@ h1.nav__heading {
 .nav__heading.display-large.char:hover {
   --display-heading-weight: 600;
   transition-delay: 100ms; /* 0s */
-  letter-spacing: -0.21ch;
+  /* letter-spacing: -0.21ch; */
+  letter-spacing: -0.05ch;
 }
 .nav__heading .display-large .char {
   transition: 0.3s cubic-bezier(0.45, 0.05, 0.22, 1.3);
