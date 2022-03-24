@@ -824,6 +824,59 @@ h1.nav__heading {
   top: -850px;
   right: -634px;
 }
+
+.hero__images.media-scroller[data-state="no-scroll-bg"] {
+  --_spacer: 2rem; /* _ is for private property which isn't mentioned in the root - naming convention */
+  display: grid;
+  /* auto flow helps when there is no defined quantity of cards */
+  gap: var(--_spacer);
+  /* gap: 0; */
+  grid-auto-flow: column;
+  /* for even display of child elements use 50% */
+  /* grid-auto-columns: 50%; */
+  /* to show the sides of next child */
+  /* grid-auto-columns: 45%; */
+  grid-auto-columns: auto;
+  /* padding: 0 var(--_spacer) var(--_spacer); */
+  /* padding: var(--_spacer); */
+  padding: var(--_spacer);
+  border-radius: calc(var(--_spacer, 2em) * 1.618);
+  overflow-x: auto;
+  /* helpful for touch device - doesn't pull the whole container down or side */
+  overscroll-behavior-inline: contain;
+  background-color: var(--mdc-theme-secondary-container);
+}
+
+.hero__images.media-scroller[data-state="no-scroll-bg"] > .media-element {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.hero__images.media-scroller[data-state="no-scroll-bg"] > * > img {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 0;
+  /* padding: var(--_spacer, 0); */
+  padding: 0;
+  margin-inline: 0;
+  background: var(--mdc-theme-error);
+  border-radius: var(--_spacer, 1em);
+  box-shadow: -2px 2px 4px hsla(4, 11%, 29%, 0.5);
+  aspect-ratio: 0.618 / 1;
+  max-width: fit-content;
+  height: auto;
+}
+
+.snaps-inline[data-state="no-scroll-bg"] {
+  --_spacer: 0;
+  /* make sure `inline / x` comes first -- before mandatory */
+  scroll-snap-type: inline mandatory;
+  /* fix getting to the space before and after first and last child */
+  /* scroll-padding-inline: var(--_spacer, 2rem); */
+  /* scroll-padding-inline: 0; */
+}
+
 /* * */
 /* * section - recipes - kitchen */
 .recipes__wrapper__contant__nutrition__item > * {
