@@ -680,7 +680,7 @@ main {
   padding: var(--_spacer);
   background: var(--mdc-theme-surface2);
   border-radius: 1rem;
-  box-shadow: 0px 2px 4px #52434250;
+  box-shadow: 0 2px 4px #52434250;
 }
 /* use logical propert inline-size instead of width  */
 .media-element > img {
