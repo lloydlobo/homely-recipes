@@ -1,3 +1,6 @@
+/* @import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css"; */
+
 :root {
   --ff-cursive: "Parisienne", cursive;
   --ff-sans: "Work Sans", Helvetica, Arial, sans-serif;
@@ -188,6 +191,7 @@ body {
   font-family: var(--ff-sans);
   font-size: var(--fs-400); /* 23px? */
   font-weight: 400;
+  font-color: var(--mdc-theme-on-background);
   margin: 0;
   min-height: 100vh;
   background-color: #fcfcfc;
@@ -609,36 +613,93 @@ main {
 /* * 3. block */
 
 .container {
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 0 1em;
   max-width: 77.875rem;
 }
 
 @media screen and (min-width: 40rem) {
   .container {
-    margin: 0 auto;
     /* max-width: 42.875rem; */
     /* max-width: clamp(35.875rem, 90.5vw ,61.188rem); */
-    max-width: clamp(35.875rem, 88.101vw, 61.188rem);
-    padding: 0 1em;
+    /* max-width: clamp(35.875rem, 88.101vw, 61.188rem); */
+    inline-size: clamp(35.875rem, 88.101vw, 61.188rem);
   }
 }
 @media screen and (min-width: 60rem) {
   .container {
-    margin: 0 auto;
-    max-width: clamp(42.875rem, 87.5vw, 61.188rem);
-    padding: 0 1em;
+    /* max-width: clamp(42.875rem, 87.5vw, 61.188rem); */
+    inline-size: clamp(42.875rem, 87.5vw, 61.188rem);
   }
 }
 @media screen and (min-width: 70rem) {
   .container {
-    margin: 0 auto;
     /* max-width: 77.875rem; */
     /* max-width: clamp(56.188rem, 87vw, 77.875rem); */
     /* ! for demo 4k */
-    max-width: clamp(56.188rem, 87vw, 101.75rem);
-    padding: 0 1em;
+    /* max-width: clamp(56.188rem, 87vw, 101.75rem); */
+    inline-size: clamp(56.188rem, 87vw, 101.75rem);
   }
+}
+
+/* * media/image scrolling — netflix style */
+
+.media-scroller {
+  --_spacer: 2em; /* _ is for private property which isn't mentioned in the root - naming convention */
+  display: grid;
+  /* auto flow helps when there is no defined quantity of cards */
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  /* for even display of child elements use 50% */
+  /* grid-auto-columns: 50%; */
+  /* to show the sides of next child */
+  grid-auto-columns: 45%;
+  /* padding: 0 var(--_spacer) var(--_spacer); */
+  padding: var(--_spacer);
+  border-radius: var(--_spacer);
+  overflow-x: auto;
+  /* helpful for touch device - doesn't pull the whole container down or side */
+  overscroll-behavior-inline: contain;
+  background-color: var(--mdc-theme-surface-variant);
+}
+
+/* media scrolling groups */
+.media-scroller--with-groups {
+  border: 2px solid hotpink;
+}
+.media-group {
+  border: 2px solid limegreen;
+}
+
+/* media individual elements */
+.media-element {
+  /* for title correction placement */
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--mdc-theme-surface2);
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px #52434250;
+}
+/* use logical propert inline-size instead of width  */
+.media-element > img {
+  inline-size: 100%; /* logical property for width */
+  aspect-ratio: 16 / 9;
+  /* aspect-ratio: .618 / 1; */
+  object-fit: cover;
+}
+
+/* snapping media scroller element */
+.snaps-inline {
+  /* make sure `inline / x` comes first -- before mandatory */
+  scroll-snap-type: inline mandatory;
+  /* fix getting to the space before and after first and last child */
+  scroll-padding-inline: var(--_spacer, 2rem);
+}
+/* what does it need to snap to */ /* select all direct children */
+.snaps-inline > * {
+  scroll-snap-align: start;
 }
 
 /* * */
