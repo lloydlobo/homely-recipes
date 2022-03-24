@@ -458,7 +458,11 @@ main {
 .display-large {
   font-size: clamp(1em, 0.9rem + 14.3472vw, 14.7125rem); /* 221px */
   line-height: 0.8;
-  letter-spacing: 1.33px;
+  /* letter-spacing: 1.33px; */
+  /* chrome */
+  /* letter-spacing: .01ch; */
+  /* mozilla */
+  letter-spacing: -.05ch;
 }
 /* 1.38125x less than large */
 .display-medium {
