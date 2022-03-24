@@ -32,6 +32,9 @@
   --mdc-theme-surface-variant: #f4dddb;
   --mdc-theme-on-surface-variant: #524342;
   --mdc-theme-outline: #857371;
+  /* color inverse */
+  --mdc-theme-inverse-primary: #ffb3ab;
+  --mdc-theme-inverse-surface: #362f2e;
   /* color - read-only/surface/light */
   --mdc-theme-surface1: linear-gradient(
       0deg,
@@ -68,6 +71,15 @@
 
   /* animate char on hover */ /* title, display */
   --char-index: 0;
+}
+.mdc-theme--inverse-primary {
+  color: var(--mdc-theme-inverse-primary);
+}
+.mdc-theme--inverse-on-primary {
+  background-color: var(--mdc-theme-inverse-primary);
+}
+.mdc-theme--inverse-surface {
+  color: var(--mdc-theme-inverse-surface);
 }
 
 /* * */
