@@ -820,9 +820,9 @@ h1.nav__heading {
 /* * section hero */
 
 .hero__bg-image {
-    position: relative;
-    top: -850px;
-    right: -634px;
+  position: relative;
+  top: -850px;
+  right: -634px;
 }
 /* * */
 /* * section - recipes - kitchen */
