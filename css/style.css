@@ -695,7 +695,7 @@ main {
   /* make sure `inline / x` comes first -- before mandatory */
   scroll-snap-type: inline mandatory;
   /* fix getting to the space before and after first and last child */
-  scroll-padding-inline: var(--_spacer, 1rem);
+  scroll-padding-inline: var(--_spacer, 2rem);
 }
 /* what does it need to snap to */ /* select all direct children */
 .snaps-inline > * {
