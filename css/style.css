@@ -462,7 +462,7 @@ main {
   /* chrome */
   /* letter-spacing: .01ch; */
   /* mozilla */
-  letter-spacing: -.05ch;
+  letter-spacing: -0.05ch;
 }
 /* 1.38125x less than large */
 .display-medium {
