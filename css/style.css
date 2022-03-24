@@ -32,6 +32,9 @@
   --mdc-theme-surface-variant: #f4dddb;
   --mdc-theme-on-surface-variant: #524342;
   --mdc-theme-outline: #857371;
+  /* color inverse */
+  --mdc-theme-inverse-primary: #ffb3ab;
+  --mdc-theme-inverse-surface: #362f2e;
   /* color - read-only/surface/light */
   --mdc-theme-surface1: linear-gradient(
       0deg,
@@ -68,6 +71,15 @@
 
   /* animate char on hover */ /* title, display */
   --char-index: 0;
+}
+.mdc-theme--inverse-primary {
+  color: var(--mdc-theme-inverse-primary);
+}
+.mdc-theme--inverse-on-primary {
+  background-color: var(--mdc-theme-inverse-primary);
+}
+.mdc-theme--inverse-surface {
+  color: var(--mdc-theme-inverse-surface);
 }
 
 /* * */
@@ -225,6 +237,12 @@ p {
     width: clamp(45ch, 50%, 75ch);
   }
 }
+
+a {
+  color: var(--mdc-theme-primary);
+  text-decoration: none;
+}
+
 /* **** */
 /* * cube css */
 /* **** */
@@ -248,6 +266,50 @@ main {
 .strong {
   font-weight: bold;
 }
+
+/* flex */
+.flex {
+  display: flex;
+}
+
+.flex--row {
+  flex-direction: row;
+}
+.flex--column {
+  flex-direction: column;
+}
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+/* grid */
+.grid {
+  display: grid;
+}
+
+.grid--row {
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+}
+.grid--column {
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+}
+.place-center {
+  display: grid;
+  place-items: center;
+}
+
+/* alignment main & cross axis */
+
+.align-items--center {
+  align-items: center;
+}
+
+.justify-content--center {
+  justify-content: center;
+}
+
 /* * flow */
 .flow > * + *,
 .post blockquote > * + * {
@@ -656,6 +718,84 @@ ul.nav__menu {
   justify-content: center;
 }
 
+/* * */
+/* components */
+/* * */
+
+/* button */
+button {
+  border: 0;
+  border-radius: var(--corner-button--1, 1.25rem);
+  background: var(--mdc-theme-primary);
+  color: var(--mdc-theme-on-primary);
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+/* * add to exception - cube css */
+
+button[data-state="scroll"] {
+  border-radius: 50%;
+  padding: 0;
+  font-size: 2em;
+  max-inline-size: 0.9786em;
+}
+button[data-state="btn-link--arrow"] {
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+
+  /* font-size: 2em; */
+  /* max-inline-size: 0.9786em; */
+}
+button[data-state="btn-link--arrow"] > svg {
+  fill: var(--mdc-theme-primary);
+  background: var(--mdc-theme-background);
+}
+
+.chevron--right::after {
+  content: "\203A";
+  /* color: var(--mdc-theme-primary); */
+  font-weight: 700;
+}
+.chevron--left::after {
+  content: "<";
+}
+
+/* media scroll arrows */
+.media-scroll-arrows {
+  display: flex;
+}
+
+.hero__images.media-scroll-arrows {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__images.media-scroll-arrows > :first-child svg {
+  color: var(--mdc-theme-primary);
+  background: var(--mdc-theme-background);
+}
+/* card */
+
+.recipe-card {
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+}
+
+.recipe-card__title {
+  display: flex;
+  /* align-items: center; */
+  /* max-width: fit-content; */
+  /* column-gap: 1ch; */
+}
 /* * */
 /* recipe__navigation */
 ul.recipes__navigation {
