@@ -816,6 +816,15 @@ h1.nav__heading {
   transition-delay: 0.2s;
   cursor: ew-resize;
 }
+/* * */
+/* * section hero */
+
+.hero__bg-image {
+    position: relative;
+    top: -850px;
+    right: -634px;
+}
+/* * */
 /* * section - recipes - kitchen */
 .recipes__wrapper__contant__nutrition__item > * {
   font-size: 16px;
