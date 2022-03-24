@@ -260,6 +260,50 @@ main {
 .strong {
   font-weight: bold;
 }
+
+/* flex */
+.flex {
+  display: flex;
+}
+
+.flex--row {
+  flex-direction: row;
+}
+.flex--column {
+  flex-direction: column;
+}
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+/* grid */
+.grid {
+  display: grid;
+}
+
+.grid--row {
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+}
+.grid--column {
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+}
+.place-center {
+  display: grid;
+  place-items: center;
+}
+
+/* alignment main & cross axis */
+
+.align-items--center {
+  align-items: center;
+}
+
+.justify-content--center {
+  justify-content: center;
+}
+
 /* * flow */
 .flow > * + *,
 .post blockquote > * + * {
@@ -668,6 +712,22 @@ ul.nav__menu {
   justify-content: center;
 }
 
+/* * */
+/* components */
+/* * */
+
+/* media scroll arrows */
+.media-scroll-arrows {
+  display: flex;
+}
+
+/* card */
+.recipe-card__title {
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  column-gap: 1ch;
+}
 /* * */
 /* recipe__navigation */
 ul.recipes__navigation {
