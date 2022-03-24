@@ -716,6 +716,30 @@ ul.nav__menu {
 /* components */
 /* * */
 
+/* button */
+button {
+  border: 0;
+  border-radius: var(--corner-button--1, 1.25rem);
+  background: var(--mdc-theme-primary);
+  color: var(--mdc-theme-on-primary);
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+/* * add to exception - cube css */
+
+button[data-state="scroll"] {
+  border-radius: 50%;
+  padding: 0;
+  font-size: 2em;
+  max-inline-size: 0.9786em;
+}
+
 /* media scroll arrows */
 .media-scroll-arrows {
   display: flex;
