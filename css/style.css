@@ -1041,11 +1041,13 @@ h1.nav__heading {
   right: -634px;
 }
 
-.recipe-scroll-component[data-state="overflow-right"] {
-  position: relative;
-  right: -3.4vw;
-  /* right: -7.4vw; */
-  /* right: -6vw; */
+@media screen and (min-width: 40em) {
+  .recipe-scroll-component[data-state="overflow-right"] {
+    position: relative;
+    right: -3.4vw;
+    /* right: -7.4vw; */
+    /* right: -6vw; */
+  }
 }
 
 .hero__images.\|.media-scroller.snaps-inline {
