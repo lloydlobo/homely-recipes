@@ -544,6 +544,11 @@ main {
   font-size: 98.8875px;
   line-height: 224px;
 }
+.display-large,
+.display-medium,
+.display-small {
+  text-align: center;
+}
 /* uppercase and set font weight to 900 */
 .display-large,
 .display-medium,
