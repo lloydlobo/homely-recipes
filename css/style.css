@@ -769,12 +769,14 @@ button {
   padding: var(--flow-space);
   margin: 0.25rem;
   cursor: pointer;
+  margin-inline-start: 0;
 }
 
 button.btn-secondary {
   background: var(--mdc-theme-backgrund);
   color: var(--mdc-theme-primary);
   border: 2px solid var(--mdc-theme-primary);
+  margin-inline-start: 0;
 }
 /* * add to exception - cube css */
 
