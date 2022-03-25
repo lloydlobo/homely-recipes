@@ -28,13 +28,6 @@
             data-word="Recipes"
           >
             Recipes
-            <!-- <span class="char" data-char="R" style="--char-index: 0">R</span><span
-              class="char" data-char="e" style="--char-index: 1">e</span>
-            <span class="char" data-char="c" style="--char-index: 2">c</span>
-            <span class="char" data-char="i" style="--char-index: 3">i</span>
-            <span class="char" data-char="p" style="--char-index: 4">p</span>
-            <span class="char" data-char="e" style="--char-index: 5">e</span>
-            <span class="char" data-char="s" style="--char-index: 6">s</span> -->
           </div>
           <div
             class="navigation__navbar | flex flex--wrap | align-items--center justify-content--center | gap-top-700"
@@ -68,19 +61,32 @@
             </p>
             <button class="btn-secondary">Get Free Recipe Resources</button>
           </div>
-          <div class="recipe-scroll-component" data-state="overflow-right">
+          <div
+            class="recipe-scroll-component | flow flow-space-500"
+            data-state="overflow-right"
+          >
             <div
               class="hero__images | media-scroller snaps-inline"
               data-state="no-scroll-bg"
             >
               <div class="recipe-card">
                 <div class="hero__images__image | media-element">
-                  <img
-                    src="./assets/images/homepage/hero-image-2.png"
-                    width="333"
-                    height="460"
-                    alt=""
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:40em)"
+                      srcset="./assets/images/homepage/hero-img-2--333x460.png"
+                    />
+                    <source
+                      media="(max-width:41em)"
+                      srcset="./assets/images/homepage/hero-img-2--206x284.png"
+                    />
+                    <img
+                      src="./assets/images/homepage/hero-img-2--333x460.png"
+                      width="333"
+                      height="460"
+                      alt=""
+                    />
+                  </picture>
                 </div>
                 <div class="recipe-card__title">
                   <a
@@ -93,12 +99,22 @@
               </div>
               <div class="recipe-card">
                 <div class="hero__images__image | media-element">
-                  <img
-                    src="./assets/images/homepage/hero-image-1.png"
-                    width="333"
-                    height="460"
-                    alt=""
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:40em)"
+                      srcset="./assets/images/homepage/hero-img-1--206x284.png"
+                    />
+                    <source
+                      media="(min-width:41em)"
+                      srcset="./assets/images/homepage/hero-img-1--333x460.png"
+                    />
+                    <img
+                      src="./assets/images/homepage/hero-img-1--333x460.png"
+                      width="333"
+                      height="460"
+                      alt=""
+                    />
+                  </picture>
                 </div>
                 <div class="recipe-card__title">
                   <a
@@ -111,12 +127,22 @@
               </div>
               <div class="recipe-card">
                 <div class="hero__images__image | media-element">
-                  <img
-                    src="./assets/images/homepage/hero-image.png"
-                    width="333"
-                    height="460"
-                    alt=""
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:40em)"
+                      srcset="./assets/images/homepage/hero-img-0--206x284.png"
+                    />
+                    <source
+                      media="(min-width:41em)"
+                      srcset="./assets/images/homepage/hero-img-0--333x460.png"
+                    />
+                    <img
+                      src="./assets/images/homepage/hero-img-0--333x460.png"
+                      width="333"
+                      height="460"
+                      alt=""
+                    />
+                  </picture>
                 </div>
                 <div class="recipe-card__title">
                   <a

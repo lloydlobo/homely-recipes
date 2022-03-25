@@ -265,6 +265,12 @@ a {
   color: var(--mdc-theme-primary);
   text-decoration: none;
 }
+/* custom resets */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* **** */
 /* * cube css */
@@ -845,6 +851,10 @@ button[data-state="btn-link--arrow"] > svg {
   display: grid;
   gap: 1rem;
   place-items: center;
+}
+.recipe-card img {
+  width: 100%;
+  height: auto;
 }
 
 .recipe-card__title {
