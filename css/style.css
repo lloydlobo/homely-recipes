@@ -67,6 +67,14 @@
     ),
     #fcfcfc; /* +14% Primary */
   /* section spacing  */
+
+  /* shadow */
+  --mdc-theme-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  /* shadow */
+  --mdc-theme-shadow-on-text: 0 2px 4px rgb(0 0 0 / 12%);
+
+  /* section-spacing */
   --section-spacer: 10.375rem;
 
   /* animate char on hover */ /* title, display */
@@ -918,20 +926,22 @@ ul.footer__social {
 
 /* * header */
 
+.logo__wrapper {
+  overflow: hidden;
+}
 span.logo {
   font-family: var(--ff-cursive);
   font-weight: 400;
-  /* transform: rotate(345deg); */
-  /* font-size: 72px; */
   font-size: clamp(3.375rem, 1rem + 3.888888vw, 4.752875rem);
-  /* rotate: -8.35deg; */
-  /* 351.65deg */
   transform: rotate(351.65deg);
   /* ! for demo only */
   display: grid;
   place-items: center;
 }
-
+span.logo.mdc-theme--primary > * {
+  /* text-shadow: var(--mdc-theme-shadow-on-text); */
+  text-shadow: 0 2px 4px rgb(0 0 0 / 12%);
+}
 @media screen and (min-width: 40em) {
   span.logo.footer {
     display: inline-block;
