@@ -10,7 +10,7 @@
   --alpha: 0.8;
   /* color */
   /* material-theme/sys/light/primary */
-  --mdc-theme-primary: rgb(156, 65, 61);
+  --mdc-theme-primary: #9c413d;
   --mdc-theme-on-primary: #ffffff;
   --mdc-theme-primary-container: #ffdad5;
   --mdc-theme-on-secondary: #ffffff;
@@ -564,6 +564,11 @@ main {
 .display-small {
   text-align: center;
 }
+
+.display-medium,
+.display-small {
+  color: var(--mdc-theme-primary, #9c413d);
+}
 /* uppercase and set font weight to 900 */
 .display-large,
 .display-medium,
@@ -769,7 +774,6 @@ button {
   padding: var(--flow-space);
   margin: 0.25rem;
   cursor: pointer;
-  margin-inline-start: 0;
 }
 
 button.btn-secondary {
