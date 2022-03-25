@@ -965,8 +965,10 @@ ul.footer__social {
 
 /* * */
 /* * 4. exceptions */
-.hero__images.media-scroller.snaps-inline[data-state="no-scroll-bg"] {
-  scroll-padding-inline: 0;
+@media screen and (max-width: 40em) {
+  .hero__images.media-scroller.snaps-inline[data-state="no-scroll-bg"] {
+    scroll-padding-inline: 0;
+  }
 }
 /* end of cube css */
 
