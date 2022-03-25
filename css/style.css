@@ -532,7 +532,8 @@ main {
   /* chrome */
   /* letter-spacing: .01ch; */
   /* mozilla */
-  letter-spacing: -0.05ch;
+  /* letter-spacing: -0.05ch; */
+  letter-spacing: 0.0618ch;
 }
 /* 1.38125x less than large */
 .display-medium {
@@ -551,6 +552,7 @@ main {
 .title-medium,
 .title-small {
   text-transform: uppercase;
+  font-weight: 900;
   font-variation-settings: "wght" var(--display-heading-weight, 900);
 }
 
@@ -956,10 +958,11 @@ h1.nav__heading {
   letter-spacing: -0.19ch;
 }
 .nav__heading.display-large.char:hover {
+  font-weight: 600;
   --display-heading-weight: 600;
   transition-delay: 100ms; /* 0s */
   /* letter-spacing: -0.21ch; */
-  letter-spacing: -0.05ch;
+  letter-spacing: 0.1ch;
 }
 .nav__heading .display-large .char {
   transition: 0.3s cubic-bezier(0.45, 0.05, 0.22, 1.3);
