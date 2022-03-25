@@ -6,10 +6,11 @@
   --ff-sans: "Work Sans", Helvetica, Arial, sans-serif;
 
   --fs-400: 1.4375rem;
-
+  /* color alpha */
+  --alpha: 0.8;
   /* color */
   /* material-theme/sys/light/primary */
-  --mdc-theme-primary: #9c413d;
+  --mdc-theme-primary: rgb(156, 65, 61);
   --mdc-theme-on-primary: #ffffff;
   --mdc-theme-primary-container: #ffdad5;
   --mdc-theme-on-secondary: #ffffff;
@@ -35,6 +36,8 @@
   /* color inverse */
   --mdc-theme-inverse-primary: #ffb3ab;
   --mdc-theme-inverse-surface: #362f2e;
+  /* custom */
+  --mdc-theme-on-surface--morph-bg: hsla(9, 12%, 11%, 0.03);
   /* color - read-only/surface/light */
   --mdc-theme-surface1: linear-gradient(
       0deg,
@@ -66,7 +69,6 @@
       rgba(156, 65, 61, 0.14)
     ),
     #fcfcfc; /* +14% Primary */
-  /* section spacing  */
 
   /* shadow */
   --mdc-theme-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
@@ -76,6 +78,19 @@
 
   /* section-spacing */
   --section-spacer: 10.375rem;
+  /* padding-inline */
+
+  --padding-inline-0: 0;
+  --padding-inline-100: 0.23606491em;
+  --padding-inline-200: 0.38195303em;
+  --padding-inline-300: 0.618em;
+  --padding-inline-400: 1em;
+  --padding-inline-500: 1.618em;
+  --padding-inline-600: 2em;
+  --padding-inline-700: 2.61794em;
+  --padding-inline-800: 3em;
+  --padding-inline-900: 4.23582692em;
+  --padding-inline-1000: 5em;
 
   /* animate char on hover */ /* title, display */
   --char-index: 0;
@@ -785,12 +800,14 @@ button[data-state="btn-link--arrow"] > svg {
 /* media scroll arrows */
 .media-scroll-arrows {
   display: flex;
+  /* padding-inline: 1em; */
 }
 
 .hero__images.media-scroll-arrows {
   /* display: flex; */
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+  margin-inline-end: var(--padding-inline-100);
 }
 
 .hero__images.media-scroll-arrows > :first-child svg {
@@ -880,7 +897,7 @@ ul.footer__social {
   overflow-x: auto;
   /* helpful for touch device - doesn't pull the whole container down or side */
   overscroll-behavior-inline: contain;
-  background-color: var(--mdc-theme-surface-variant);
+  /* background-color: var(--mdc-theme-surface-variant); */
 }
 
 /* media scrolling groups */
@@ -897,7 +914,8 @@ ul.footer__social {
   display: grid;
   grid-template-rows: min-content;
   gap: var(--_spacer);
-  padding: var(--_spacer);
+  /* padding: var(--_spacer); */
+  padding: 0;
   background: var(--mdc-theme-surface2);
   border-radius: 1rem;
   box-shadow: 0 2px 4px #52434250;
@@ -977,53 +995,64 @@ h1.nav__heading {
 /* * */
 /* * section hero */
 
+@media screen and (min-width: 40em) {
+  .hero {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 140px;
+  }
+}
+
 .hero__bg-image {
   position: relative;
   top: -850px;
   right: -634px;
 }
 
+.recipe-scroll-component[data-state="overflow-right"] {
+  position: relative;
+  right: -7.4vw;
+  /* right: -6vw; */
+}
+
 .hero__images.media-scroller[data-state="no-scroll-bg"] {
   --_spacer: 2rem; /* _ is for private property which isn't mentioned in the root - naming convention */
   display: grid;
   /* auto flow helps when there is no defined quantity of cards */
-  gap: var(--_spacer);
-  /* gap: 0; */
+  /* gap: var(--_spacer); */
+  gap: 4em;
   grid-auto-flow: column;
   /* for even display of child elements use 50% */
-  /* grid-auto-columns: 50%; */
+  grid-auto-columns: 70%;
   /* to show the sides of next child */
   /* grid-auto-columns: 45%; */
-  grid-auto-columns: auto;
+  /* grid-auto-columns: auto; */
   /* padding: 0 var(--_spacer) var(--_spacer); */
   /* padding: var(--_spacer); */
   padding: var(--_spacer);
+  /* padding: 0 ; */
   border-radius: calc(var(--_spacer, 2em) * 1.618);
   overflow-x: auto;
   /* helpful for touch device - doesn't pull the whole container down or side */
   overscroll-behavior-inline: contain;
-  background-color: var(--mdc-theme-secondary-container);
+  /* background-color: var(--mdc-theme-secondary-container); */
+  background-color: var(--mdc-theme-on-surface--morph-bg);
+  /* background-color: rgba(var(--mdc-theme-primary), var(--alpha)); */
 }
-
-.hero__images.media-scroller[data-state="no-scroll-bg"] > .media-element {
+.hero__images__image.\|.media-element
+  .hero__images.media-scroller[data-state="no-scroll-bg"]
+  > .media-element {
   background: none;
   box-shadow: none;
   padding: 0;
 }
 
-.hero__images.media-scroller[data-state="no-scroll-bg"] > * > img {
-  display: grid;
-  grid-template-rows: min-content;
-  gap: 0;
-  /* padding: var(--_spacer, 0); */
-  padding: 0;
-  margin-inline: 0;
-  background: var(--mdc-theme-error);
-  border-radius: var(--_spacer, 1em);
-  box-shadow: -2px 2px 4px hsla(4, 11%, 29%, 0.5);
-  aspect-ratio: 0.618 / 1;
-  max-width: fit-content;
-  height: auto;
+.hero__images__image
+  .media-element
+  .hero__images.media-scroller[data-state="no-scroll-bg"]
+  > *
+  > img {
+  object-fit: cover;
 }
 
 .snaps-inline[data-state="no-scroll-bg"] {
