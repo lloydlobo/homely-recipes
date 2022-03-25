@@ -229,7 +229,6 @@ body {
   font-color: var(--mdc-theme-on-background);
   margin: 0;
   min-height: 100vh;
-  background-color: #fcfcfc;
   background-color: var(--mdc-theme-background, #fcfcfc);
   text-rendering: optimizeSpeed;
   padding-top: unset;
@@ -292,8 +291,8 @@ main {
   margin-top: var(--section-spacer);
 }
 
-.strong {
-  font-weight: bold;
+:is(p, label).strong {
+  font-weight: 600;
 }
 
 /* flex */
@@ -662,6 +661,9 @@ main {
 .mdc-theme--on-primary-bg {
   background-color: var(--mdc-theme-on-primary-container);
 }
+.mdc-theme--on-primary-bg-inverse {
+  background-color: var(--mdc-theme-primary-container);
+}
 
 .mdc-theme--secondary {
   color: var(--mdc-theme-secondary);
@@ -871,6 +873,33 @@ ul.recipes__navigation {
   gap: 1em;
   align-items: center;
 }
+
+.active--link {
+  color: var(--mdc-theme-primary);
+}
+/* penultimate section */
+
+.banner__wrapper.container.grid.\| > * {
+  padding-inline-start: var(--padding-inline-800);
+  padding-block-end: var(--section-spacer);
+  padding-block-start: var(--padding-inline-1000);
+}
+
+/* banner__wrapper add grid column */
+@media screen and (min-width: 40em) {
+  /* .banner__wrapper {
+    grid-column: 1 / span 2;
+  } */
+  .banner__wrapper {
+    display: grid;
+    grid-template-columns: 0.618fr 1fr;
+    gap: 0;
+    /* place-items: center; */
+  }
+}
+
+/*
+ */
 
 /* * */
 /* footer__navigation */

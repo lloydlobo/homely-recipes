@@ -56,7 +56,7 @@
               <span class="mdc-theme--primary">homemade </span>recipes.
             </h1>
             <p class="hero__content__body | body-medium">
-              Sharing experiences witht he community where people re-discover
+              Sharing experiences with the community where people re-discover
               home-made food, share recipes, and connect with creators like you.
             </p>
             <button class="btn-secondary">Get Free Recipe Resources</button>
@@ -199,10 +199,12 @@
       </section>
       <!-- section - recipes - kitchen -->
       <section>
-        <div class="recipes container grid">
+        <div class="recipes | container gap-top-1000 | grid">
           <h2 class="recipes__heading display-medium">Kitchen</h2>
-          <ul class="recipes__navigation" role="list">
-            <li class="recipes__navigation__recipe-item sub-headline-medium">
+          <ul class="recipes__navigation | mdc-theme--tertiary" role="list">
+            <li
+              class="recipes__navigation__recipe-item sub-headline-medium | active--link"
+            >
               Fish Curry
             </li>
             <li class="recipes__navigation__recipe-separator">
@@ -224,7 +226,7 @@
               Pudding
             </li>
           </ul>
-          <div class="recipes__recipe-wrapper">
+          <div class="recipes__recipe-wrapper | gap-top-700">
             <h3
               class="recipes__wrapper__heading | label-wrapper--full-bleed |headline-small mdc-theme--inverse-surface mdc-theme--inverse-on-primary"
             >
@@ -247,9 +249,11 @@
                 Facilis, eum.
               </p>
               <div class="recipes__wrapper__content__serving-info flex-row">
-                <p class="recipes__wrapper__content__serving body-small strong">
+                <label
+                  class="recipes__wrapper__content__serving | strong body-small"
+                >
                   Serving Size:
-                </p>
+                </label>
                 <p class="recipes__wrapper__content__serving-value body-small">
                   150 gm
                 </p>
@@ -257,7 +261,7 @@
               <!-- <p class="recipes__wrapper__content__serving-size body-small">
                 <span class="strong">Serving Size: </span>
               </p> -->
-              <div class="recipes__wrapper__content__nutrition">
+              <div class="recipes__wrapper__content__nutrition | flex">
                 <div class="recipes__wrapper__contant__nutrition__item">
                   <p class="recipes__wrapper__contant__nutrition__item__label">
                     Calories
@@ -297,7 +301,7 @@
       </section>
       <!-- section -  featured recipes -->
       <section>
-        <div class="featured container grid">
+        <div class="featured | container gap-top-1000 | grid">
           <h2 class="featured__heading display-medium">Featured</h2>
           <div class="featured__images">
             <div class="featured__images__image | media-scroller snaps-inline">
@@ -339,13 +343,15 @@
       </section>
       <!-- section -  cta banner -->
       <section>
-        <div class="banner">
-          <div class="banner__wrapper container">
-            <div class="banner__wrapper__start">
+        <div class="banner | gap-top-1000">
+          <div class="banner__wrapper | container | grid">
+            <div
+              class="banner__wrapper__start | mdc-theme--primary mdc-theme--on-primary-bg-inverse"
+            >
               <div class="title-small title--small--outline">Saving lorem</div>
               <div class="title-small title--small">Spreading lorem</div>
             </div>
-            <div class="banner__wrapper__end">
+            <div class="banner__wrapper__end | mdc-theme--inverse-on-primary">
               <div class="headline-large">Lorem ipsum, Dolor sit,</div>
               <div class="headline-large">Lorem, ipsum.</div>
               <div class="banner__wrapper__end__blob"></div>
@@ -356,7 +362,7 @@
     </main>
 
     <footer>
-      <div class="footer container">
+      <div class="footer | container | gap-top-500">
         <div class="footer__navigation">
           <span class="logo | footer">Homely</span>
           <ul class="footer__navigation" role="list">
