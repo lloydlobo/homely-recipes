@@ -825,6 +825,7 @@ button[data-state="btn-link--arrow"] > svg {
 /* media scroll arrows */
 .media-scroll-arrows {
   display: flex;
+  gap: var(--padding-inline-400);
   /* padding-inline: 1em; */
 }
 
