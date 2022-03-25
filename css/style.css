@@ -814,9 +814,17 @@ button[data-state="btn-link--arrow"] > svg {
 
 .hero__images.media-scroll-arrows {
   /* display: flex; */
-  justify-content: end;
   align-items: center;
   margin-inline-end: var(--padding-inline-100);
+  justify-content: center;
+}
+@media screen and (min-width: 40em) {
+  .hero__images.media-scroll-arrows {
+    /* display: flex; */
+    /* align-items: center; */
+    /* margin-inline-end: var(--padding-inline-100); */
+    justify-content: end;
+  }
 }
 
 .hero__images.media-scroll-arrows > :first-child svg {
@@ -951,7 +959,9 @@ ul.footer__social {
 
 /* * */
 /* * 4. exceptions */
-
+.hero__images.media-scroller.snaps-inline[data-state="no-scroll-bg"] {
+  scroll-padding-inline: 0;
+}
 /* end of cube css */
 
 /* * */
@@ -1026,6 +1036,15 @@ h1.nav__heading {
   right: -3.4vw;
   /* right: -7.4vw; */
   /* right: -6vw; */
+}
+
+.hero__images.\|.media-scroller.snaps-inline {
+  margin-block-start: var(--padding-inline-400);
+}
+@media screen and (min-width: 40em) {
+  .hero__images.\|.media-scroller.snaps-inline {
+    margin-block-start: var(--padding-inline-0);
+  }
 }
 
 .hero__images.media-scroller[data-state="no-scroll-bg"] {
