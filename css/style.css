@@ -763,8 +763,8 @@ ul.nav__menu {
 button {
   border: 0;
   border-radius: var(--corner-button--1, 1.25rem);
-  background: var(--mdc-theme-primary);
-  color: var(--mdc-theme-on-primary);
+  background: var(--_btn-bg-clr, var(--mdc-theme-primary, #9c413d));
+  color: var(--_btn-clr, var(--mdc-theme-on-primary, #ffffff));
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
   line-height: 1.2;
@@ -772,15 +772,17 @@ button {
   text-decoration: none;
   /* padding: 0.25rem 0.5rem; */
   padding: var(--flow-space);
-  margin: 0.25rem;
+  margin: 0;
   cursor: pointer;
+  /* margin-inline-start: 0; */
 }
 
-button.btn-secondary {
-  background: var(--mdc-theme-backgrund);
-  color: var(--mdc-theme-primary);
-  border: 2px solid var(--mdc-theme-primary);
-  margin-inline-start: 0;
+.btn-secondary {
+  /* background: var(--mdc-theme-backgrund); */
+  /* color: var(--mdc-theme-primary); */
+  --_btn-clr: var(--mdc-theme-primary, #9c413d);
+  --_btn-bg-clr: var(--mdc-theme-background, #ffffff);
+  border: 2px solid var(--_btn-clr, var(--mdc-theme-primary, #9c413d));
 }
 /* * add to exception - cube css */
 
