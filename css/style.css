@@ -584,12 +584,12 @@ main {
 .headline-medium {
   font-family: "Work Sans";
   font-size: 47px;
-  line-height: 71px;
+  line-height: 1.04;
 }
 .headline-small {
   font-family: "Work Sans";
   font-size: clamp(1.68106rem, 1.68106rem + 0.688978vw, 2.3rem); /* 30px */
-  line-height: 44px;
+  line-height: 1.2;
 }
 .headline-large,
 .headline-medium,
@@ -923,7 +923,7 @@ ul.footer__social {
 /* use logical propert inline-size instead of width  */
 .media-element > img {
   inline-size: 100%; /* logical property for width */
-  aspect-ratio: 16 / 9;
+  /* aspect-ratio: 16 / 9; */
   /* aspect-ratio: .618 / 1; */
   object-fit: cover;
 }
@@ -995,11 +995,14 @@ h1.nav__heading {
 /* * */
 /* * section hero */
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .hero {
     display: grid;
     grid-auto-flow: column;
-    column-gap: 140px;
+    /* column-gap: 140px; */
+  }
+  .hero__content.\|.flow.flow-space-500 {
+    min-inline-size: 40vw;
   }
 }
 
@@ -1011,34 +1014,27 @@ h1.nav__heading {
 
 .recipe-scroll-component[data-state="overflow-right"] {
   position: relative;
-  right: -7.4vw;
+  right: -3.4vw;
+  /* right: -7.4vw; */
   /* right: -6vw; */
 }
 
 .hero__images.media-scroller[data-state="no-scroll-bg"] {
   --_spacer: 2rem; /* _ is for private property which isn't mentioned in the root - naming convention */
   display: grid;
-  /* auto flow helps when there is no defined quantity of cards */
-  /* gap: var(--_spacer); */
-  gap: 4em;
+
+  gap: 1em;
   grid-auto-flow: column;
   /* for even display of child elements use 50% */
   grid-auto-columns: 70%;
-  /* to show the sides of next child */
-  /* grid-auto-columns: 45%; */
-  /* grid-auto-columns: auto; */
-  /* padding: 0 var(--_spacer) var(--_spacer); */
-  /* padding: var(--_spacer); */
+
   padding: var(--_spacer);
-  /* padding: 0 ; */
   border-radius: calc(var(--_spacer, 2em) * 1.618);
   overflow-x: auto;
-  /* helpful for touch device - doesn't pull the whole container down or side */
   overscroll-behavior-inline: contain;
-  /* background-color: var(--mdc-theme-secondary-container); */
-  background-color: var(--mdc-theme-on-surface--morph-bg);
-  /* background-color: rgba(var(--mdc-theme-primary), var(--alpha)); */
+  /* background-color: var(--mdc-theme-on-surface--morph-bg); */
 }
+
 .hero__images__image.\|.media-element
   .hero__images.media-scroller[data-state="no-scroll-bg"]
   > .media-element {
@@ -1046,13 +1042,17 @@ h1.nav__heading {
   box-shadow: none;
   padding: 0;
 }
-
-.hero__images__image
-  .media-element
+.hero__images__image.\|.media-element
   .hero__images.media-scroller[data-state="no-scroll-bg"]
-  > *
+  > .media-element
   > img {
+  aspect-ratio: none;
+}
+
+.media-scroller[data-state="no-scroll-bg"] .media-element {
   object-fit: cover;
+  border-radius: 2em;
+  box-shadow: var(--mdc-theme-shadow);
 }
 
 .snaps-inline[data-state="no-scroll-bg"] {
