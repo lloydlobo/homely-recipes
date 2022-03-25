@@ -728,7 +728,7 @@ main {
 ul.nav__menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  column-gap: 1em;
   align-items: center;
   justify-content: center;
 }
