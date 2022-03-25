@@ -747,7 +747,9 @@ ul.nav__menu {
   align-items: center;
   justify-content: center;
 }
-
+.navigation__navbar {
+  gap: 1em;
+}
 /* * */
 /* components */
 /* * */
