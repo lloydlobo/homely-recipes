@@ -1182,10 +1182,15 @@ h1.nav__heading {
   --_scale: 1.618em;
   border-bottom-right-radius: calc(var(--corner) + var(--_scale));
   /* position: relative; */
+  grid-area: "recipe-heading";
 }
 
-.recipes__wrapper__content__nutrition {
-  /* border-radius: var(--corner); */
+.recipes__wrapper__content__nutrition.\|.flex.\|.mdc-theme--on-primary-bg-inverse {
+  gap: 1em;
+  padding-inline: 1em;
+  position: absolute;
+  padding-block: 0.5em;
+  border-radius: var(--corner);
 }
 
 @media screen and (min-width: 40em) {
@@ -1204,11 +1209,13 @@ h1.nav__heading {
   .recipes__wrapper__image {
     grid-column-start: 6;
     grid-column-end: 11;
+    grid-area: "recipe-image";
   }
 
   .recipes__wrapper__content.\|.flow.flow-space-400.\| {
     grid-column-start: 1;
     grid-column-end: 4;
+    grid-area: "recipe-content";
   }
 }
 
