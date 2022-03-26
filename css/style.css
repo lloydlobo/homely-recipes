@@ -258,15 +258,15 @@ h2,
 h3 {
   line-height: 1.1;
 }
-/*
+
 p {
   min-width: 12ch;
-} */
-/* @media screen and (min-width: 40em) {
+}
+@media screen and (min-width: 40em) {
   p {
     width: clamp(45ch, 50%, 75ch);
   }
-} */
+}
 
 a {
   color: var(--mdc-theme-primary);
@@ -1191,6 +1191,10 @@ h1.nav__heading {
   position: absolute;
   padding-block: 0.5em;
   border-radius: calc(var(--corner) * 1.618);
+}
+
+.recipes__wrapper__contant__nutrition__item {
+  display: grid;
 }
 
 @media screen and (min-width: 40em) {
