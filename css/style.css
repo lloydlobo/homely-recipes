@@ -1200,7 +1200,6 @@ h1.nav__heading {
   }
   .recipes__wrapper__body {
     display: grid;
-    align-items: center;
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 1em;
     grid-auto-flow: column;
