@@ -881,7 +881,6 @@ color: white;} */
   display: grid;
   gap: 1rem;
   place-items: center;
-  max-inline-size: fit-content;
 }
 .recipe-card img {
   width: 100%;
@@ -1134,8 +1133,7 @@ h1.nav__heading {
   gap: 1em;
   grid-auto-flow: column;
   /* for even display of child elements use 50% */
-  grid-auto-columns: 70%;
-
+  grid-auto-columns: 50%;
   padding: var(--_spacer);
   border-radius: calc(var(--_spacer, 2em) * 1.618);
   overflow-x: auto;
@@ -1143,6 +1141,11 @@ h1.nav__heading {
   /* background-color: var(--mdc-theme-on-surface--morph-bg); */
 }
 
+@media screen and (min-width: 40em) {
+  .hero__images.media-scroller[data-state="no-scroll-bg"] {
+    grid-auto-columns: 70%;
+  }
+}
 .hero__images__image.\|.media-element
   .hero__images.media-scroller[data-state="no-scroll-bg"]
   > .media-element {
