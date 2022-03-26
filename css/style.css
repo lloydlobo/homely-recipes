@@ -1191,6 +1191,7 @@ h1.nav__heading {
   position: absolute;
   padding-block: 0.5em;
   border-radius: calc(var(--corner) * 1.618);
+  border-block-end: 2px solid var(--mdc-theme-primary, #9c413d);
 }
 
 .recipes__wrapper__contant__nutrition__item {
