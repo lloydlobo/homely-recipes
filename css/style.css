@@ -1190,7 +1190,7 @@ h1.nav__heading {
   padding-inline: 1em;
   position: absolute;
   padding-block: 0.5em;
-  border-radius: var(--corner);
+  border-radius: calc(var(--corner) * 1.618);
 }
 
 @media screen and (min-width: 40em) {
@@ -1209,6 +1209,9 @@ h1.nav__heading {
     grid-column-start: 6;
     grid-column-end: 11;
     grid-area: "recipe-image";
+  }
+  .recipes__wrapper__image img {
+    border-radius: calc(var(--corner) * 1.618);
   }
 
   .recipes__wrapper__content.\|.flow.flow-space-400.\| {
