@@ -31,3 +31,8 @@ ol[role="list"] li:not(:last-child)::after {
     display: inline-flex;
   }
 }
+
+.recipe-details {
+  grid-auto-flow: column;
+  /* grid-template-columns: repeat(10, 1fr); */
+}
