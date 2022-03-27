@@ -28,9 +28,10 @@ ul[data-state="list"].ingredients__list li {
   margin-block-end: 0.5rem;
 }
 
-* {
+/* ! css box model */
+/* * {
   border: 2px solid hsla(120, 54%, 65%, 0.219);
-}
+} */
 
 /* .breadcrumb li:not(:first-child)::before {
   content: "→";
