@@ -3,11 +3,16 @@ ol {
 }
 
 .breadcrumbs-container li {
-  display: none;
+  display: inline-flex;
   hyphens: auto; /* how text hyphenate when they wrap around */
 }
 
-/* only show first and last child on mobile */
-.breadcrumbs-container li:is(:first-child, :last-child) {
-  display: inline-flex;
+@media screen and (max-width: 40em) {
+  .breadcrumbs-container li {
+    display: none;
+  }
+  /* only show first and last child on mobile */
+  .breadcrumbs-container li:is(:first-child, :last-child) {
+    display: inline-flex;
+  }
 }
