@@ -14,7 +14,7 @@ ol {
 /* .breadcrumb::after {
   content: " \203A ";
 } */
-.breadcrumb:not(:last-child)::after {
+ol[role="list"] li:not(:last-child)::after {
   content: " \203A ";
 }
 
