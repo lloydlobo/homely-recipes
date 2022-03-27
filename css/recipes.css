@@ -50,3 +50,12 @@ ol[role="list"] li:not(:last-child)::after {
   grid-column-start: 6;
   grid-column-end: span 5;
 }
+
+/* ! quick fixes */
+/* [ ] fix soon */
+
+.nav__heading.display-large.char.mdc-theme--inverse-primary {
+  white-space: nowrap;
+  place-items: center;
+  justify-content: center;
+}
