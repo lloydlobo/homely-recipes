@@ -1,0 +1,81 @@
+ol {
+  hyphens: auto;
+  /* line-height: 1.2; */
+  /* line-height: 1.4; */
+}
+
+.breadcrumbs-container li {
+  display: inline-flex;
+  hyphens: auto; /* how text hyphenate when they wrap around */
+  column-gap: 0.62857143em;
+}
+
+ol[role="list"] li:not(:last-child)::after {
+  content: " \203A ";
+  padding-inline-end: 0.3em;
+  color: var(--mdc-theme-primary, #9c413d);
+}
+
+ul[data-state="list"].ingredients__list li {
+  text-transform: uppercase;
+  font-weight: 600;
+  /* line-height: 1.8; */
+}
+:is(.ingredients__list, .method__list) li {
+  /* text-transform: uppercase; */
+  /* font-weight: 600; */
+  line-height: 1.4;
+  margin-block-end: 0.5rem;
+}
+
+/* ! css box model */
+/* * {
+  border: 2px solid hsla(120, 54%, 65%, 0.219);
+} */
+
+/* .breadcrumb li:not(:first-child)::before {
+  content: "→";
+} */
+
+@media screen and (max-width: 40em) {
+  .breadcrumbs-container li {
+    display: none;
+  }
+  /* only show first and last child on mobile */
+  .breadcrumbs-container li:is(:first-child, :last-child) {
+    display: inline-flex;
+  }
+}
+.recipe-details {
+  grid-row-gap: 20px;
+}
+
+@media screen and (min-width: 40em) {
+  .recipe-details {
+    grid-auto-flow: column;
+    /* grid-template-columns: repeat(10, 1fr); */
+    gap: 1em;
+  }
+
+  .ingredients {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+
+  .method {
+    grid-column-start: 6;
+    grid-column-end: span 5;
+  }
+}
+
+/* **** */
+/* * 04 - exception — cube css */
+/* **** */
+
+@media screen and (min-width: 40em) {
+  .nav__heading[data-state="recipe"] {
+    /* font-size: clamp(1em, 0.9rem + 14.3472vw, 14.7125rem); */ /* 221px - homepage */
+    /* font-size: clamp(1em, 0.9rem + 14.3472vw, 10.7125rem); */
+    font-size: clamp(1em, 0.9rem + 11vw, 11rem);
+  }
+}

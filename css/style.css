@@ -234,7 +234,7 @@ body {
   font-family: var(--ff-sans);
   font-size: var(--fs-400); /* 23px? */
   font-weight: 400;
-  font-color: var(--mdc-theme-on-background);
+  color: var(--mdc-theme-on-background);
   margin: 0;
   min-height: 100vh;
   background-color: var(--mdc-theme-background, #fcfcfc);
@@ -569,9 +569,19 @@ main {
   line-height: 1;
 }
 .display-small {
-  font-size: 98.8875px;
-  line-height: 224px;
+  /* font-size: 98.8875px; */
+  /* font-size: clamp(2.65rem, 1rem + 8.6vw, 8rem); 98.8875px */
+  font-size: clamp(2.65rem, 1rem + 8.6vw, 6.17969rem);
+  line-height: 1;
 }
+.display-smaller {
+  /* font-size: 61.1171199px; */
+  font-size: clamp(2.65rem, 1rem + 8.6vw, 3.77969rem);
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 .display-large,
 .display-medium,
 .display-small {
@@ -579,7 +589,8 @@ main {
 }
 
 .display-medium,
-.display-small {
+.display-small,
+.display-smaller {
   color: var(--mdc-theme-primary, #9c413d);
 }
 /* uppercase and set font weight to 900 */
