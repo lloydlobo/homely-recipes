@@ -735,7 +735,7 @@ main {
   max-width: 77.875rem;
 }
 
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 60rem) {
   .container {
     /* max-width: 42.875rem; */
     /* max-width: clamp(35.875rem, 90.5vw ,61.188rem); */
@@ -1109,7 +1109,7 @@ h1.nav__heading {
   right: -634px;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .recipe-scroll-component[data-state="overflow-right"] {
     position: relative;
     right: -3.4vw;
