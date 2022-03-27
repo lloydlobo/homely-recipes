@@ -578,7 +578,10 @@ main {
   /* font-size: 61.1171199px; */
   font-size: clamp(2.65rem, 1rem + 8.6vw, 3.77969rem);
   line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
 }
+
 .display-large,
 .display-medium,
 .display-small {
@@ -594,7 +597,6 @@ main {
 .display-large,
 .display-medium,
 .display-small,
-.display-smaller,
 .title-large,
 .title-medium,
 .title-small {

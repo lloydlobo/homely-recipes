@@ -16,13 +16,20 @@ ol[role="list"] li:not(:last-child)::after {
   color: var(--mdc-theme-primary, #9c413d);
 }
 
-ul[data-state="list"] li {
+ul[data-state="list"].ingredients__list li {
   text-transform: uppercase;
   font-weight: 600;
+  /* line-height: 1.8; */
+}
+:is(.ingredients__list, .method__list) li {
+  /* text-transform: uppercase; */
+  /* font-weight: 600; */
+  line-height: 1.4;
+  margin-block-end: 0.5rem;
 }
 
-ul.ingredients__list {
-  line-height: 1.6;
+* {
+  border: 2px solid hsla(120, 54%, 65%, 0.219);
 }
 
 /* .breadcrumb li:not(:first-child)::before {
