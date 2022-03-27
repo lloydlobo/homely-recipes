@@ -7,6 +7,21 @@ ol {
   hyphens: auto; /* how text hyphenate when they wrap around */
 }
 
+/* .breadcrumb:not(:last-child)::after {
+  content: " \203A ";
+} */
+
+/* .breadcrumb::after {
+  content: " \203A ";
+} */
+.breadcrumb:not(:last-child)::after {
+  content: " \203A ";
+}
+
+/* .breadcrumb li:not(:first-child)::before {
+  content: "→";
+} */
+
 @media screen and (max-width: 40em) {
   .breadcrumbs-container li {
     display: none;
