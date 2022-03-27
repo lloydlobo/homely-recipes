@@ -52,7 +52,7 @@
         <div class="hero | container">
           <div class="hero__content | gap-top-800 | flow flow-space-500">
             <h1 class="hero__content__heading | headline-medium">
-              A platform for only tasty
+              A platform for tasty
               <span class="mdc-theme--primary">homemade </span>recipes.
             </h1>
             <p class="hero__content__body | body-medium">
@@ -199,9 +199,10 @@
       <!-- section - recipes - kitchen -->
       <section>
         <div
-          class="recipes | container | gap-top-1000 flow flow-space-600 | grid"
+          class="recipes | container | gap-top-1000 gap-bottom-1000 flow flow-space-600 | grid"
         >
-          <h2 class="recipes__heading display-medium">Kitchen</h2>
+          <h2 class="recipes__heading display-medium">Featured</h2>
+          <!-- <blockquote data-state="display-subheading">“Complete freedom to act as one wishes”</blockquote> -->
           <ul class="recipes__navigation | mdc-theme--tertiary" role="list">
             <li
               class="recipes__navigation__recipe-item sub-headline-medium | active--link"
@@ -322,45 +323,172 @@
       <!-- section -  featured recipes -->
       <section>
         <div
-          class="featured | container | flow gap-top-1000 gap-top-1000 | grid"
+          class="collections | container | gap-top-1000 gap-top-1000 | grid place-center | flow flow-space-600"
         >
-          <h2 class="featured__heading display-medium">Featured</h2>
-          <div class="featured__images">
-            <div class="featured__images__image | media-scroller snaps-inline">
-              <div class="featured__image | media-element">
-                <img
-                  src="https://source.unsplash.com/534x460"
-                  width="534"
-                  height="460"
-                  alt=""
-                />
+          <h2 class="recipes__heading | display-medium | flow">
+            Carte Blanche
+          </h2>
+          <blockquote
+            class="body-small | mdc-theme--tertiary"
+            data-state="display-subheading"
+          >
+            <em>“Complete freedom to act as one wishes”</em>
+          </blockquote>
+
+          <!-- * [ ] new recipe scroll ===> collection -->
+          <!-- ? maybe add group media scrolling of 4 cards in 1 group collection --- to save space? -- can highlight eaach group with a bg-color and text -->
+
+          <div
+            class="recipe-scroll-component | gap-top-300"
+            data-state="overflow-none"
+          >
+            <div
+              class="collections | media-scroller snaps-inline"
+              data-state="no-scroll-bg"
+            >
+              <div class="recipe-card">
+                <div class="hero__images__image | media-element">
+                  <picture>
+                    <source
+                      media="(min-width:40em)"
+                      srcset="./assets/images/homepage/hero-img-2--333x460.png"
+                    />
+                    <source
+                      media="(max-width:41em)"
+                      srcset="./assets/images/homepage/hero-img-2--206x284.png"
+                    />
+                    <img
+                      src="./assets/images/homepage/hero-img-2--333x460.png"
+                      width="333"
+                      height="460"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+                <div class="recipe-card__title">
+                  <a
+                    class="recipe-card__title__name | body-small | chevron--right"
+                    href="#"
+                  >
+                    Chicken Recipes
+                  </a>
+                </div>
               </div>
-              <div class="featured__image | media-element">
-                <img
-                  src="https://source.unsplash.com/534x460"
-                  width="534"
-                  height="460"
-                  alt=""
-                />
+              <div class="recipe-card">
+                <div class="hero__images__image | media-element">
+                  <picture>
+                    <source
+                      media="(max-width:40em)"
+                      srcset="./assets/images/homepage/hero-img-1--206x284.png"
+                    />
+                    <source
+                      media="(min-width:41em)"
+                      srcset="./assets/images/homepage/hero-img-1--333x460.png"
+                    />
+                    <img
+                      src="./assets/images/homepage/hero-img-1--333x460.png"
+                      width="333"
+                      height="460"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+                <div class="recipe-card__title">
+                  <a
+                    class="recipe-card__title__name | body-small | chevron--right"
+                    href="#"
+                  >
+                    Fish Recipes
+                  </a>
+                </div>
               </div>
-              <div class="featured__image | media-element">
-                <img
-                  src="https://source.unsplash.com/534x460"
-                  width="534"
-                  height="460"
-                  alt=""
-                />
+              <div class="recipe-card">
+                <div class="hero__images__image | media-element">
+                  <picture>
+                    <source
+                      media="(max-width:40em)"
+                      srcset="./assets/images/homepage/hero-img-0--206x284.png"
+                    />
+                    <source
+                      media="(min-width:41em)"
+                      srcset="./assets/images/homepage/hero-img-0--333x460.png"
+                    />
+                    <img
+                      src="./assets/images/homepage/hero-img-0--333x460.png"
+                      width="333"
+                      height="460"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+                <div class="recipe-card__title">
+                  <a
+                    class="recipe-card__title__name | body-small | chevron--right"
+                    href="#"
+                  >
+                    Fish Recipes
+                  </a>
+                </div>
               </div>
-              <div class="featured__image | media-element">
-                <img
-                  src="https://source.unsplash.com/534x460"
-                  width="534"
-                  height="460"
-                  alt=""
-                />
+              <div class="recipe-card">
+                <div class="hero__images__image | media-element">
+                  <picture>
+                    <source
+                      media="(max-width:40em)"
+                      srcset="./assets/images/homepage/hero-img-0--206x284.png"
+                    />
+                    <source
+                      media="(min-width:41em)"
+                      srcset="./assets/images/homepage/hero-img-0--333x460.png"
+                    />
+                    <img
+                      src="./assets/images/homepage/hero-img-0--333x460.png"
+                      width="333"
+                      height="460"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+                <div class="recipe-card__title">
+                  <a
+                    class="recipe-card__title__name | body-small | chevron--right"
+                    href="#"
+                  >
+                    Traditional Rava Laddoos
+                  </a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="hero__images__image | media-element">
+                  <picture>
+                    <source
+                      media="(max-width:40em)"
+                      srcset="./assets/images/homepage/hero-img-0--206x284.png"
+                    />
+                    <source
+                      media="(min-width:41em)"
+                      srcset="./assets/images/homepage/hero-img-0--333x460.png"
+                    />
+                    <img
+                      src="./assets/images/homepage/hero-img-0--333x460.png"
+                      width="333"
+                      height="460"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+                <div class="recipe-card__title">
+                  <a
+                    class="recipe-card__title__name | body-small | chevron--right"
+                    href="#"
+                  >
+                    Bread & Butter Pudding Recipes
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+          <!-- end of new component recipe scroll collection -->
           <div
             class="featured__footer media-scroll-arrows | justify-content--center"
           >
@@ -424,7 +552,9 @@
     <footer>
       <div class="footer | container | gap-top-500">
         <div class="footer__navigation">
-          <span class="logo | footer">Homely</span>
+          <span class="logo | footer | mdc-theme--primary"
+            ><strong>Homely</strong></span
+          >
           <ul class="footer__navigation" role="list">
             <li class="footer__navigation__items">Collection</li>
             <li class="footer__navigation__items">In THe Kitchen</li>

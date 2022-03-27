@@ -256,7 +256,7 @@ body {
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1;
 }
 
 p {
@@ -566,7 +566,7 @@ main {
 /* 1.38125x less than large */
 .display-medium {
   font-size: clamp(2.65rem, 1rem + 8.6vw, 10rem); /* 160px */
-  line-height: 1.4;
+  line-height: 1;
 }
 .display-small {
   font-size: 98.8875px;
@@ -735,7 +735,7 @@ main {
   max-width: 77.875rem;
 }
 
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 60rem) {
   .container {
     /* max-width: 42.875rem; */
     /* max-width: clamp(35.875rem, 90.5vw ,61.188rem); */
@@ -1109,7 +1109,7 @@ h1.nav__heading {
   right: -634px;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .recipe-scroll-component[data-state="overflow-right"] {
     position: relative;
     right: -3.4vw;
@@ -1142,6 +1142,11 @@ h1.nav__heading {
   /* background-color: var(--mdc-theme-on-surface--morph-bg); */
 }
 
+/* @media screen and (min-width: 40em) {
+  .hero__images.media-scroller[data-state="no-scroll-bg"] {
+    grid-auto-columns: 70%;
+  }
+} */
 @media screen and (min-width: 40em) {
   .hero__images.media-scroller[data-state="no-scroll-bg"] {
     grid-auto-columns: 70%;
@@ -1231,4 +1236,41 @@ h1.nav__heading {
 }
 .recipes__wrapper__contant__nutrition__item > * + * {
   font-weight: bold;
+}
+
+/* **** */
+/* * section - collections carte blanche */
+/* **** */
+
+/* ? copilot did something amazing */
+/* .collections__wrapper__heading.label-wrapper--full-bleed {
+  --_scale: 1.618em;
+  border-bottom-right-radius: calc(var(--corner) + var(--_scale));
+
+  grid-area: "collection-heading";
+} */ /* position was relative */
+
+.collections.media-scroller[data-state="no-scroll-bg"] {
+  --_spacer: 2rem;
+  display: grid;
+  grid-auto-flow: column;
+  /* for even display of child elements use 50% */
+  grid-auto-columns: 20%;
+  gap: 2em;
+  padding: var(--_spacer);
+  border-radius: calc(var(--_spacer, 2em) / 1.618);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  /* background-color: var(--mdc-theme-on-surface--morph-bg); */
+}
+.collections.media-scroller[data-state="no-scroll-bg"] .media-element {
+  object-fit: cover;
+  border-radius: 1em;
+  box-shadow: var(--mdc-theme-shadow);
+}
+@media screen and (min-width: 40em) {
+  .collections.media-scroller[data-state="no-scroll-bg"] {
+    /* grid-auto-columns: 70%; */
+    border-radius: calc(var(--_spacer, 2em) * 1.618);
+  }
 }
