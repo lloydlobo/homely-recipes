@@ -53,19 +53,21 @@ ul[data-state="list"].ingredients__list li {
 @media screen and (min-width: 40em) {
   .recipe-details {
     grid-auto-flow: column;
-    /* grid-template-columns: repeat(10, 1fr); */
+    grid-template-columns: repeat(10, 1fr);
     gap: 1em;
   }
 
   .ingredients {
     grid-column-start: 1;
-    grid-column-end: span 2;
+    /* grid-column-end: span 2; */
+    grid-column-end: span 5;
   }
 
   .method {
-    /* grid-column-start: 6; */
-    grid-column-start: 3;
-    grid-column-end: span 5;
+    grid-column-start: 6;
+    /* grid-column-start: 3; */
+    /* grid-column-end: span 5; */
+    grid-column-end: span 11;
   }
 }
 
