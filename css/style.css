@@ -1190,6 +1190,62 @@ h1.nav__heading {
   grid-area: "recipe-heading";
 }
 
+/* [ ] backlog */
+
+/* .collections > h2.recipes__heading.\|.display-medium.\|.flow::after {
+  content: "Collections";
+  font-size: 1.618rem;
+  display: block;
+  text-align: center;
+  font-family: var(--ff-cursive);
+  color: var(--mdc-theme-inverse-primary);
+  padding: .382rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: capitalize;
+  font-variation-settings: "wght" var(--display-heading-weight, 600);
+} */
+/* h2.recipes__heading.\|.display-medium.\|.flow::after {
+  background-color: gold;
+  margin: 0 auto;
+  max-inline-size: fit-content;
+  background: -moz-radial-gradient(
+      0 100%,
+      circle,
+      rgba(204, 0, 0, 0) 14px,
+      #ffb3ab 15px
+    ),
+    -moz-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 14px, #ffb3ab
+          15px),
+    -moz-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 14px, #ffb3ab 15px),
+    -moz-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 14px, #ffb3ab 15px);
+  background: -o-radial-gradient(
+      0 100%,
+      circle,
+      rgba(204, 0, 0, 0) 14px,
+      #ffb3ab 15px
+    ),
+    -o-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 14px, #ffb3ab 15px),
+    -o-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 14px, #ffb3ab 15px),
+    -o-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 14px, #ffb3ab 15px);
+  background: -webkit-radial-gradient(
+      0 100%,
+      circle,
+      rgba(204, 0, 0, 0) 14px,
+      #ffb3ab 15px
+    ),
+    -webkit-radial-gradient(100% 100%, circle, rgba(204, 0, 0, 0) 14px, #ffb3ab
+          15px),
+    -webkit-radial-gradient(100% 0, circle, rgba(204, 0, 0, 0) 14px, #ffb3ab
+          15px),
+    -webkit-radial-gradient(0 0, circle, rgba(204, 0, 0, 0) 14px, #ffb3ab 15px);
+  background-position: bottom left, bottom right, top right, top left;
+  -moz-background-size: 50% 50%;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+} */
+
 .recipes__wrapper__content__nutrition.\|.flex.\|.mdc-theme--on-primary-bg-inverse {
   gap: 1em;
   padding-inline: 1em;
