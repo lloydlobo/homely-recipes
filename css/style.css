@@ -570,7 +570,7 @@ main {
 }
 .display-small {
   font-size: 98.8875px;
-  line-height: 224px;
+  line-height: 1;
 }
 .display-large,
 .display-medium,
