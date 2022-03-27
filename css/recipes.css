@@ -4,8 +4,6 @@ ol {
   /* line-height: 1.4; */
 }
 
-/* ol.method__list {
-} */
 .breadcrumbs-container li {
   display: inline-flex;
   hyphens: auto; /* how text hyphenate when they wrap around */
@@ -18,8 +16,18 @@ ol {
 /* .breadcrumb::after {
   content: " \203A ";
 } */
+
 ol[role="list"] li:not(:last-child)::after {
   content: " \203A ";
+}
+
+ul[data-state="list"] li {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+ul.ingredients__list {
+  line-height: 1.6;
 }
 
 /* .breadcrumb li:not(:first-child)::before {
@@ -36,26 +44,35 @@ ol[role="list"] li:not(:last-child)::after {
   }
 }
 .recipe-details {
-  grid-auto-flow: column;
-  /* grid-template-columns: repeat(10, 1fr); */
-  gap: 1em;
+  grid-row-gap: 20px;
 }
 
-.ingredients {
-  grid-column-start: 1;
-  grid-column-end: span 2;
+@media screen and (min-width: 40em) {
+  .recipe-details {
+    grid-auto-flow: column;
+    /* grid-template-columns: repeat(10, 1fr); */
+    gap: 1em;
+  }
+
+  .ingredients {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+
+  .method {
+    grid-column-start: 6;
+    grid-column-end: span 5;
+  }
 }
 
-.method {
-  grid-column-start: 6;
-  grid-column-end: span 5;
-}
+/* **** */
+/* * 04 - exception — cube css */
+/* **** */
 
-/* ! quick fixes */
-/* [ ] fix soon */
-
-.nav__heading.display-large.char.mdc-theme--inverse-primary {
-  white-space: nowrap;
-  place-items: center;
-  justify-content: center;
+@media screen and (min-width: 40em) {
+  .nav__heading[data-state="recipe"] {
+    /* font-size: clamp(1em, 0.9rem + 14.3472vw, 14.7125rem); */ /* 221px - homepage */
+    /* font-size: clamp(1em, 0.9rem + 14.3472vw, 10.7125rem); */
+    font-size: clamp(1em, 0.9rem + 11vw, 11rem);
+  }
 }

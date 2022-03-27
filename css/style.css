@@ -569,7 +569,14 @@ main {
   line-height: 1;
 }
 .display-small {
-  font-size: 98.8875px;
+  /* font-size: 98.8875px; */
+  /* font-size: clamp(2.65rem, 1rem + 8.6vw, 8rem); 98.8875px */
+  font-size: clamp(2.65rem, 1rem + 8.6vw, 6.17969rem);
+  line-height: 1;
+}
+.display-smaller {
+  /* font-size: 61.1171199px; */
+  font-size: clamp(2.65rem, 1rem + 8.6vw, 3.77969rem);
   line-height: 1;
 }
 .display-large,
@@ -579,13 +586,15 @@ main {
 }
 
 .display-medium,
-.display-small {
+.display-small,
+.display-smaller {
   color: var(--mdc-theme-primary, #9c413d);
 }
 /* uppercase and set font weight to 900 */
 .display-large,
 .display-medium,
 .display-small,
+.display-smaller,
 .title-large,
 .title-medium,
 .title-small {

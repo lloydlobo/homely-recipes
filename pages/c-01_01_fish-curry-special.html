@@ -28,6 +28,7 @@
           <div
             class="nav__heading | grid | display-large char | mdc-theme--inverse-primary"
             data-word="Recipes"
+            data-state="recipe"
           >
             Fish Curry
           </div>
@@ -47,52 +48,52 @@
         </div>
       </nav>
     </header>
-    <!-- breadcrumb -->
-    <div class="recipe-action-container |">
-      <div class="container | flex| gap-top-600">
-        <button class="button action has-icon sidebar-button" type="button">
-          <span class="button-wrap"
-            ><span class="icon icon-sidebar"></span
-          ></span>
-        </button>
-        <nav
-          class="breadcrumbs-container | flex | align-items--center |"
-          aria-label="Breadcrumb navigation"
-        >
-          <ol
-            aria-label="breadcrumbs | flex flex--wrap |  | body-small "
-            data-state="list"
-            role="list"
-          >
-            <li property="itemListElement" typeof="ListItem">
-              <a href="" class="breadcrumb"
-                ><span property="name">Home</span></a
-              >
-              <meta property="position" content="1" />
-            </li>
-            <li property="itemListElement" typeof="ListItem">
-              <a href="" class="breadcrumb"
-                ><span property="name">Collections</span></a
-              >
-              <meta property="position" content="2" />
-            </li>
-            <li property="itemListElement" typeof="ListItem">
-              <a href="" class="breadcrumb"
-                ><span property="name">Fish Curry</span></a
-              >
-              <meta property="position" content="3" />
-            </li>
-            <li property="itemListElement" typeof="ListItem">
-              <a href="" class="breadcrumb"
-                ><span property="name">Fish Curry Special</span></a
-              >
-              <meta property="position" content="4" />
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
     <main>
+      <!-- breadcrumb -->
+      <div class="recipe-action-container |">
+        <div class="container | flex| gap-top-600">
+          <button class="button action has-icon sidebar-button" type="button">
+            <span class="button-wrap"
+              ><span class="icon icon-sidebar"></span
+            ></span>
+          </button>
+          <nav
+            class="breadcrumbs-container | flex | align-items--center |"
+            aria-label="Breadcrumb navigation"
+          >
+            <ol
+              aria-label="breadcrumbs | flex flex--wrap |  | body-small "
+              data-state="list"
+              role="list"
+            >
+              <li property="itemListElement" typeof="ListItem">
+                <a href="" class="breadcrumb"
+                  ><span property="name">Home</span></a
+                >
+                <meta property="position" content="1" />
+              </li>
+              <li property="itemListElement" typeof="ListItem">
+                <a href="" class="breadcrumb"
+                  ><span property="name">Collections</span></a
+                >
+                <meta property="position" content="2" />
+              </li>
+              <li property="itemListElement" typeof="ListItem">
+                <a href="" class="breadcrumb"
+                  ><span property="name">Fish Curry</span></a
+                >
+                <meta property="position" content="3" />
+              </li>
+              <li property="itemListElement" typeof="ListItem">
+                <a href="" class="breadcrumb"
+                  ><span property="name">Fish Curry Special</span></a
+                >
+                <meta property="position" content="4" />
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
       <section>
         <div class="recipe-hero | container | gap-top-600 flow flow-space-600">
           <h1 class="recipe-hero__title | | display-small mdc-theme--primary">
@@ -128,7 +129,7 @@
         <div class="container | gap-top-1000">
           <div class="recipe-details | grid">
             <div class="ingredients | flow">
-              <h2 class="ingredients__heading | headline-medium">
+              <h2 class="ingredients__heading | display-smaller">
                 Ingredients
               </h2>
               <ul class="ingredients__list" role="list" data-state="list">
@@ -150,7 +151,7 @@
               </ul>
             </div>
             <div class="method | flow">
-              <h2 class="method__heading | headline-medium">Method</h2>
+              <h2 class="method__heading | display-smaller">Method</h2>
               <ol class="method__list">
                 <li>
                   Fillets of fish should be washed, dried, and chopped into
