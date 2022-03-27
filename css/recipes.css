@@ -63,7 +63,8 @@ ul[data-state="list"].ingredients__list li {
   }
 
   .method {
-    grid-column-start: 6;
+    /* grid-column-start: 6; */
+    grid-column-start: 3;
     grid-column-end: span 5;
   }
 }
