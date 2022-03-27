@@ -1142,6 +1142,11 @@ h1.nav__heading {
   /* background-color: var(--mdc-theme-on-surface--morph-bg); */
 }
 
+/* @media screen and (min-width: 40em) {
+  .hero__images.media-scroller[data-state="no-scroll-bg"] {
+    grid-auto-columns: 70%;
+  }
+} */
 @media screen and (min-width: 40em) {
   .hero__images.media-scroller[data-state="no-scroll-bg"] {
     grid-auto-columns: 70%;
