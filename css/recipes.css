@@ -1,0 +1,13 @@
+ol {
+  line-height: 1.2;
+}
+
+.breadcrumbs-container li {
+  display: none;
+  hyphens: auto; /* how text hyphenate when they wrap around */
+}
+
+/* only show first and last child on mobile */
+.breadcrumbs-container li:is(:first-child, :last-child) {
+  display: inline-flex;
+}

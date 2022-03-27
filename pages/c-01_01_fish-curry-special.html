@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fish Curry Special</title>
+    <!-- <link rel="stylesheet" href="./Users/machd/Documents/GitHub/homely-recipes/css/style.css" /> -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/recipes.css" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navigation container">
+          <div class="logo__wrapper">
+            <span class="logo | mdc-theme--primary"
+              ><strong>Homely</strong></span
+            >
+          </div>
+          <div
+            class="nav__heading | display-large char | mdc-theme--inverse-primary"
+            data-word="Recipes"
+          >
+            Fish Curry
+          </div>
+          <div
+            class="navigation__navbar | flex flex--wrap | align-items--center justify-content--center | gap-top-700"
+          >
+            <ul class="nav__menu | mdc-theme--primary" role="list">
+              <li class="nav__menu__items">Collections</li>
+              <li class="nav__menu__items">In The Kitchen</li>
+              <li class="nav__menu__items">Holidays & Seasons</li>
+              <li class="nav__menu__items">About</li>
+            </ul>
+            <div class="nav__menu__search">
+              <input type="text" placeholder="_" data-state="small" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- breadcrumb -->
+    <div class="recipe-action-container">
+      <div class="container | flex">
+        <button class="button action has-icon sidebar-button" type="button">
+          <span class="button-wrap"
+            ><span class="icon icon-sidebar"></span
+          ></span>
+        </button>
+        <nav
+          class="breadcrumbs-container | flex | align-items--center |"
+          aria-label="Breadcrumb navigation"
+        >
+          <ol
+            aria-label="breadcrumbs | flex flex--wrap |  | body-small "
+            data-state="list"
+            role="list"
+          >
+            <li property="itemListElement" typeof="ListItem">
+              <a href="" class="breadcrumb"
+                ><span property="name">Home</span></a
+              >
+              <meta property="position" content="1" />
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+              <a href="" class="breadcrumb"
+                ><span property="name">Collections</span></a
+              >
+              <meta property="position" content="1" />
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+              <a href="" class="breadcrumb"
+                ><span property="name">Fish Curry</span></a
+              >
+              <meta property="position" content="1" />
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+              <a href="" class="breadcrumb"
+                ><span property="name">Fish Curry Special</span></a
+              >
+              <meta property="position" content="1" />
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <section>
+        <div class="recipe-hero | container | gap-top-600 flow flow-space-600">
+          <h1 class="recipe-hero__title | | mdc-theme--primary">
+            Fish Curry Special
+          </h1>
+          <picture>
+            <source
+              media="(min-width:40em)"
+              srcset="../assets/images/homepage/hero-img-2--333x460.png"
+            />
+            <source
+              media="(max-width:41em)"
+              srcset="../assets/images/homepage/hero-img-2--206x284.png"
+            />
+            <img
+              src="../assets/images/homepage/hero-img-2--333x460.png"
+              width="333"
+              height="460"
+              alt=""
+            />
+          </picture>
+          <ul class="recipe-social body-small | flex flex--wrap" role="list">
+            <li class="pinterest">Pin it</li>
+            <li class="facebook">Facebook</li>
+            <li class="twitter">Twitter</li>
+            <li class="email">Email</li>
+            <li class="print">Print</li>
+            <li class="instagram">Instagram</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
