@@ -1,7 +1,11 @@
 ol {
-  line-height: 1.2;
+  hyphens: auto;
+  /* line-height: 1.2; */
+  /* line-height: 1.4; */
 }
 
+/* ol.method__list {
+} */
 .breadcrumbs-container li {
   display: inline-flex;
   hyphens: auto; /* how text hyphenate when they wrap around */
@@ -31,8 +35,18 @@ ol[role="list"] li:not(:last-child)::after {
     display: inline-flex;
   }
 }
-
 .recipe-details {
   grid-auto-flow: column;
   /* grid-template-columns: repeat(10, 1fr); */
+  gap: 1em;
+}
+
+.ingredients {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+.method {
+  grid-column-start: 6;
+  grid-column-end: span 5;
 }
