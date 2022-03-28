@@ -190,3 +190,96 @@ h3:is(.recipe-details__fun-fact, .recipe-details__tips__heading) {
     grid-row: auto;
   }
 }
+
+ol.method__list > li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+/* selects and aligns the input checkbox */
+ol.method__list li > input {
+  /* flex: 1; */
+  /* padding-inline-start: 20px; */
+  /* * do this to place the checkbox rectangle down at the baseline */
+}
+
+input[type="checkbox"] {
+  /* removes system-level styling, prefix means work in progress with the browser */
+  -webkit-appearance: none;
+  appearance: none;
+  /* width: 1em; */
+  /* height: 1em; */
+
+  /* vertical-align: -1em; */ /* already set as `baseline` in reset */
+  /* place-self: flex-end; */
+
+  max-height: 2ch;
+  min-width: 2ch;
+  /* ! uncheck background color later */
+  background: var(--mdc-theme-neutral-300, #e0e0e0);
+  border-radius: 100px;
+  /* border: 1px solid grey; */
+  /* adjust the position of the checkboxes on the text baseline */
+  vertical-align: text-bottom;
+  /* Set here so that Windows' High-Contrast Mode can override */
+  /* color: green; */
+  color: var(--mdc-theme-background, #fff);
+}
+
+input[type="checkbox"]::before {
+  content: "✔";
+  position: absolute;
+  font-size: 0.8em;
+  right: 0.3em;
+  top: 0.05em;
+  /* usually this is hidden */
+  /* visibility: hidden; */
+}
+
+input[type="checkbox"]:checked {
+  /* Use `visibility` instead of `display` to avoid recalculating layout */
+  background: var(--mdc-theme-success, #0b4b1d);
+  /* font-size: 0.618em; */
+  /* right: 0.3em; */
+  visibility: visible;
+  /* min-width: fit-content; */
+  /* max-height: fit-content; */
+  /* vertical-align: -1em; */
+  border-radius: 100%;
+  /* padding: 0.618em; */
+}
+
+input[type="checkbox"]:disabled {
+  border-color: black;
+  background: #ddd;
+  color: gray;
+}
+
+/* create custom ::marker with counter */
+
+ol.method__list {
+  display: block;
+  max-inline-size: fit-content;
+  /* width: 30em; */
+  counter-reset: counterName;
+  list-style: none;
+  padding: 0;
+}
+
+ol.method__list li {
+  /* padding-left: 2em; */
+  padding-inline-start: 2.5rem;
+  padding-block-end: 0.618em;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+  position: relative;
+  counter-increment: counterName;
+}
+
+ol.method__list li::before {
+  content: counter(counterName) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
