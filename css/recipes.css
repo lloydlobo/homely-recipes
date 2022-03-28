@@ -21,16 +21,24 @@ ol {
 
 @media screen and (min-width: 40em) {
   .recipe-hero__wrapper,
-  .recipe-hero__wrapper__content {
+  .recipe-description {
     grid-auto-flow: column;
     /* place-items: center; */
+    /* grid-template-columns: auto; */
     gap: 2em;
   }
-  .recipe-hero__wrapper__content > * {
+  .recipe-description > * {
     height: max-content;
     border: 0;
     border-inline-end: 2px solid var(--mdc-theme-primary);
     border-style: dashed;
+    padding: 0.5rem 1rem;
+  }
+
+  .recipe-content {
+    padding: 0.5rem 1rem;
+  }
+  .recipe-content p {
     padding: 0.5rem 1rem;
   }
 }
