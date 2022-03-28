@@ -148,7 +148,6 @@ h4 {
   text-transform: uppercase;
   color: var(--mdc-theme-primary, #9c413d);
   font-weight: 900;
-  
 }
 
 h3:is(.recipe-details__fun-fact, .recipe-details__tips__heading) {
