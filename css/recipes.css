@@ -10,6 +10,38 @@ ol {
   column-gap: 0.62857143em;
 }
 
+/* * section - hero */
+
+.recipe-hero__wrapper,
+.recipe-hero__wrapper__content {
+  grid-auto-flow: column;
+  /* place-items: center; */
+  gap: 2em;
+}
+
+.recipe-hero__wrapper__content {
+  font-size: var(--body-small);
+}
+.recipe-hero__wrapper__content ::first-line {
+  font-weight: bold;
+}
+.recipe-hero__wrapper__content > * {
+  height: max-content;
+  border: 0;
+  border-inline-end: 2px solid var(--mdc-theme-primary);
+  border-style: dashed;
+  padding: 0.5rem 1rem;
+}
+
+/* ! for demo only */
+.recipe-hero picture > * {
+  /* min-width: -webkit-fill-available; */
+  grid-column: span(4);
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
 ol[role="list"] li:not(:last-child)::after {
   content: " \203A ";
   padding-inline-end: 0.3em;

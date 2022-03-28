@@ -104,22 +104,40 @@
             <h1 class="recipe-hero__title | | display-small mdc-theme--primary">
               Fish Curry Special
             </h1>
-            <picture>
-              <source
-                media="(min-width:40em)"
-                srcset="../../assets/images/homepage/hero-img-2--333x460.png"
-              />
-              <source
-                media="(max-width:41em)"
-                srcset="../../assets/images/homepage/hero-img-2--206x284.png"
-              />
-              <img
-                src="../../assets/images/homepage/hero-img-2--333x460.png"
-                width="333"
-                height="460"
-                alt=""
-              />
-            </picture>
+            <div class="recipe-hero__wrapper | grid">
+              <picture>
+                <source
+                  media="(min-width:40em)"
+                  srcset="../../assets/images/homepage/hero-img-2--333x460.png"
+                />
+                <source
+                  media="(max-width:41em)"
+                  srcset="../../assets/images/homepage/hero-img-2--206x284.png"
+                />
+                <img
+                  src="../../assets/images/homepage/hero-img-2--333x460.png"
+                  width="333"
+                  height="460"
+                  alt=""
+                />
+              </picture>
+              <div class="recipe-hero__wrapper__content | grid">
+                <div class="recipe-description-preparation">
+                  <div class="recipe-preparation">Preparation</div>
+                  <span class="recipe-preparation-value">45 min</span>
+                </div>
+                <div class="recipe-description-total-time">
+                  <div class="recipe-total-time">Total Time</div>
+                  <span class="recipe-total-time-value">45 min</span>
+                </div>
+                <div class="recipe-description-servings">
+                  <div class="recipe-servings">Servings</div>
+                  <span class="recipe-servings-value"
+                    >6 servings, about 2 Tbsp. each
+                  </span>
+                </div>
+              </div>
+            </div>
             <ul class="recipe-social body-small | flex flex--wrap" role="list">
               <li class="pinterest">Pin it</li>
               <li class="facebook">Facebook</li>
