@@ -94,3 +94,34 @@ span:is(.recipe-details__tips__sub-heading__body, .recipe-details__fun-fact) {
 .recipe-details__tips__body {
   font-size: var(--body-small);
 }
+
+h3,
+h4 {
+  text-transform: uppercase;
+  color: var(--mdc-theme-primary, #9c413d);
+}
+
+h3:is(.recipe-details__fun-fact, .recipe-details__tips__heading) {
+  font-weight: 400; /* for demo only */
+}
+
+h4 {
+  font-weight: 900;
+}
+
+.fun-fact {
+  /* border-bottom-right-radius: 40px; */
+  padding: 1em;
+  color: var(--mdc-theme-on-background, #2c2c2c);
+  background-color: var(--mdc-theme-inverse-primary, #fafafa);
+  border-radius: 40px;
+  grid-row: none;
+}
+
+@media screen and (min-width: 40em) {
+  .fun-fact {
+    border-radius: 0;
+    border-bottom-right-radius: 40px;
+    grid-row: auto;
+  }
+}
