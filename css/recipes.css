@@ -147,16 +147,14 @@ span:is(.recipe-details__tips__sub-heading__body, .recipe-details__fun-fact) {
 h4 {
   text-transform: uppercase;
   color: var(--mdc-theme-primary, #9c413d);
+  font-weight: 900;
+  
 }
 
 h3:is(.recipe-details__fun-fact, .recipe-details__tips__heading) {
   color: var(--mdc-theme-primary, #9c413d);
   /* font-weight: 400;  */
   font-family: var(--ff-cursive);
-}
-
-h4 {
-  font-weight: 900;
 }
 
 .fun-fact,
