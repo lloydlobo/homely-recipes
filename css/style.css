@@ -12,7 +12,8 @@
   /* utility */
   /* block */
   /* // exception */
-
+  /* font-size */
+  --body-small: clamp(1rem, 0.9rem + 0.25vw, 1.25rem);
   /* color alpha */
   --alpha: 0.8;
 
@@ -662,7 +663,7 @@ main {
 }
 .body-small {
   font-weight: 400;
-  font-size: clamp(1rem, 0.9rem + 0.25vw, 1.25rem);
+  font-size: var(--body-small, clamp(1rem, 0.9rem + 0.25vw, 1.25rem));
   line-height: 1.5;
   letter-spacing: 0.4px;
 }
