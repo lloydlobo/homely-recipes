@@ -13,7 +13,7 @@ Thank you for taking the time to contribute. In order to get PRs closed in a rea
 - [ ] New and existing unit tests pass locally with my changes.
 - [ ] Any dependent changes have been merged and published in downstream modules.
 - [ ] I have checked my code and corrected any misspellings.
-- [ ] I have read [The Contributing Guide](https://github.com/lloydlobo/homely-recipes/blob/main/CONTRIBUTING.md).
+- [ ] I have read [The Contributing Guide](https://github.com/likeaweb/octavia-recipes/blob/main/CONTRIBUTING.md).
 - [ ] The title summarizes the change and where it happened, for example: "Fixes bug in script.js file".
 - [ ] If the PR is related to an open issue, use a [relevant keyword](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue) and reference it with the `#` sign and the issue number.
 - [ ] If changes are requested, please make the changes in a timely manner. After you submit the changes, request another review from the maintainer (top right).
