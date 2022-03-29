@@ -33,7 +33,8 @@
 </p>
 
 ## 🖱️ Preview
-[![homely recipes website](https://github.com/lloydlobo/lloydlobo/blob/main/assets/projects/web-development/homely-recipes.gif)](https://lloydlobo.github.io/homely-recipes/) 
+
+[![homely recipes website](https://github.com/lloydlobo/lloydlobo/blob/main/assets/projects/web-development/homely-recipes.gif)](https://lloydlobo.github.io/homely-recipes/)
 
 ## 🤝 Contributing
 
