@@ -1,4 +1,4 @@
-# Welcome to the Homely Recipes contributing guide 
+# Welcome to the Homely Recipes contributing guide
 
 Thank you so much for taking the time to contribute to our project! :sparkles:
 
@@ -26,9 +26,7 @@ Read the [README](README.md) for an overview of the project. Here are some resou
 
 If you find a problem in the code, [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If you can't find a similar issue you can create one using the [issue form](https://github.com/lloydlobo/homely-recipes/issues/new/choose).
 
-
 #### Solve an issue
-
 
 Look over our [existing issues](https://github.com/lloydlobo/homely-recipes/issues) to see if there's anything that interests you. You can use 'labels' as filters to narrow down your search. For further information, see [Labels](/contributing/how-to-use-labels.md). As a general rule, we don't assign issues to anyone. You are welcome to open a PR with a fix if you find a workable issue.
 
@@ -40,15 +38,15 @@ Look over our [existing issues](https://github.com/lloydlobo/homely-recipes/issu
 
 2. Fork the repository.
 
-  - Using GitHub Desktop:
+- Using GitHub Desktop:
 
-     - [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) will guide you through setting up Desktop.
+  - [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) will guide you through setting up Desktop.
 
-     - You can [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop) after setting up the Desktop!
+  - You can [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop) after setting up the Desktop!
 
-  - Using the command line:
+- Using the command line:
 
-     - [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
+  - [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
 
 3. Update or install **Node.js v16**. See [the development guide](contributing/development.md) for further details.
 
@@ -76,11 +74,10 @@ After you submit your PR, a team member will examine it. We may inquire further 
 
 - As you update your PR and apply changes, mark each conversation as [resolved](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#resolving-conversations).
 
-
 - If you run into any merge conflicts, check out this [git tutorial](https://lab.github.com/githubtraining/managing-merge-conflicts) to help you resolve merge conflicts and other issues.
 
 ### Your PR is now accepted and merged!
 
-Congratulations on your achievement! :tada: Your contributions is much appreciated. :sparkles:.   
+Congratulations on your achievement! :tada: Your contributions is much appreciated. :sparkles:.
 
-Thank You! 
+Thank You!
