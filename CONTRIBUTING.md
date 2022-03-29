@@ -24,11 +24,11 @@ Read the [README](README.md) for an overview of the project. Here are some resou
 
 #### Create a new issue
 
-If you find a problem in the code, [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If you can't find a similar issue you can create one using the [issue form](https://github.com/lloydlobo/homely-recipes/issues/new/choose).
+If you find a problem in the code, [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If you can't find a similar issue you can create one using the [issue form](https://github.com/likeaweb/octavia-recipes/issues/new/choose).
 
 #### Solve an issue
 
-Look over our [existing issues](https://github.com/lloydlobo/homely-recipes/issues) to see if there's anything that interests you. You can use 'labels' as filters to narrow down your search. For further information, see [Labels](/contributing/how-to-use-labels.md). As a general rule, we don't assign issues to anyone. You are welcome to open a PR with a fix if you find a workable issue.
+Look over our [existing issues](https://github.com/likeaweb/octavia-recipes/issues) to see if there's anything that interests you. You can use 'labels' as filters to narrow down your search. For further information, see [Labels](/contributing/how-to-use-labels.md). As a general rule, we don't assign issues to anyone. You are welcome to open a PR with a fix if you find a workable issue.
 
 ### Make Changes
 
