@@ -7,11 +7,11 @@
 <br>
 <p align="left">
 <!--   <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/release.yml">
-    <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;">
+    <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;"> -->
   </a>
   <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/compliance.yml">
     <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/compliance.yml/badge.svg" alt="Compliance" style="max-width: 100%;">
-  </a> -->
+  </a>
   <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/codeql.yml">
     <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/codeql.yml/badge.svg" alt="CodeQL" style="max-width: 100%;">
   </a>
