@@ -1,4 +1,4 @@
-# Welcome to the Homely Recipes contributing guide
+# Welcome to the Octavia Recipes contributing guide
 
 Thank you so much for taking the time to contribute to our project! :sparkles:
 
