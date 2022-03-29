@@ -6,14 +6,14 @@
 </div>
 <br>
 <p align="left">
-  <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/release.yml">
+<!--   <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/release.yml">
     <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;">
   </a>
   <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/compliance.yml">
     <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/compliance.yml/badge.svg" alt="Compliance" style="max-width: 100%;">
-  </a>
-  <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/codeql-analysis.yml">
-    <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL" style="max-width: 100%;">
+  </a> -->
+  <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/codeql.yml">
+    <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/codeql.yml/badge.svg" alt="CodeQL" style="max-width: 100%;">
   </a>
   <img src="https://img.shields.io/badge/Dependabot-active-brightgreen.svg" alt="Dependabot Badge">
   <img src="https://img.shields.io/github/languages/code-size/lloydlobo/homely-recipes" alt="GitHub code size in bytes">
