@@ -1164,7 +1164,8 @@ h1.nav__heading {
   gap: 1em;
   grid-auto-flow: column;
   /* for even display of child elements use 50% */
-  grid-auto-columns: 50%;
+  /* grid-auto-columns: 50%; */
+  grid-auto-columns: auto;
   padding: var(--_spacer);
   border-radius: calc(var(--_spacer, 2em) * 1.618);
   overflow-x: auto;
@@ -1179,7 +1180,8 @@ h1.nav__heading {
 } */
 @media screen and (min-width: 40em) {
   .hero__images.media-scroller[data-state="no-scroll-bg"] {
-    grid-auto-columns: 70%;
+    /* grid-auto-columns: 70%; */
+    grid-auto-columns: auto;
   }
 }
 .hero__images__image.\|.media-element
