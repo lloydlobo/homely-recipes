@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
     <script src="./js//components/navigation.js" defer></script>
+    <script src="./js//components/logo.js" defer></script>
+    <script src="components.js" type="module" defer></script>
+    <!-- ? how to implement this? -->
   </head>
   <body>
     <header>
@@ -66,6 +69,7 @@
               Sharing experiences with the community where people re-discover
               home-made food, share recipes, and connect with creators like you.
             </p>
+            <!-- <favorite-component></favorite-component> -->
             <button class="btn-secondary">Get Free Recipe Resources</button>
           </div>
           <div
@@ -253,13 +257,13 @@
                 />
               </div>
               <div class="recipes__wrapper__content | flow flow-space-400 |">
-                <span class="body-medium"
-                  >The one that never goes out of flavor.</span
-                >
-                <p class="recipes__wrapper__content__body body-small">
+                <div class="body-medium">
+                  The one that never goes out of flavor.
+                </div>
+                <span class="recipes__wrapper__content__body body-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Facilis, eum.
-                </p>
+                </span>
                 <div class="recipes__wrapper__content__serving-info flex-row">
                   <label
                     class="recipes__wrapper__content__serving | strong body-small"
@@ -535,6 +539,7 @@
               </button>
             </a>
           </div>
+          <!-- <p class="editableContent">My favorite food to eat is Chocolate</p> -->
         </div>
       </section>
       <!-- section -  cta banner -->
@@ -560,12 +565,13 @@
     <footer>
       <div class="container">
         <div class="footer__primary">
-          <span class="logo | footer | mdc-theme--primary"
-            ><strong>Homely</strong></span
-          >
+          <logo-component></logo-component>
           <navigation-component></navigation-component>
         </div>
       </div>
     </footer>
+    <!-- <span class="logo | footer | mdc-theme--primary"
+      ><strong>Homely</strong></span
+    > -->
   </body>
 </html>
