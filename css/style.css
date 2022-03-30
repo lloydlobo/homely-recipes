@@ -1164,8 +1164,8 @@ h1.nav__heading {
   gap: 1em;
   grid-auto-flow: column;
   /* for even display of child elements use 50% */
-  /* grid-auto-columns: 50%; */
-  grid-auto-columns: auto;
+  grid-auto-columns: 50%;
+  /* grid-auto-columns: auto; */
   padding: var(--_spacer);
   border-radius: calc(var(--_spacer, 2em) * 1.618);
   overflow-x: auto;
@@ -1343,12 +1343,15 @@ h1.nav__heading {
   display: grid;
   grid-auto-flow: column;
   /* for even display of child elements use 50% */
-  grid-auto-columns: 20%;
+  /* grid-auto-columns: 20%; */
+  /* grid-auto-columns: 50%; */
+  grid-auto-columns: clamp(10%, 100% - 55vw, 70%);
   gap: 2em;
   padding: var(--_spacer);
   border-radius: calc(var(--_spacer, 2em) / 1.618);
   overflow-x: auto;
   overscroll-behavior-inline: contain;
+  overflow-wrap: anywhere;
   /* background-color: var(--mdc-theme-on-surface--morph-bg); */
 }
 .collections.media-scroller[data-state="no-scroll-bg"] .media-element {
