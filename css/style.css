@@ -1128,9 +1128,9 @@ h1.nav__heading {
     grid-auto-flow: column;
     /* column-gap: 140px; */
   }
-  .hero__content.\|.flow.flow-space-500 {
+  /* .hero__content.\|.flow.flow-space-500 {
     min-inline-size: 40vw;
-  }
+  } */
 }
 
 .hero__bg-image {
@@ -1361,4 +1361,21 @@ h1.nav__heading {
     /* grid-auto-columns: 70%; */
     border-radius: calc(var(--_spacer, 2em) * 1.618);
   }
+}
+
+/* section - cta */
+
+.banner.gap-top-1000.\| {
+  /* background: linear-gradient(90deg, #fad9d5, #f5b2aa); */
+  background: linear-gradient(
+    to right,
+    #ffdad5 0%,
+    #ffdad5 0%,
+    #ffdad5 50%,
+    #ffdad5 50%,
+    #ffb3ab 80%,
+    #ffb3ab 80%,
+    #ffb3ab 100%,
+    #ffb3ab 100%
+  );
 }
