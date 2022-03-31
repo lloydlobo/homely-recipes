@@ -2,22 +2,24 @@
 
 function searchSite() {
   const searchValue = document.getElementById("inputSearchSite").value;
-  // document.getElementById("recipeList").innerHTML = searchValue;
+  // Manipulate the DOMstring with the <p id="recipeList"> element
+  // Add the searchValue to the DOMstring
   document.getElementById(
     "recipeList"
   ).innerHTML = `<h4>Showing results for: ${searchValue}</h4>`;
-
-  // Run function searchSite when keyup is "Enter"
-  document
-    .getElementById("inputSearchSite")
-    .addEventListener("keyup", function (event) {
-      // Number 13 is the "Enter" key on the keyboard
-      if (event.key === "Enter") {
-        // trigger the function searchSite
-        searchSite();
-      }
-    });
 }
+
+// Run function searchSite when keyup is "Enter"
+document
+  .getElementById("inputSearchSite")
+  .addEventListener("keyup", function (event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+      // trigger the function searchSite
+      // displaySearchSiteResults();
+      searchSite();
+    }
+  });
 
 // // //
 // // //
