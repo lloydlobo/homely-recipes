@@ -1476,7 +1476,7 @@ h3.recipes__wrapper__heading.label-wrapper--full-bleed::after {
 /* section - banner cta */
 /* **** */
 
-.banner.gap-top-1000.\| {
+.banner {
   /* background: linear-gradient(90deg, #fad9d5, #f5b2aa); */
   background: linear-gradient(
     to bottom,
@@ -1492,7 +1492,7 @@ h3.recipes__wrapper__heading.label-wrapper--full-bleed::after {
 }
 
 @media screen and (min-width: 40em) {
-  .banner.gap-top-1000.\| {
+  /* .banner {
     background: linear-gradient(
       to right,
       #ffdad5 0%,
@@ -1504,7 +1504,7 @@ h3.recipes__wrapper__heading.label-wrapper--full-bleed::after {
       #ffb3ab 100%,
       #ffb3ab 100%
     );
-  }
+  } */
   .banner.gap-top-1000.\| {
     background: linear-gradient(
       to right,
