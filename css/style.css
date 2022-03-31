@@ -314,12 +314,17 @@ main {
 /* * */
 /* * 2. utility */
 
-.section-spacer {
-  margin-top: var(--section-spacer);
+.font-family--cursive {
+  font-family: var(--ff-cursive, Parisienne, cursive);
 }
 
-:is(p, label).strong {
+/* make font strong (bold) without using the strong HTML element */
+:is(p, label, span).strong {
   font-weight: 600;
+}
+
+.section-spacer {
+  margin-top: var(--section-spacer);
 }
 
 /* flex */
@@ -937,10 +942,17 @@ ul.recipes__navigation {
 }
 /* penultimate section */
 
-.banner__wrapper.container.grid.\| > * {
-  padding-inline-start: var(--padding-inline-800);
-  padding-block-end: var(--section-spacer);
-  padding-block-start: var(--padding-inline-1000);
+.banner__wrapper > :first-child {
+  margin-block-start: var(--padding-inline-800);
+}
+.banner__wrapper > * {
+  /* padding-inline-start: var(--padding-inline-800); */
+  padding-inline: var(--padding-inline-600, 2rem);
+  padding-block-end: var(--padding-inline-1000);
+  padding-block-start: var(--padding-inline-600);
+  border-radius: var(--corner);
+}
+.banner__wrapper > * {
 }
 
 /* banner__wrapper add grid column */
@@ -1386,7 +1398,9 @@ h3.recipes__wrapper__heading.label-wrapper--full-bleed::after {
   }
 }
 
-/* section - cta */
+/* **** */
+/* section - banner cta */
+/* **** */
 
 .banner.gap-top-1000.\| {
   /* background: linear-gradient(90deg, #fad9d5, #f5b2aa); */
@@ -1419,7 +1433,35 @@ h3.recipes__wrapper__heading.label-wrapper--full-bleed::after {
   }
 }
 
+.banner__quote {
+  position: relative;
+}
+
+.banner__quote blockquote::before {
+  content: "\275D";
+  display: inline-block;
+  position: absolute;
+  /* height: 2rem; */
+  /* width: 2rem; */
+  left: -1em;
+  top: -0.5em;
+  min-block-size: -webkit-fill-available;
+  /* background: hsl(0, 75%, 42%); */
+}
+
+/* .banner__quote blockquote::after {
+  content: "\275E";
+  display: inline-block;
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  left: -2em;
+  top: -0.5em;
+} */
+
+/* **** */
 /* footer */
+/* **** */
 
 .footer__primary {
   display: flex;
