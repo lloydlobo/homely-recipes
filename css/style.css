@@ -1042,7 +1042,6 @@ ul.recipes__navigation {
     left: -2em;
     box-shadow: -1px 7px 14px 1px rgb(0 0 0 / 14%);
     transform: scale(1);
-    filter: brightness(0.995);
     transition: all 0.618s ease-out;
     /* fill-opacity: 0.5; */
   }
@@ -1050,7 +1049,6 @@ ul.recipes__navigation {
   .banner__wrapper__start:hover {
     transform: scale(1.0618);
     transition: all 0.382s ease-in-out;
-    filter: brightness(1);
   }
 }
 
