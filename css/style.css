@@ -41,7 +41,7 @@
 
   /* material-theme/sys/light/primary */
   --mdc-theme-primary: #9c413d;
-  --mdc-theme-primary-dark: #803431;
+  --mdc-theme-primary-contrast: #803431;
   --mdc-theme-on-primary: #ffffff;
   --mdc-theme-primary-container: #ffdad5;
   --mdc-theme-on-secondary: #ffffff;
@@ -715,8 +715,8 @@ main {
   background-color: var(--mdc-theme-on-primary);
 }
 
-.mdc-theme--primary {
-  color: var(--mdc-theme-primary-dark, #803431);
+.mdc-theme--primary-contrast {
+  color: var(--mdc-theme-primary-contrast, #803431);
 }
 
 .mdc-theme--on-primary {
@@ -1002,12 +1002,14 @@ ul.recipes__navigation {
   .banner__wrapper > :first-child {
     margin-block-start: unset;
   }
+
   .banner__wrapper__start {
     position: relative;
     top: -3em;
-    --_bg-color: pink;
+    /* --_bg-color: pink; */
+    background-color: var(--mdc-theme-inverse-primary);
     /* background-color: var(--mdc-theme-background, #fcfcfc); */
-    background-color: var(--_bg-color, pink);
+    /* background-color: var(--_bg-color, pink); */
     left: -2em;
     box-shadow: -1px 7px 14px 1px rgb(0 0 0 / 14%);
   }
@@ -1015,6 +1017,10 @@ ul.recipes__navigation {
 
 .get-involved-cta {
   display: block;
+  margin-top: var(--flow-space-400);
+}
+.get-involved-cta:hover {
+  text-decoration: underline;
 }
 
 cite.font-family--cursive {
@@ -1022,10 +1028,14 @@ cite.font-family--cursive {
   align-self: flex-end;
   --scale: 1.618;
   margin-block-start: calc(var(--padding-inline-400) / var(--scale));
+  font-weight: 400;
+}
+cite.font-family--cursive a {
+  color: var(--mdc-theme-primary-contrast, #803431);
 }
 
 a.get-involved-cta {
-  color: var(--mdc-theme-primary-dar, #803431);
+  color: var(--mdc-theme-primary-contrast, #803431);
 }
 
 /*
@@ -1488,6 +1498,16 @@ h3.recipes__wrapper__heading.label-wrapper--full-bleed::after {
       #ffb3ab 50%,
       #ffb3ab 50%,
       #ffb3ab 100%,
+      #ffb3ab 100%
+    );
+  }
+  .banner.gap-top-1000.\| {
+    background: linear-gradient(
+      to right,
+      #ffdad5 0%,
+      #ffdad5 0%,
+
+      #ffb3ab 61.8%,
       #ffb3ab 100%
     );
   }
