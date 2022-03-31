@@ -962,6 +962,10 @@ ul.recipes__navigation {
   color: var(--mdc-theme-primary);
 }
 /* penultimate section */
+
+.banner__wrapper {
+  grid-row-gap: 1em;
+}
 .banner__wrapper > :first-child {
   margin-block-start: var(--padding-inline-800);
 }
@@ -973,7 +977,7 @@ ul.recipes__navigation {
   padding-block-start: var(--padding-inline-1000);
   border-radius: var(--corner);
 }
-.banner__wrapper > * + * {
+.banner__wrapper > :nth-child(2) {
   border-radius: 0;
 }
 
@@ -998,7 +1002,7 @@ ul.recipes__navigation {
   gap: 1rem;
 } */
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .banner__wrapper > :first-child {
     margin-block-start: unset;
   }
