@@ -91,11 +91,8 @@ class Navigation extends HTMLElement {
             0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
           box-shadow: var(  --mdc-theme-shadow);
           position: relative;
-          bottom: .05em;
           background: var(--mdc-theme-primary);
           max-inline-size: fit-content;
-          height: 4px;
-          width: 100px;
           text-decoration: none;
         }
 
