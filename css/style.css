@@ -1391,16 +1391,32 @@ h3.recipes__wrapper__heading.label-wrapper--full-bleed::after {
 .banner.gap-top-1000.\| {
   /* background: linear-gradient(90deg, #fad9d5, #f5b2aa); */
   background: linear-gradient(
-    to right,
+    to bottom,
     #ffdad5 0%,
     #ffdad5 0%,
-    #ffdad5 50%,
-    #ffdad5 50%,
-    #ffb3ab 50%,
-    #ffb3ab 50%,
+    #ffdad5 0%,
+    #ffdad5 0%,
+    #ffb3ab 32.8%,
+    #ffb3ab 32.8%,
     #ffb3ab 100%,
     #ffb3ab 100%
   );
+}
+
+@media screen and (min-width: 40em) {
+  .banner.gap-top-1000.\| {
+    background: linear-gradient(
+      to right,
+      #ffdad5 0%,
+      #ffdad5 0%,
+      #ffdad5 50%,
+      #ffdad5 50%,
+      #ffb3ab 50%,
+      #ffb3ab 50%,
+      #ffb3ab 100%,
+      #ffb3ab 100%
+    );
+  }
 }
 
 /* footer */
