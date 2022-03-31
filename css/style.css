@@ -298,6 +298,9 @@ img {
   height: auto;
 }
 
+blockquote {
+  font-style: italic;
+}
 /* **** */
 /* * cube css */
 /* **** */
@@ -1438,13 +1441,18 @@ h3.recipes__wrapper__heading.label-wrapper--full-bleed::after {
 }
 
 .banner__quote blockquote::before {
-  content: "\275D";
+  /* content: "\275D"; */
+  content: "\201C";
   display: inline-block;
   position: absolute;
   /* height: 2rem; */
   /* width: 2rem; */
+  font-size: 4rem;
+  left: -0.618em;
+  top: -0.618em;
+  /* font-size: large;
   left: -1em;
-  top: -0.5em;
+  top: -0.5em; */
   min-block-size: -webkit-fill-available;
   /* background: hsl(0, 75%, 42%); */
 }
