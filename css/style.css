@@ -31,6 +31,7 @@
 
   /* material-theme/sys/light/primary */
   --mdc-theme-primary: #9c413d;
+  --mdc-theme-primary-dark: #803431;
   --mdc-theme-on-primary: #ffffff;
   --mdc-theme-primary-container: #ffdad5;
   --mdc-theme-on-secondary: #ffffff;
@@ -281,9 +282,10 @@ h3 {
 p {
   min-width: 12ch;
 }
+
 @media screen and (min-width: 40em) {
-  p {
-    width: clamp(45ch, 50%, 75ch);
+  p :not([class]) {
+    max-width: clamp(45ch, 50%, 75ch);
   }
 }
 
@@ -322,7 +324,7 @@ main {
 }
 
 /* make font strong (bold) without using the strong HTML element */
-:is(p, label, span).strong {
+:is(p, label, span, div).strong {
   font-weight: 600;
 }
 
@@ -701,6 +703,11 @@ main {
 .mdc-theme--primary-bg {
   background-color: var(--mdc-theme-on-primary);
 }
+
+.mdc-theme--primary {
+  color: var(--mdc-theme-primary-dark, #803431);
+}
+
 .mdc-theme--on-primary {
   color: var(--mdc-theme-primary-container);
 }
@@ -944,18 +951,29 @@ ul.recipes__navigation {
   color: var(--mdc-theme-primary);
 }
 /* penultimate section */
-
 .banner__wrapper > :first-child {
   margin-block-start: var(--padding-inline-800);
 }
+
+@media screen and (min-width: 40em) {
+  .banner__wrapper > :first-child {
+    margin-block-start: unset;
+  }
+}
+
 .banner__wrapper > * {
   /* padding-inline-start: var(--padding-inline-800); */
   padding-inline: var(--padding-inline-600, 2rem);
   padding-block-end: var(--padding-inline-1000);
-  padding-block-start: var(--padding-inline-600);
+  padding-block-start: var(--padding-inline-1000);
   border-radius: var(--corner);
 }
+.banner__wrapper > * + * {
+  border-radius: 0;
+}
+
 .banner__wrapper > * {
+  padding-block-start: var(--padding-inline-1000);
 }
 
 /* banner__wrapper add grid column */
@@ -969,6 +987,19 @@ ul.recipes__navigation {
     gap: 0;
     /* place-items: center; */
   }
+}
+
+/* .banner__wrapper__end  {
+  gap: 1rem;
+} */
+
+.get-involved-cta {
+  display: block;
+  margin-block-start: var(--padding-inline-400);
+}
+
+a.get-involved-cta {
+  color: var(--mdc-theme-primary-dar, #803431);
 }
 
 /*
