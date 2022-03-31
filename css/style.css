@@ -1005,7 +1005,9 @@ ul.recipes__navigation {
   .banner__wrapper__start {
     position: relative;
     top: -3em;
-    background-color: var(--mdc-theme-background, #fcfcfc);
+    --_bg-color: pink;
+    /* background-color: var(--mdc-theme-background, #fcfcfc); */
+    background-color: var(--_bg-color, pink);
     left: -2em;
     box-shadow: -1px 7px 14px 1px rgb(0 0 0 / 14%);
   }
