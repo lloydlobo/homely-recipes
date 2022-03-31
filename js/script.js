@@ -1,3 +1,151 @@
+// create function siteSearch to fetch the value of input id="inputSearchSite" and execute with button onclick to display the value in the element with id="recipeList"
+function searchSite() {
+  const searchValue = document.getElementById("inputSearchSite").value;
+  // document.getElementById("recipeList").innerHTML = searchValue;
+  document.getElementById(
+    "recipeList"
+  ).innerHTML = `<h4>Showing results for: ${searchValue}</h4>`;
+}
+
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+// // //
+
+// function searchResults() {
+//   const searchSiteInput = document.getElementById(searchSite).value;
+
+//   document.getElementById(
+//     "searchResults"
+//   ).innerHTML = `<strong>Showing results for ${searchSiteInput}</strong>`;
+// }
+
+// Logging the search value of input#siteSearch onkeydown to a <p> with id#logSearchValue
+const input = document.querySelector("input");
+const log = document.getElementById("log");
+
+input.onkeydown = logKey;
+
+// log textContent into p element with id #logSearchValue
+function logKey(e) {
+  log.textContent = `${e.code}`;
+}
+
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //
 // Add a const with the name of editableContent and assign it to the class editableContnent Use querySelector to select the editableContent class
 
 const editableContent = document.querySelector(".editableContent");
