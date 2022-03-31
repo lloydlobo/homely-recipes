@@ -1376,7 +1376,7 @@ h1.nav__heading {
 h3.recipes__wrapper__heading.label-wrapper--full-bleed::before {
   content: "";
   display: inline-block;
-  width: 1000px;
+  width: 833.3333%;
   height: 1.2em;
   background: var(--mdc-theme--inverse-primary, #ffb3ab);
   /* position: relative; */
