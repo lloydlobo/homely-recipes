@@ -981,10 +981,6 @@ ul.recipes__navigation {
   border-radius: 0;
 }
 
-.banner__wrapper > * {
-  padding-block-start: var(--padding-inline-1000);
-}
-
 /* banner__wrapper add grid column */
 @media screen and (min-width: 40em) {
   /* .banner__wrapper {
