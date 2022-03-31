@@ -3,11 +3,11 @@
 // Path: js/components/navigation.js
 // Compare this snippet from js/components/Footer.js:
 class Navigation extends HTMLElement {
-  constructor() {
-    super();
+  constructor () {
+    super()
 
     // Allow the shadowDOM to be styled by external CSS with the mode: open
-    this.attachShadow({ mode: "open" });
+    this.attachShadow({ mode: 'open' })
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -108,12 +108,12 @@ class Navigation extends HTMLElement {
           </ul>
         </div>
       </slot>
-    `;
+    `
   }
 }
 
 // Register the new element with the browser.
-window.customElements.define("navigation-component", Navigation);
+window.customElements.define('navigation-component', Navigation)
 
 // function searchResults() {
 //   const searchSiteInput = document.getElementById(searchSite).value;
