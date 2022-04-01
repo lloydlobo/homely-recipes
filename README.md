@@ -44,7 +44,7 @@
 
 ## 🤝 Contributing
 
-We encourage you to contribute to Open Sauced! Please check out the [Contributing guide](https://github.com/lloydlobo/homely-recipes/blob/main/CONTRIBUTING.md) for guidelines about how to proceed.
+We encourage you to contribute to Homely Recipes! Please check out the [Contributing guide](https://github.com/lloydlobo/homely-recipes/blob/main/CONTRIBUTING.md) for guidelines about how to proceed.
 
 <!-- ## 🍕 Community
 
