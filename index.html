@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homely Recipes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Parisienne&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
-    <title>Homely Recipes</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
     <script src="./js//components/navigation.js" defer></script>
     <script src="./js//components/logo.js" defer></script>
-    <script src="components.js" type="module" defer></script>
-    <!-- ? how to implement this? -->
+    <!-- <script src="components.js" type="module" defer></script> -->
+    <!-- <script src="https://use.fontawesome.com/dfd9be05ae.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/8a40d5b2ef.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/8eeda7b9a9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -38,7 +43,7 @@
 
           <navigation-component></navigation-component>
 
-          <div class="search-bar">
+          <!-- <div class="search-bar">
             <input
               class="search-bar__input"
               type="text"
@@ -67,8 +72,33 @@
                 ></path>
               </svg>
             </button>
+          </div> -->
+          <!-- **** -->
+          <!-- [  ] [  autocomplete search ] todo -->
+          <div class="wrapper">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Type to search"
+              autocomplete="chrome-off"
+              data-state="fa-autocomplete"
+            />
+            <!-- <i class="fa fa-search"></i> -->
+            <button data-state="fa-search-icon" class="btn-fa-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="results">
+              <!-- <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul> -->
+            </div>
           </div>
-
+          <!-- * end of todo  -->
+          <!-- **** -->
           <!-- <div class="site-search">
             <input
               type="search"

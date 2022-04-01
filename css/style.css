@@ -1671,3 +1671,86 @@ h3.recipes__wrapper__heading.label-wrapper--full-bleed::after {
   --mdc-theme-primary: #9c413d;
   color: var(--mdc-theme-primary, #9c413d);
 }
+
+/* **** */
+/* **** */
+/* AutoCOmplete Search courtesy of Chris Barber Riley */
+/* **** */
+/* **** */
+
+.wrapper {
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+  /* * This is the secret sauce -- box-shadow */
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  position: relative;
+  width: 450px;
+}
+
+input[data-state="fa-autocomplete"] {
+  max-width: 100%;
+  width: 100%;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  padding-inline-start: 10px;
+  padding-inline-end: 40px;
+  font-size: 18px;
+  font-family: var(--ff-sans);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[data-state="fa-autocomplete"]:focus {
+  outline: none;
+}
+
+button[data-state="fa-search-icon"].btn-fa-search {
+  position: absolute;
+  border: 0;
+  background: none;
+  top: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  width: 50px;
+}
+
+button[data-state="fa-search-icon"].btn-fa-search i {
+  width: 100%;
+  color: #6d7b98;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+.results {
+  padding: 0;
+}
+
+.results ul {
+  margin: 0;
+  padding: 0;
+}
+
+.results ul li {
+  list-style: none;
+  border-radius: 3px;
+  opacity: 0; /* make it to 0 */
+  display: none;
+  padding: 8px 12px;
+  transition: all 0.5s linear;
+}
+
+.show .results ul li {
+  opacity: 1;
+  display: block;
+}
+
+.show .results {
+  padding: 10px;
+}
+
+.results ul li:hover {
+  background: #ececec;
+}
