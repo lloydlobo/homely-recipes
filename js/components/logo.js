@@ -29,7 +29,7 @@ class Logo extends HTMLElement {
 
       <slot>
       <div class="logo">
-      <span>Homely
+      <span>Octavia
       </span>
       </div>
       </slot>
