@@ -1677,28 +1677,40 @@ h3.recipes__wrapper__heading.label-wrapper--full-bleed::after {
 /* AutoCOmplete Search courtesy of Chris Barber Riley */
 /* **** */
 /* **** */
+.search-wrapper-placeholder {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
 
 .wrapper {
   margin: 0 auto;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 25px;
   /* * This is the secret sauce -- box-shadow */
-  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
-  position: relative;
-  width: 450px;
+  box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.053);
+  /* position: relative; */
+  position: absolute;
+  top: 0;
+  scrollbar-gutter: 10em;
+  /* width: 450px; */
+  /* max-width: 45vw; */
+  width: clamp(40vw, 90vw, 90vw);
+  max-width: 450px;
+  z-index: 1000;
 }
 
 input[data-state="fa-autocomplete"] {
-  max-width: 100%;
+  /* max-width: 100%; */
   width: 100%;
   border: none;
   height: 50px;
-  border-radius: 5px;
+  border-radius: 25px;
   padding-inline-start: 10px;
   padding-inline-end: 40px;
   font-size: 18px;
   font-family: var(--ff-sans);
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 input[data-state="fa-autocomplete"]:focus {
@@ -1719,11 +1731,13 @@ button[data-state="fa-search-icon"].btn-fa-search {
 
 button[data-state="fa-search-icon"].btn-fa-search i {
   width: 100%;
-  color: #6d7b98;
+  color: var(--mdc-theme-primary-contrast);
   line-height: 50px;
   font-size: 22px;
 }
-
+button[data-state="fa-search-icon"].btn-fa-search i:hover {
+  color: var(--mdc-theme-primary);
+}
 .results {
   padding: 0;
 }
