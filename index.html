@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homely Recipes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +14,15 @@
     <title>Octavia Recipes</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
+    <script src="./js//components/navigation.js" defer></script>
+    <script src="./js//components/logo.js" defer></script>
+    <!-- <script src="components.js" type="module" defer></script> -->
+    <!-- <script src="https://use.fontawesome.com/dfd9be05ae.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/8a40d5b2ef.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/8eeda7b9a9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -31,7 +41,92 @@
           >
             Recipes
           </div>
-          <div
+
+          <navigation-component></navigation-component>
+
+          <!-- <div class="search-bar">
+            <input
+              class="search-bar__input"
+              type="text"
+              autocomplete="on"
+              placeholder="Search a recipe"
+              id="inputSearchSite"
+            />
+            <button
+              onclick="searchSite()"
+              class="btn-search"
+              data-state="search-icon"
+              type="submit"
+              id="searchSiteButton"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1.5em"
+                width="1.5em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+                ></path>
+              </svg>
+            </button>
+          </div> -->
+          <!-- **** -->
+          <!-- [  ] [  autocomplete search ] todo -->
+          <div class="wrapper">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Type to search"
+              autocomplete="chrome-off"
+              data-state="fa-autocomplete"
+            />
+            <!-- <i class="fa fa-search"></i> -->
+            <button data-state="fa-search-icon" class="btn-fa-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="results">
+              <!-- <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul> -->
+            </div>
+          </div>
+          <!-- * end of todo  -->
+          <!-- **** -->
+          <!-- <div class="site-search">
+            <input
+              type="search"
+              id="siteSearch"
+              value=""
+              placeholder="Search for a dish or cuisine"
+            />
+            <button
+            onclick="siteSearch()"
+              class="btn-search"
+              data-state="search-icon"
+              type="submit"
+              id="searchSiteButton"
+            >
+              &#128269;
+            </button>
+          </div> -->
+          <p id="recipeList"></p>
+          <!-- // -->
+          <!-- log key -->
+          <!-- <input />
+          <p id="logi"></p> -->
+          <!-- end of log key -->
+          <!-- // -->
+          <!-- <p class="editableContent">My favorite food to eat is Chocolate</p> -->
+          <!-- // -->
+          <!-- <div
             class="navigation__navbar | flex flex--wrap | align-items--center justify-content--center | gap-top-700"
           >
             <ul class="nav__menu | mdc-theme--primary" role="list">
@@ -43,7 +138,7 @@
             <div class="nav__menu__search">
               <input type="text" placeholder="_" data-state="small" />
             </div>
-          </div>
+          </div> -->
         </div>
       </nav>
     </header>
@@ -61,6 +156,7 @@
               Sharing experiences with the community where people re-discover
               home-made food, share recipes, and connect with creators like you.
             </p>
+            <!-- <favorite-component></favorite-component> -->
             <button class="btn-secondary">Get Free Recipe Resources</button>
           </div>
           <div
@@ -248,13 +344,13 @@
                 />
               </div>
               <div class="recipes__wrapper__content | flow flow-space-400 |">
-                <span class="body-medium"
-                  >The one that never goes out of flavor.</span
-                >
-                <p class="recipes__wrapper__content__body body-small">
+                <div class="body-medium">
+                  The one that never goes out of flavor.
+                </div>
+                <span class="recipes__wrapper__content__body body-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Facilis, eum.
-                </p>
+                </span>
                 <div class="recipes__wrapper__content__serving-info flex-row">
                   <label
                     class="recipes__wrapper__content__serving | strong body-small"
@@ -534,17 +630,46 @@
       </section>
       <!-- section -  cta banner -->
       <section>
-        <div class="banner | gap-top-1000">
+        <div class="banner | gap-top-1000 | mdc-theme--on-primary-bg-inverse">
           <div class="banner__wrapper | container | grid">
             <div
-              class="banner__wrapper__start | mdc-theme--primary mdc-theme--on-primary-bg-inverse"
+              class="banner__wrapper__start | mdc-theme--on-primary-bg-inverse"
             >
-              <div class="title-small title--small--outline">Saving lorem</div>
-              <div class="title-small title--small">Spreading lorem</div>
+              <div class="banner__quote |">
+                <blockquote>
+                  <span class="strong">Food brings people together</span> on
+                  many different levels.
+                  <div>
+                    It's nourishment of the soul and body:
+                    <span class="strong">it's truly love</span>.
+                  </div>
+                </blockquote>
+                <cite class="font-family--cursive"
+                  ><a
+                    href="https://www.sophisticatedgourmet.com/food-quotes/#:~:text=%E2%80%9CFood%20brings%20people%20together%20on,body%3B%20it's%20truly%20love.%E2%80%9D&text=%E2%80%9CIf%20you%20really%20want%20to,food%20give%20you%20their%20heart.%E2%80%9D"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    – Giada De Laurentiis</a
+                  ></cite
+                >
+              </div>
+              <!-- <div class="title-small title--small">Spreading lorem</div> -->
             </div>
-            <div class="banner__wrapper__end | mdc-theme--inverse-on-primary">
-              <div class="headline-large">Lorem ipsum, Dolor sit,</div>
-              <div class="headline-large">Lorem, ipsum.</div>
+            <div class="banner__wrapper__end | flex flex--column | flow |">
+              <h2 class="headline-small | strong">
+                Want to be part of the journey?
+              </h2>
+              <div class="strong">
+                Our constant quest for creating delicious experiences starts
+                here, with you.
+              </div>
+              <p class="body-medium">
+                Every part of Homely Recipes (recipes, collections, tips and the
+                site itself) springs from our incredible open community of food
+                loving contributors. Please join us!
+                <a href="" class="get-involved-cta">Get Involved →</a>
+              </p>
               <div class="banner__wrapper__end__blob"></div>
             </div>
           </div>
@@ -553,23 +678,15 @@
     </main>
 
     <footer>
-      <div class="footer | container | gap-top-500">
-        <div class="footer__navigation">
-          <span class="logo | footer | mdc-theme--primary"
-            ><strong>Octavia</strong></span
-          >
-          <ul class="footer__navigation" role="list">
-            <li class="footer__navigation__items">Collections</li>
-            <li class="footer__navigation__items">In The Kitchen</li>
-            <li class="footer__navigation__items">Holiday & Seasons</li>
-            <li class="footer__navigation__items">About</li>
-          </ul>
-          <ul class="footer__social" role="list">
-            <li class="instagram">Instagram</li>
-            <li class="facebook">Facebook</li>
-          </ul>
+      <div class="container">
+        <div class="footer__primary">
+          <logo-component></logo-component>
+          <navigation-component></navigation-component>
         </div>
       </div>
     </footer>
+    <!-- <span class="logo | footer | mdc-theme--primary"
+      ><strong>Homely</strong></span
+    > -->
   </body>
 </html>
