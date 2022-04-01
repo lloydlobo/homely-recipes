@@ -7,7 +7,13 @@
 <br>
 <p align="left">
 <!--   <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/release.yml">
-    <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;"> -->
+    <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;"> </a> -->
+  
+  <a href="https://app.codiga.io/public/project/32333/homely-recipes/dashboard">
+    <img src="https://api.codiga.io/project/32333/score/svg" alt="Code Quality Score" style="max-width: 100%;">
+  </a>
+  <a href="https://app.codiga.io/public/project/32333/homely-recipes/dashboard">
+    <img src="https://api.codiga.io/project/32333/status/svg" alt="Code Grade" style="max-width: 100%;">
   </a>
   <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/compliance.yml">
     <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/compliance.yml/badge.svg" alt="Compliance" style="max-width: 100%;">
