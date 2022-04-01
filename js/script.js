@@ -2,12 +2,41 @@
 // * Autocomplete Search
 // ****
 const searchable = [
-  "Special Fish Curry",
+  "Bread Butter Pudding",
+  "Fish Curry Special",
+  "Rice Neer Dosa",
   "Special Chicken Masala",
   "Traditional Rava Laddo",
-  "Bread Butter Puding",
-  "Rice Neer Dosa",
 ];
+
+const searchableLink = [
+  "collections/dessert-recipes/bread-butter-pudding.html",
+  "collections/fish-curry/fish-curry-special.html",
+  "collections/dosa-recipes/rice-neer-dosa.html",
+  "collections/chicken-recipes/special-chicken-masala.html",
+  "collections/rava-recipes/traditional-rava-laddo.html",
+];
+
+// filter the searchableLink array
+function filterResults(e) {
+  const searchTerm = e.target.value.toLowerCase();
+  const searchResults = searchable.filter((item) => {
+    return item.toLowerCase().includes(searchTerm);
+  });
+  const searchResultsLink = searchableLink.filter((item) => {
+    return item.toLowerCase().includes(searchTerm);
+  });
+  const searchResultsList = document.querySelector(".search-results");
+  searchResultsList.innerHTML = "";
+  searchResults.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="${searchResultsLink[index]}">${item}</a>`;
+    searchResultsList.appendChild(li);
+  });
+}
+
+let recipeAndLink = { searchable, searchableLink };
+console.log(recipeAndLink);
 
 // *
 // * set variables from the DOM
@@ -20,7 +49,6 @@ searchInput.addEventListener("keyup", () => {
   // // console.log(e.target.value);
   // filter through our searchable variable's itemListElement
   const inputValue = searchInput.value;
-  // console.log(inputValue.length);   /* check the length of the input */
   if (inputValue.length) {
     results = searchable.filter((item) => {
       return item.toLowerCase().includes(inputValue.toLowerCase());
@@ -39,15 +67,28 @@ function renderResults(results) {
       "show"
     ); /* ? could it be toggle instead of remove? */
   }
-
-  // when there are results, loop over results with callback funtion map of item
+  // * [ ] filter the searchableLink.map with results index /* todo */
+  const searchableLinkItem = searchableLink[1];
+  // when there are results, loop over results with callback function map of item
   const content = results
     .map((item) => {
-      return `<li><a href="">${item}</a></li>`;
+      return `<li><a href="${searchableLinkItem}">${item}</a></li>`;
       // return `<li><a href="collections/${item.collection}/${item.recipe}.html">${item}</a></li>`;
     })
     .join(""); /* join this on a string */
-  // console.log(content); /* pass the console.log inside the function -- it grabs the results if there is length -- loops over the results and pass it through a map function */
+
   searchWrapper.classList.add("show");
   resultsWrapper.innerHTML = `<ul>${content}</ul>`;
 }
+
+// when a <li> is clicked and searchable filter item's array index matches searchableLink,
+// append the link to the searchableLink array index
+
+// resultsWrapper.addEventListener("click", (e) => {
+//   if (e.target.item == searchableLink[0]) {
+//     const index = searchable.indexOf(e.target.textContent);
+//     window.location.href = searchableLink[index];
+//   } else {
+//     return;
+//   } /* ? */
+// });
