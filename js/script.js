@@ -1,12 +1,31 @@
 // * Autocomplete Search
 // this could be the result of an API
+// const searchable = [
+//   "Fish Curry Special",
+//   "Special Chicken Masala",
+//   "Traditional Rava Laddo",
+//   "Bread Butter Puding",
+//   "Rice Neer Dosa",
+// ];
+
 const searchable = [
-  "Special Fish Curry",
+  "Fish Curry Special",
   "Special Chicken Masala",
   "Traditional Rava Laddo",
   "Bread Butter Puding",
   "Rice Neer Dosa",
+  // { recipe: "Special Fish Curry", link: "https://google.com" },
+  // { recipe: "Special Chicken Masala", link: "https://google.com" },
+  // { recipe: "Traditional Rava Laddo", link: "https://google.com" },
+  // { recipe: "Bread Butter Puding", link: "https://google.com" },
+  // { recipe: "Rice Neer Dosa", link: "https://google.com" },
 ];
+
+//  maps out searchable sub-arrays
+
+searchable.map(function (subarray) {
+  console.log(subarray);
+});
 // //
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#grouping_the_elements_of_an_array
 
@@ -40,18 +59,20 @@ function renderResults(results) {
     ); /* ? could it be toggle instead of remove? */
   }
 
-  // // assign variables for each data ids in the array searchable
-  // const recipe = results.map((item) => item.recipe);
-  // const ingredients = results.map((item) => item.ingredients);
-
   // when there are results, loop over results with callback funtion map of item
   const content = results
     .map((item) => {
       return `<li><a href="">${item}</a></li>`;
-      // return `<li><a href="">${item.recipe}</a></li>`;
+      // return `<li><a href="collections/${item.collection}/${item.recipe}.html">${item}</a></li>`;
     })
     .join(""); /* join this on a string */
-  // console.log(content);/* pass the console.log inside the function -- it grabs the results if there is length -- loops over the results and pass it through a map function */
+  // console.log(content);
+  /* pass the console.log inside the function -- it grabs the results if there is length -- loops over the results and pass it through a map function */
   searchWrapper.classList.add("show");
   resultsWrapper.innerHTML = `<ul>${content}</ul>`;
 }
+// function search(term) {
+//   return searchable.filter((recipe) => {
+//     return recipe.recipe.toLowerCase().includes(term.toLowerCase());
+//   });
+// }
