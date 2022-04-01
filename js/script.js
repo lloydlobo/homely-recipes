@@ -236,7 +236,7 @@ const logArraySearchable = (element, index, array) => {
 // console.log(myFunction);
 
 // // another forEach example: https://www.programiz.com/javascript/forEach
-let students = ["John", "Sara", "Jack"];
+const students = ["John", "Sara", "Jack"];
 
 // using forEach
 students.forEach(myFunction);
