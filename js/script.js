@@ -1,6 +1,6 @@
 // * Autocomplete Search
 // this could be the result of an API
-let searchable = [
+const searchable = [
   "Apple",
   "Avocado",
   "Banana",
@@ -34,7 +34,7 @@ const resultsWrapper = document.querySelector(".results");
 searchInput.addEventListener("keyup", () => {
   // // console.log(e.target.value);
   // filter through our searchable variable's itemListElement
-  let inputValue = searchInput.value;
+  const inputValue = searchInput.value;
 
   // check the length of the input
   // console.log(inputValue.length);
@@ -55,12 +55,12 @@ function renderResults(results) {
   }
 
   // when there are results, loop over results with callback funtion map of item
-  let content = results
+  const content = results
     .map((item) => {
       return `<li><a href="">${item}</a></li>`;
       // return `<li><a href="">${item.name}</a></li>`;
     })
-    .join(``); /* join this on a string */
+    .join(""); /* join this on a string */
   // console.log(content);/* pass the console.log inside the function -- it grabs the results if there is length -- loops over the results and pass it through a map function */
   searchWrapper.classList.add("show");
   resultsWrapper.innerHTML = `<ul>${content}</ul>`;
