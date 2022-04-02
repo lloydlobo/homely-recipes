@@ -57,4 +57,4 @@ Got Questions? Join the conversation in our [Discord](https://discord.gg/<foruml
 
 ## ⚖️ LICENSE
 
-MIT © [Octavia Recipes](LICENSE)
+MIT © [Homely Recipes](LICENSE)
