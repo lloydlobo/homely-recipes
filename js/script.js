@@ -35,7 +35,7 @@ function filterResults(e) {
   });
 }
 
-let recipeAndLink = { searchable, searchableLink };
+const recipeAndLink = { searchable, searchableLink };
 console.log(recipeAndLink);
 
 // *
