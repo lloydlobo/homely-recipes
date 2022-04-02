@@ -33,6 +33,7 @@ function filterResults(e) {
     li.innerHTML = `<a href="${searchResultsLink[index]}">${item}</a>`;
     searchResultsList.appendChild(li);
   });
+  return filterResults();
 }
 
 const recipeAndLink = { searchable, searchableLink };
