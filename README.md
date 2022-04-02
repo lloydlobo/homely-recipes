@@ -7,7 +7,13 @@
 <br>
 <p align="left">
 <!--   <a href="https://github.com/likeaweb/octavia-recipes/actions/workflows/release.yml">
-    <img src="https://github.com/likeaweb/octavia-recipes/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;"> -->
+    <img src="https://github.com/likeaweb/octavia-recipes/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;"> </a> -->
+  
+  <a href="https://app.codiga.io/public/project/32333/octavia-recipes/dashboard">
+    <img src="https://api.codiga.io/project/32333/score/svg" alt="Code Quality Score" style="max-width: 100%;">
+  </a>
+  <a href="https://app.codiga.io/public/project/32333/octavia-recipes/dashboard">
+    <img src="https://api.codiga.io/project/32333/status/svg" alt="Code Grade" style="max-width: 100%;">
   </a>
   <a href="https://github.com/likeaweb/octavia-recipes/actions/workflows/compliance.yml">
     <img src="https://github.com/likeaweb/octavia-recipes/actions/workflows/compliance.yml/badge.svg" alt="Compliance" style="max-width: 100%;">
@@ -38,7 +44,7 @@
 
 ## 🤝 Contributing
 
-We encourage you to contribute to Open Sauced! Please check out the [Contributing guide](https://github.com/likeaweb/octavia-recipes/blob/main/CONTRIBUTING.md) for guidelines about how to proceed.
+We encourage you to contribute to Octavia Recipes! Please check out the [Contributing guide](https://github.com/likeaweb/octavia-recipes/blob/main/CONTRIBUTING.md) for guidelines about how to proceed.
 
 <!-- ## 🍕 Community
 
