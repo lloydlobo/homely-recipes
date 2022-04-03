@@ -608,7 +608,8 @@ input:valid ~ span:after {
 
 /* * typography */
 .display-large {
-  font-size: clamp(1em, 0.9rem + 14.3472vw, 14.7125rem); /* 221px */
+  /* font-size: clamp(1em, 0.9rem + 14.3472vw, 14.7125rem); 221px */
+  font-size: clamp(1em, 0.9rem + 11.3472vw, 14.7125rem); /* 221px */
   line-height: 0.8;
   /* letter-spacing: 1.33px; */
   /* chrome */
@@ -1764,4 +1765,13 @@ button[data-state="fa-search-icon"].btn-fa-search i:hover {
 
 .results ul li:hover {
   background: #ececec;
+}
+/* contact-form--netlify */
+.contact-form--netlify {
+  display: grid;
+  gap: var(--flow-space-400);
+  grid-auto-columns: min-content;
+  justify-content: center;
+  /* grid-auto-rows: max-content; */
+  /* place-items: center; */
 }
