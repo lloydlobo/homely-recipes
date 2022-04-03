@@ -10,8 +10,8 @@ class Navigation extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     this.shadowRoot.innerHTML = `
-       <link rel="stylesheet" href="../../css/style.css">
-       <link rel="stylesheet" href="../../css/navigation.css">
+       <link rel="stylesheet" href="./css/style.css">
+       <link rel="stylesheet" href="./css/navigation.css">
       <slot>
         <div class="navbar">
           <ul class="navigation | body-small">

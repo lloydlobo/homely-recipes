@@ -10,8 +10,8 @@ class Logo extends HTMLElement {
     // Allow the shadowDOM to be styled by external CSS with the mode: open
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="../../css/style.css">
-      <link rel="stylesheet" href="../../css/logo.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/logo.css">
 
       <slot>
 

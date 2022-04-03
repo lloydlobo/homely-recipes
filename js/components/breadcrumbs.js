@@ -10,8 +10,8 @@ class Breadcrumbs extends HTMLElement {
     this.attachShadow({ mode: "open" });
     // create a shadow root
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="../../css/style.css">
-       <link rel="stylesheet" href="../../css/breadcrumbs.css">
+      <link rel="stylesheet" href="./css/style.css">
+       <link rel="stylesheet" href="./css/breadcrumbs.css">
 
        <div class="recipe-action-container | gap-top-1000">
         <div class="container | flex |">
