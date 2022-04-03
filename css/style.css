@@ -608,7 +608,8 @@ input:valid ~ span:after {
 
 /* * typography */
 .display-large {
-  font-size: clamp(1em, 0.9rem + 14.3472vw, 14.7125rem); /* 221px */
+  /* font-size: clamp(1em, 0.9rem + 14.3472vw, 14.7125rem); 221px */
+  font-size: clamp(1em, 0.9rem + 11.3472vw, 14.7125rem); /* 221px */
   line-height: 0.8;
   /* letter-spacing: 1.33px; */
   /* chrome */
