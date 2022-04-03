@@ -104,7 +104,7 @@ class Navigation extends HTMLElement {
             <li>Collections</li>
             <li>Holiday & Seasons</li>
             <li><a href="about.html">About</a></li>
-            <li>Contact</li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </slot>

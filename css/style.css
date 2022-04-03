@@ -1765,3 +1765,12 @@ button[data-state="fa-search-icon"].btn-fa-search i:hover {
 .results ul li:hover {
   background: #ececec;
 }
+/* contact-form--netlify */
+.contact-form--netlify {
+  display: grid;
+  gap: var(--flow-space-400);
+  grid-auto-columns: min-content;
+  justify-content: center;
+  /* grid-auto-rows: max-content; */
+  /* place-items: center; */
+}
