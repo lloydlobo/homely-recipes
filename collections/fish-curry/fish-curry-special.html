@@ -14,9 +14,12 @@
     <!-- <link rel="stylesheet" href="./Users/machd/Documents/GitHub/homely-recipes/css/style.css" /> -->
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/recipes.css" />
+    <link rel="stylesheet" href="../../css/breadcrumbs.css" />
     <script src="../../js/script.js" defer></script>
-    <!-- Add navigation-component script link from .js/components/ -->
     <script src="../../js/components/navigation.js" defer></script>
+    <script src="../../js/components/breadcrumbs.js" defer></script>
+    <script src="../../js/components/logo.js" defer></script>
+    <!-- Add navigation-component script link from .js/components/ -->
     <!-- Add footer-component script link from .js/components/ -->
     <script src="../../js/components/footer.js" defer></script>
   </head>
@@ -44,64 +47,29 @@
           <div class="">
             <navigation-component></navigation-component>
           </div>
-          <!-- <ul class="nav__menu | mdc-theme--primary" role="list">
-              <li class="nav__menu__items">Collections</li>
-              <li class="nav__menu__items">In The Kitchen</li>
-              <li class="nav__menu__items">Holidays & Seasons</li>
-              <li class="nav__menu__items">About</li>
-            </ul>
-            <div class="nav__menu__search">
-              <input type="text" placeholder="_" data-state="small" />
-            </div> -->
+          <div class="search-wrapper-placeholder">
+            <div class="wrapper">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Type to search"
+                autocomplete="off"
+                data-state="fa-autocomplete"
+              />
+              <button data-state="fa-search-icon" class="btn-fa-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <div class="results"></div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
     <main>
       <!-- breadcrumb -->
-      <div class="recipe-action-container |">
-        <div class="container | flex| gap-top-600">
-          <button class="button action has-icon sidebar-button" type="button">
-            <span class="button-wrap"
-              ><span class="icon icon-sidebar"></span
-            ></span>
-          </button>
-          <nav
-            class="breadcrumbs-container | flex | align-items--center |"
-            aria-label="Breadcrumb navigation"
-          >
-            <ol
-              aria-label="breadcrumbs | flex flex--wrap | body-small "
-              data-state="list"
-              role="list"
-            >
-              <li property="itemListElement" typeof="ListItem">
-                <a href="" class="breadcrumb"
-                  ><span property="name">Home</span></a
-                >
-                <meta property="position" content="1" />
-              </li>
-              <li property="itemListElement" typeof="ListItem">
-                <a href="" class="breadcrumb"
-                  ><span property="name">Collections</span></a
-                >
-                <meta property="position" content="2" />
-              </li>
-              <li property="itemListElement" typeof="ListItem">
-                <a href="" class="breadcrumb"
-                  ><span property="name">Fish Curry</span></a
-                >
-                <meta property="position" content="3" />
-              </li>
-              <li property="itemListElement" typeof="ListItem">
-                <a href="" class="breadcrumb"
-                  ><span property="name">Fish Curry Special</span></a
-                >
-                <meta property="position" content="4" />
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
+      <breadcrumbs-component></breadcrumbs-component>
+
       <article>
         <section>
           <div
@@ -311,25 +279,12 @@
     </main>
 
     <footer>
-      <navigation-component></navigation-component>
-      <!-- <footer-component></footer-component> -->
-      <!-- <div class="footer | container | gap-top-500">
-        <div class="footer__navigation">
-          <span class="logo | footer | mdc-theme--primary"
-            ><strong>Homely</strong></span
-          >
-          <ul class="footer__navigation" role="list">
-            <li class="footer__navigation__items">Collections</li>
-            <li class="footer__navigation__items">In The Kitchen</li>
-            <li class="footer__navigation__items">Holiday & Seasons</li>
-            <li class="footer__navigation__items">About</li>
-          </ul>
-          <ul class="footer__social" role="list">
-            <li class="instagram">Instagram</li>
-            <li class="facebook">Facebook</li>
-          </ul>
+      <div class="container">
+        <div class="footer__primary">
+          <logo-component></logo-component>
+          <navigation-component></navigation-component>
         </div>
-      </div> -->
+      </div>
     </footer>
   </body>
 </html>

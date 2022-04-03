@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Homely Recipes</title>
+    <title>Collections</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,8 +13,9 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
-    <script src="./js/components/navigation.js" defer></script>
     <script src="./js/components/logo.js" defer></script>
+    <script src="./js/components/navigation.js" defer></script>
+    <script src="./js/components/breadcrumbs.js" defer></script>
     <script
       src="https://kit.fontawesome.com/8eeda7b9a9.js"
       crossorigin="anonymous"
@@ -37,7 +38,7 @@
             class="nav__heading | display-large char | mdc-theme--inverse-primary"
             data-word="Recipes"
           >
-            Contact
+            Recipes
           </div>
 
           <navigation-component></navigation-component>
@@ -62,36 +63,35 @@
       </nav>
     </header>
     <main>
-      <section class="hero | gap-top-700 gap-bottom-1000">
-        <div class="flow flow-space-500 | container">
-          <h1
-            class="hero__content__heading | body-large | gap-top-1000"
-            style="text-align: center"
-          >
-            Leave me a message below and I'll respond ASAP!
-          </h1>
-          <!-- Netlify Form -->
-          <div class="contact-form | gap-top-800">
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              class="contact-form--netlify"
-            >
-              <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-              </p>
-              <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-              </p>
-              <p>
-                <label>Message: <textarea name="message"></textarea></label>
-              </p>
-              <p>
-                <button type="submit">Send message</button>
-              </p>
-            </form>
+      <breadcrumbs-component></breadcrumbs-component>
+      <section class="hero |">
+        <div class="hero | container">
+          <div class="hero__content | gap-top-400 | flow flow-space-500">
+            <h1 class="hero__content__heading | headline-medium">
+              Hi there! I'm <strong>Homely</strong>.
+            </h1>
+            <p class="hero__content__body | body-medium">
+              I like curating and sharing recipes which I enjoy preparing and
+              serving to my loved ones.<br />
+              <br />
+              Welcome and have a look around. This journey of cooking has been a
+              great one. Hope you have a good one too.
+            </p>
+            <!-- <favorite-component></favorite-component> -->
+            <!--  add a link to a button-->
+            <div class="sub">
+              <sub>Got a suggestion or an idea? Leave me a message </sub>
+            </div>
+            <br />
+            <a href="contact.html">
+              <button class="btn-secondary">Contact Now</button>
+            </a>
           </div>
+          <div class="hero__images--about"">
+          <img
+            src="assets/images/7187-hello-animated-loading-screen.gif"
+            alt=""
+          />
         </div>
       </section>
     </main>

@@ -127,6 +127,7 @@ class Navigation extends HTMLElement {
 
       </style>
 
+       <link rel="stylesheet" href="../../css/style.css">
       <slot>
         <div class="navbar">
           <ul class="navigation | body-small">
