@@ -75,10 +75,6 @@ shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>'; // Could also use appendChil
 
 Shadow DOM is particularly useful when creating custom elements. Use shadow DOM to compartmentalize an element's HTML, CSS, and JS, thus producing a "web component".
 
-
-
 href="https://web.dev/shadowdom-v1/#stylefromoutside"
-
-
 
  */
