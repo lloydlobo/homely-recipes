@@ -103,7 +103,7 @@ class Navigation extends HTMLElement {
           <ul class="navigation | body-small">
             <li>Collections</li>
             <li>Holiday & Seasons</li>
-            <li>About</li>
+            <li><a href="about.html">About</a></li>
             <li>Contact</li>
           </ul>
         </div>
