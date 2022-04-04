@@ -15,7 +15,6 @@ const sidebarInnerHTML = `
           <select
             name=""
             id="recipe-collection-select"
-            autofocus="true"
             class="category__select"
           >
             <option value="fish">Select by collections</option>
