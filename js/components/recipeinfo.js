@@ -3,8 +3,13 @@ const recipeInfoInnerHTML = `
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/recipes.css">
 
-  <div class="recipe-info | gap-top-1000">
-    <div class="recipe-tips |">
+ <div class="recipe-info | gap-top-1000">
+  <div class="recipe-tips |">
+  <details >
+  <summary class="recipe-info__heading | body-small" aria-label="Recipe Info">
+  Recipe Info
+    </summary>
+
       <h3 class="recipe-details__tips__heading | headline-small">Recipe Tips</h3>
       <div class="flow gap-top-300">
         <h4 class="recipe-details__tips__sub-heading">Serving Suggestion</h4>
@@ -21,7 +26,12 @@ const recipeInfoInnerHTML = `
         </span>
       </div>
     </div>
-    <div class="fun-fact | flow">
+  </details>
+  <div class="fun-fact | flow">
+  <details >
+  <summary class="recipe-info__heading | body-small" aria-label="Fun Food Facts">
+  Fun Fact
+    </summary>
       <h3 class="recipe-details__fun-fact | headline-small | gap-bottom-400">
         Fun Fact
       </h3>
