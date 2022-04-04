@@ -28,6 +28,15 @@ footer {
   grid-area: footer;
 }
 
+/* hero section collections */
+.hero-collections__heading {
+  filter: alpha(opacity=50);
+}
+
+.hero-collections__para {
+  text-align: center;
+}
+
 .recipes-collections__cards {
   display: grid;
   /* grid-template-rows: repeat(3, 1fr); */
@@ -53,4 +62,53 @@ footer {
   box-shadow: var(--mdc-theme-shadow);
   --flow-space-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
   padding: 1em;
+}
+
+/* * aside sidebar */
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2em; */
+  align-items: center;
+  justify-content: center;
+}
+/* popular recipe card  */
+.popular-recipes {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1em; */
+}
+
+.popular-recipes__cards {
+  display: grid;
+  row-gap: 1em;
+}
+
+.popular-recipes__card {
+  display: flex;
+  gap: 1em;
+}
+
+label {
+  background-color: var(--mdc-theme-inverse-primary);
+  color: var(--mdc-theme-on-inverse-primary);
+  /* padding: 0.5em; */
+  padding-block: 0.3em;
+  padding-inline: 0.5em;
+  text-align: center;
+  /* text-overflow: clip; */
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  /* font-size: 0.8em; */
+  /* font-weight: bold; */
 }

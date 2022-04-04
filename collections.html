@@ -65,11 +65,13 @@
     </header>
     <main>
       <section>
-        <div class="">
-          <h1 class="collections | gap-top-1000 flow | display-small">
+        <div class="hero-collections">
+          <h1
+            class="hero-collections__heading | gap-top-1000 flow | display-small"
+          >
             Collections
           </h1>
-          <p>
+          <p class="hero-collections__para">
             A visual view of all of the latest and greatest recipes, organized
             in chronological order for your viewing pleasure.
           </p>
@@ -156,45 +158,44 @@
       </section>
     </main>
     <aside class="gap-top-1000">
-      <article>
-        <div class="category | flow">
-          <!-- ? should this be h3? -->
-          <label
-            for="recipe-collection-select"
-            class="category__heading | body-medium"
-            aria-label="Choose recipes by collections"
-            >Recipes by collections</label
-          >
-          <select
-            name=""
-            id="recipe-collection-select"
-            autofocus="true"
-            class="category__select"
-          >
-            <option value="fish">Select by collections</option>
-            <option value="fish">Fish Curry</option>
-            <option value="chicken">Chicken</option>
-            <option value="dosa">Dosa</option>
-            <option value="ladoo">Ladoo</option>
-            <option value="dessert">Dessert</option>
-            <option value="pudding">Pudding</option>
-          </select>
-        </div>
-        <div class="popular-recipes | flow">
-          <label
-            for=""
-            class="category__heading | body-medium"
-            aria-label="Popular Recipes"
-            >Popular Recipes</label
-          >
-          <!-- <h2 class="popular-recipesy__heading | body-medium">
-            Recipes by category
-          </h2> -->
+      <div class="category | flow">
+        <!-- ? should this be h3? -->
+        <label
+          for="recipe-collection-select"
+          class="category__heading | body-medium"
+          aria-label="Choose recipes by collections"
+          >Recipes by collections</label
+        >
+        <select
+          name=""
+          id="recipe-collection-select"
+          autofocus="true"
+          class="category__select"
+        >
+          <option value="fish">Select by collections</option>
+          <option value="fish">Fish Curry</option>
+          <option value="chicken">Chicken</option>
+          <option value="dosa">Dosa</option>
+          <option value="ladoo">Ladoo</option>
+          <option value="dessert">Dessert</option>
+          <option value="pudding">Pudding</option>
+        </select>
+      </div>
+      <div class="popular-recipes | flow">
+        <label
+          for=""
+          class="category__heading | body-medium"
+          aria-label="Popular Recipes"
+          >Popular Recipes</label
+        >
+        <div class="popular-recipes__cards">
           <div class="popular-recipes__card">
             <img
               src="./assets/images/homepage/hero-img-0--333x460.png"
               alt=""
               class="popular-recipes__card__img"
+              width="80"
+              height="80"
             />
             <h2 class="popular-recipes__card__heading | body-small">
               Lorem, ipsum dolor.
@@ -206,6 +207,8 @@
             src="./assets/images/homepage/hero-img-0--333x460.png"
             alt=""
             class="popular-recipes__card__img"
+            width="80"
+            height="80"
           />
           <h2 class="popular-recipes__card__heading | body-small">
             Lorem, ipsum dolor.
@@ -216,13 +219,15 @@
             src="./assets/images/homepage/hero-img-0--333x460.png"
             alt=""
             class="popular-recipes__card__img"
+            width="80"
+            height="80"
           />
           <h2 class="popular-recipes__card__heading | body-small">
             Lorem, ipsum dolor.
           </h2>
         </div>
-        <input type="search" name="" id="" placeholder="Search a recipe..." />
-      </article>
+      </div>
+      <input type="search" name="" id="" placeholder="Search a recipe..." />
     </aside>
     <footer>
       <div class="">
