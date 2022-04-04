@@ -6,7 +6,7 @@ body {
     "header header header"
     "main main aside"
     "footer footer footer";
-  gap: 2em;
+  gap: 1em;
   /* margin: 0 auto; */
   /* grid-template-columns: 2fr 2fr 1fr; */
   /* golden ratio */
