@@ -1,7 +1,7 @@
 // declare constant breadcrumbsInnerHTML to hold the innerHTML of the breadcrumbs
 const breadcrumbsInnerHTML = `
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/breadcrumbs.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/breadcrumbs.css">
   <div class="recipe-action-container | gap-top-1000">
     <div class=" flex |">
       <button class="button action has-icon sidebar-button" type="button">
