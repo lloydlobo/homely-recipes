@@ -23,7 +23,7 @@
       defer
     ></script>
   </head>
-  <body>
+  <body class="container">
     <header>
       <nav>
         <div class="navigation container">
@@ -65,7 +65,7 @@
     </header>
     <main>
       <section>
-        <div class="container">
+        <div class="">
           <h1 class="collections | gap-top-1000 flow | display-small">
             Collections
           </h1>
@@ -76,7 +76,7 @@
         </div>
       </section>
       <section>
-        <div class="container | gap-top-600 flow">
+        <div class="| gap-top-600 flow">
           <div class="recipes-category">
             <h2 class="recipes-category__headline">Recipes by category:</h2>
             <select name="" id="" class="recipes-category__select"></select>
@@ -155,45 +155,69 @@
         </div>
       </section>
     </main>
-    <aside>
+    <aside class="gap-top-1000">
       <article>
         <div class="category">
           <!-- ? should this be h3? -->
-          <h2 class="category__heading">Recipes by category</h2>
-          <select name="" id="" class="category__select"></select>
+          <label
+            for="recipe-collection-select"
+            class="category__heading | body-medium"
+            >Choose recipes by category</label
+          >
+          <select
+            name=""
+            id="recipe-collection-select"
+            autofocus=" "
+            class="category__select"
+          >
+            <option value="fish">Fish Curry</option>
+            <option value="chicken">Chicken</option>
+            <option value="dosa">Dosa</option>
+            <option value="ladoo">Ladoo</option>
+            <option value="dessert">Dessert</option>
+            <option value="pudding">Pudding</option>
+          </select>
         </div>
         <div class="popular-recipes">
-          <h2 class="popular-recipesy__heading">Recipes by category</h2>
+          <h2 class="popular-recipesy__heading | body-medium">
+            Recipes by category
+          </h2>
           <div class="popular-recipes__card">
-            <h2 class="popular-recipes__card__heading">Lorem, ipsum dolor.</h2>
             <img
               src="./assets/images/homepage/hero-img-0--333x460.png"
               alt=""
               class="popular-recipes__card__img"
             />
+            <h2 class="popular-recipes__card__heading | body-small">
+              Lorem, ipsum dolor.
+            </h2>
           </div>
         </div>
         <div class="popular-recipes__card">
-          <h2 class="popular-recipes__card__heading">Lorem, ipsum dolor.</h2>
           <img
             src="./assets/images/homepage/hero-img-0--333x460.png"
             alt=""
             class="popular-recipes__card__img"
           />
+          <h2 class="popular-recipes__card__heading | body-small">
+            Lorem, ipsum dolor.
+          </h2>
         </div>
         <div class="popular-recipes__card">
-          <h2 class="popular-recipes__card__heading">Lorem, ipsum dolor.</h2>
           <img
             src="./assets/images/homepage/hero-img-0--333x460.png"
             alt=""
             class="popular-recipes__card__img"
           />
+          <h2 class="popular-recipes__card__heading | body-small">
+            Lorem, ipsum dolor.
+          </h2>
         </div>
         <input type="search" name="" id="" />
       </article>
     </aside>
     <footer>
-      <div class="container">
+      <div class="">
         <div class="footer__primary">
           <logo-component></logo-component>
           <navigation-component></navigation-component>
