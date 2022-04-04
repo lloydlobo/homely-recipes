@@ -20,6 +20,7 @@
     <script src="/js/components/breadcrumbs.js" defer></script>
     <script src="/js/components/sidebar.js" defer></script>
     <script src="/js/components/logo.js" defer></script>
+    <script src="/js/components/recipeinfo.js" defer></script>
     <!-- Add navigation-component script link from .js/components/ -->
     <!-- Add footer-component script link from .js/components/ -->
     <script src="/js/components/footer.js" defer></script>
@@ -225,7 +226,11 @@
                 </ol>
               </div>
             </div>
-            <div class="recipe-info | grid | gap-top-1000">
+
+            <!-- recipeInfo-component -->
+            <recipeinfo-component></recipeinfo-component>
+            <!-- [  ] archive the recipe info -->
+            <!-- <div class="recipe-info | grid | gap-top-1000">
               <div class="fun-fact | flow">
                 <h3
                   class="recipe-details__fun-fact | headline-small | gap-bottom-400"
@@ -256,9 +261,6 @@
                 <h3 class="recipe-details__tips__heading | headline-small">
                   Recipe Tips
                 </h3>
-                <!-- <span class="recipe-details__tips__body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-                </span> -->
                 <div class="flow gap-top-300">
                   <h4 class="recipe-details__tips__sub-heading">
                     Serving Suggestion
@@ -281,7 +283,7 @@
                   </span>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
       </article>
