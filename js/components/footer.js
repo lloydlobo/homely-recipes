@@ -1,3 +1,5 @@
+// declare a class for the shadowRoot DOM customElement
+// uses the constructor function
 class Footer extends HTMLElement {
   constructor() {
     super();

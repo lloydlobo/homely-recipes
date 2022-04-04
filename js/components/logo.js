@@ -1,7 +1,4 @@
-// Add a shadowDOM for logo
-// Language: javascript
-// Path: js/components/logo.js
-// Compare this snippet from js/components/navigation.js:
+// Add a shadowDOM class Logo for logo witht he constructor() function
 
 class Logo extends HTMLElement {
   constructor() {
@@ -10,28 +7,15 @@ class Logo extends HTMLElement {
     // Allow the shadowDOM to be styled by external CSS with the mode: open
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
-      <style>
-      :host * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
-      .logo {
-          font-size: 1.5rem;
-          font-family: Parisienne, cursive;
-          transform: rotate(351.65deg);
-  --mdc-theme-primary: #9c413d;
-          color: var(--mdc-theme-primary);
-      }
-
-      </style>
-
+      <link rel="stylesheet" href="../../css/style.css">
+      <link rel="stylesheet" href="../../css/logo.css">
 
       <slot>
+
       <div class="logo">
-      <span>Octavia
-      </span>
+      <span><a href=index.html>Octavia</a></span>
       </div>
+
       </slot>
         `;
   }
