@@ -1,11 +1,14 @@
 /* * aside sidebar */
 aside {
   grid-area: aside;
+}
 
+/* sidebar */
+.sidebar {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 2em;
-  align-items: center;
 }
 
 .category {

@@ -1,6 +1,11 @@
 /* @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css"; */
 
+/* * {
+  box-sizing: border-box;
+  border: 1px solid hsla(0, 0%, 7%, 0.111);
+} */
+
 :root {
   --flow-space-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
   --flow-space-900: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);

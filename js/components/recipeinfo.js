@@ -3,11 +3,26 @@ const recipeInfoInnerHTML = `
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/recipes.css">
 
-  <div class="recipe-info | grid | gap-top-1000">
+  <div class="recipe-info | gap-top-1000">
+    <div class="recipe-tips |">
+      <h3 class="recipe-details__tips__heading | headline-small">Recipe Tips</h3>
+      <div class="flow gap-top-300">
+        <h4 class="recipe-details__tips__sub-heading">Serving Suggestion</h4>
+        <span class="recipe-details__tips__sub-heading__body">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, culpa!
+        </span>
+        <h4 class="recipe-details__tips__sub-heading">Substitute</h4>
+        <span class="recipe-details__tips__sub-heading__body">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, cul!
+        </span>
+        <h4 class="recipe-details__tips__sub-heading">How to Store</h4>
+        <span class="recipe-details__tips__sub-heading__body">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, culpa!
+        </span>
+      </div>
+    </div>
     <div class="fun-fact | flow">
-      <h3
-        class="recipe-details__fun-fact | headline-small | gap-bottom-400"
-      >
+      <h3 class="recipe-details__fun-fact | headline-small | gap-bottom-400">
         Fun Fact
       </h3>
       <span class="recipe-details__fun-fact__fact-title |">
@@ -15,48 +30,21 @@ const recipeInfoInnerHTML = `
       </span>
       <div class="recipe-details__fun-fact__fact-info | body-small">
         According to
-        <a
-          target="_blank"
-          href="https://en.wikipedia.org/wiki/Curry#Etymology"
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Curry#Etymology"
           >Wikipedia</a
-        >, "Curry is an anglicised form of the Tamil: கறி kaṟi meaning
-        'sauce' or 'relish for rice' that uses the leaves of the curry
-        tree <em>(Murraya koenigii)</em>."
+        >, "Curry is an anglicised form of the Tamil: கறி kaṟi meaning 'sauce' or
+        'relish for rice' that uses the leaves of the curry tree
+        <em>(Murraya koenigii)</em>."
       </div>
       <div class="recipe-details__fun-fact__fact-info | body-small">
         To denote its spicy properties, the pepper was formerly called
-        <em>'Curry Milagu'</em>. Curry became a generic word for
-        anything prepared with pepper or chilli later on. Curry is
-        also a derivation word that means biting.
-      </div>
-    </div>
-    <div class="recipe-tips |">
-      <h3 class="recipe-details__tips__heading | headline-small">
-        Recipe Tips
-      </h3>
-      <div class="flow gap-top-300">
-        <h4 class="recipe-details__tips__sub-heading">
-          Serving Suggestion
-        </h4>
-        <span class="recipe-details__tips__sub-heading__body">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Quidem, culpa!
-        </span>
-        <h4 class="recipe-details__tips__sub-heading">Substitute</h4>
-        <span class="recipe-details__tips__sub-heading__body">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Quidem, cul!
-        </span>
-        <h4 class="recipe-details__tips__sub-heading">
-          How to Store
-        </h4>
-        <span class="recipe-details__tips__sub-heading__body">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Quidem, culpa!
-        </span>
+        <em>'Curry Milagu'</em>. Curry became a generic word for anything prepared
+        with pepper or chilli later on. Curry is also a derivation word that means
+        biting.
       </div>
     </div>
   </div>
+
 `;
 
 // add a shadowDOM root customElement class
