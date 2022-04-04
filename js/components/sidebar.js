@@ -1,10 +1,8 @@
 // create a constant for sidebar <aside> innerHTML
 // this is used inside the shadowDOM constructor() function below
 const sidebarInnerHTML = `
-      <link rel="stylesheet" href="./css/style.css">
-      <link rel="stylesheet" href="./css/sidebar.css">
-      <link rel="stylesheet" href="../../css/style.css">
-      <link rel="stylesheet" href="../../css/sidebar.css">
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="stylesheet" href="/css/sidebar.css">
 
       <aside class="gap-top-1000">
         <div class="category | flow">
@@ -36,7 +34,7 @@ const sidebarInnerHTML = `
           <div class="popular-recipes__cards">
             <div class="popular-recipes__card">
               <img
-                src="./assets/images/homepage/hero-img-0--333x460.png"
+                src="/assets/images/homepage/hero-img-0--333x460.png"
                 alt=""
                 class="popular-recipes__card__img"
                 width="80"
@@ -49,7 +47,7 @@ const sidebarInnerHTML = `
           </div>
           <div class="popular-recipes__card">
             <img
-              src="./assets/images/homepage/hero-img-0--333x460.png"
+              src="/assets/images/homepage/hero-img-0--333x460.png"
               alt=""
               class="popular-recipes__card__img"
               width="80"
@@ -61,7 +59,7 @@ const sidebarInnerHTML = `
           </div>
           <div class="popular-recipes__card">
             <img
-              src="./assets/images/homepage/hero-img-0--333x460.png"
+              src="/assets/images/homepage/hero-img-0--333x460.png"
               alt=""
               class="popular-recipes__card__img"
               width="80"
