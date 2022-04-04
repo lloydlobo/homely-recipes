@@ -21,7 +21,7 @@ body {
       "main main aside"
       "footer footer footer";
     gap: 1em;
-    grid-template-columns: 0.309fr 0.309fr 0.382fr;
+    grid-template-columns: 3.09fr 3.09fr 3.82fr;
     grid-template-rows: auto 1fr auto;
   }
 }
