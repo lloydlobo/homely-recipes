@@ -1,10 +1,6 @@
-// create a class Sidebar extends DOM HTMLElement
-class Sidebar extends HTMLElement {
-  constructor() {
-    super();
-
-    this.attachShadow({ mode: "open" });
-    this.shadowRoot.innerHTML = `
+// create a constant for sidebar <aside> innerHTML
+// this is used inside the shadowDOM constructor() function below
+const sidebarInnerHTML = `
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="./css/sidebar.css">
       <link rel="stylesheet" href="../../css/style.css">
@@ -78,42 +74,18 @@ class Sidebar extends HTMLElement {
         </div>
         <input type="search" name="" id="" placeholder="Search a recipe..." />
       </aside>
-                `;
+`;
+
+// create a class Sidebar extends DOM HTMLElement
+class Sidebar extends HTMLElement {
+  constructor() {
+    super();
+
+    this.attachShadow({ mode: "open" });
+    // import the innerHTML from the constant above
+    this.shadowRoot.innerHTML = sidebarInnerHTML;
   }
 }
 
-// define customElements
-window.customElements.define("sidebar-component", Sidebar);
-
-// <style>
-//   :host {
-//     display: block;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-
-//     background-color: #fff;
-//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-//     z-index: 1;
-//     }
-//     .sidebar-header {
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       padding: 10px;
-//       background-color: #fff;
-//       border-bottom: 1px solid #e5e5e5;
-//       }
-//       .sidebar-header img {
-//         width: 40px;
-//         height: 40px;
-//         border-radius: 50%;
-//         }
-//         .sidebar-header .sidebar-header-text {
-//           font-size: 14px;
-//           font-weight: bold;
-//           color: #333;
-//           }
-
-//   </style>
+// define customElements to be used in the HTML DOM as <sidebar-component>
+customElements.define("sidebar-component", Sidebar);
