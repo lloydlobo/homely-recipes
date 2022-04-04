@@ -1,79 +1,10 @@
-// Create a class Breadcumbs shadowDOM for the DOM element
-// reference: https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow
-
+// minify code - create customELement shadowDom Breadcrumbs
 class Breadcrumbs extends HTMLElement {
   constructor() {
-    // Always call super first in constructor
-    super();
-
-    // Allow the shadowDOM to be styled by external CSS with the mode: open
-    this.attachShadow({ mode: "open" });
-    // create a shadow root
-    this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="./css/style.css">
-      <link rel="stylesheet" href="./css/breadcrumbs.css">
-      <link rel="stylesheet" href="../../css/style.css">
-       <link rel="stylesheet" href="../../css/breadcrumbs.css">
-
-       <div class="recipe-action-container | gap-top-1000">
-        <div class="container | flex |">
-          <button class="button action has-icon sidebar-button" type="button">
-            <span class="button-wrap"
-              ><span class="icon icon-sidebar"></span
-            ></span>
-          </button>
-          <nav
-            class="breadcrumbs-container | flex | align-items--center | gap-top-400 "
-            aria-label="Breadcrumb navigation"
-          >
-            <ol
-              aria-label="breadcrumbs" class=" | flex flex--wrap | body-small "
-              data-state="list"
-              role="list"
-            >
-            <li property="itemListElement" typeof="ListItem">
-              <slot name="breadcrumb-1--link"><a href="../../index.html" class="breadcrumb"><slot property="name" name="breadcrumb-1--name"><span name="property"></span></slot></a>
-              </slot>
-              <meta property="position" content="1" />
-            </li>
-            <li property="itemListElement" typeof="ListItem">
-              <slot name="breadcrumb-2--link"><a href="../../collections.html" class="breadcrumb"><slot property="name" name="breadcrumb-2--name"><span name="property"></span></slot></a>
-              </slot>
-              <meta property="position" content="2" />
-            </li>
-            <li property="itemListElement" typeof="ListItem">
-              <slot name="breadcrumb-3--link"><a href="" class="breadcrumb"><slot property="name" name="breadcrumb-3--name"><span name="property"></span></slot></a>
-              </slot>
-              <meta property="position" content="3" />
-            </li>
-            <li property="itemListElement" typeof="ListItem">
-              <slot name="breadcrumb-4--link"><a href="" class="breadcrumb"><slot property="name" name="breadcrumb-4--name"><span name="property"></span></slot></a>
-              </slot>
-              <meta property="position" content="4" />
-            </li>
-
-            </ol>
-          </nav>
-        </div>
-      </div>
-    `;
+    super(),
+      this.attachShadow({ mode: "open" }),
+      (this.shadowRoot.innerHTML =
+        '\n      <link rel="stylesheet" href="./css/style.css">\n      <link rel="stylesheet" href="./css/breadcrumbs.css">\n      <link rel="stylesheet" href="../../css/style.css">\n       <link rel="stylesheet" href="../../css/breadcrumbs.css">\n\n       <div class="recipe-action-container | gap-top-1000">\n        <div class="container | flex |">\n          <button class="button action has-icon sidebar-button" type="button">\n            <span class="button-wrap"\n              ><span class="icon icon-sidebar"></span\n            ></span>\n          </button>\n          <nav\n            class="breadcrumbs-container | flex | align-items--center | gap-top-400 "\n            aria-label="Breadcrumb navigation"\n          >\n            <ol\n              aria-label="breadcrumbs" class=" | flex flex--wrap | body-small "\n              data-state="list"\n              role="list"\n            >\n            <li property="itemListElement" typeof="ListItem">\n              <slot name="breadcrumb-1--link"><a href="../../index.html" class="breadcrumb"><slot property="name" name="breadcrumb-1--name"><span name="property"></span></slot></a>\n              </slot>\n              <meta property="position" content="1" />\n            </li>\n            <li property="itemListElement" typeof="ListItem">\n              <slot name="breadcrumb-2--link"><a href="../../collections.html" class="breadcrumb"><slot property="name" name="breadcrumb-2--name"><span name="property"></span></slot></a>\n              </slot>\n              <meta property="position" content="2" />\n            </li>\n            <li property="itemListElement" typeof="ListItem">\n              <slot name="breadcrumb-3--link"><a href="" class="breadcrumb"><slot property="name" name="breadcrumb-3--name"><span name="property"></span></slot></a>\n              </slot>\n              <meta property="position" content="3" />\n            </li>\n            <li property="itemListElement" typeof="ListItem">\n              <slot name="breadcrumb-4--link"><a href="" class="breadcrumb"><slot property="name" name="breadcrumb-4--name"><span name="property"></span></slot></a>\n              </slot>\n              <meta property="position" content="4" />\n            </li>\n\n            </ol>\n          </nav>\n        </div>\n      </div>\n    ');
   }
 }
-
-// define and render the shadowDOM element customElements
 window.customElements.define("breadcrumbs-component", Breadcrumbs);
-/*
-If custom elements are the way to create a new HTML (with a JS API), shadow DOM is the way you provide its HTML and CSS.
-The two APIs combine to make a component with self-contained HTML, CSS, and JavaScript.
-
-Anything you add in the shadows becomes local to the hosting element, including <style>. This is how shadow DOM achieves CSS style scoping.
-
-shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>'; // Could also use appendChild().
-
-## Creating shadow DOM for a custom element
-
-Shadow DOM is particularly useful when creating custom elements. Use shadow DOM to compartmentalize an element's HTML, CSS, and JS, thus producing a "web component".
-
-href="https://web.dev/shadowdom-v1/#stylefromoutside"
-
- */
