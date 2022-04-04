@@ -4,7 +4,7 @@ const sidebarInnerHTML = `
       <link rel="stylesheet" href="/css/style.css">
       <link rel="stylesheet" href="/css/sidebar.css">
 
-      <aside class="gap-top-1000">
+      <div class="sidebar | gap-top-1000">
         <div class="category | flow">
           <label
             for="recipe-collection-select"
@@ -71,7 +71,8 @@ const sidebarInnerHTML = `
           </div>
         </div>
         <input type="search" name="" id="" placeholder="Search a recipe..." />
-      </aside>
+        </div>
+      </div>
 `;
 
 // create a class Sidebar extends DOM HTMLElement

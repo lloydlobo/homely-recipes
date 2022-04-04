@@ -1,7 +1,4 @@
-// Add a shadowDOM for logo
-// Language: javascript
-// Path: js/components/logo.js
-// Compare this snippet from js/components/navigation.js:
+// Add a shadowDOM class Logo for logo witht he constructor() function
 
 class Logo extends HTMLElement {
   constructor() {

@@ -1,7 +1,7 @@
 // declare a constant navigationInnerHTML
 const navigationInnerHTML = `
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/navigation.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/navigation.css">
   <style>
     :host * {
       box-sizing: border-box;
@@ -115,15 +115,15 @@ const navigationInnerHTML = `
 
   <div class="navbar">
     <ul class="navigation | body-small">
-      <li><a href="/collections.html">Collections</a></li>
+      <li><a href="collections.html">Collections</a></li>
       <li class="disabled"><a class="disabled" href="/holiday-seasons-recipes.html" aria-disabled="true">Holiday & Seasons</a></li>
       <li><a href="/about.html">About</a></li>
-      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 `;
 
-// Add a shadowDOM customEleemnt for navigation
+// Add a shadowDOM customElement for navigation
 class Navigation extends HTMLElement {
   constructor() {
     super();

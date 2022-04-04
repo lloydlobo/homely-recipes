@@ -1,6 +1,8 @@
 /* @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css"; */
 
+/* * {box-sizing: border-box;border: 1px solid hsla(0, 0%, 7%, 0.111);} */
+
 :root {
   --flow-space-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
   --flow-space-900: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
@@ -626,12 +628,16 @@ input:valid ~ span:after {
 .display-small {
   /* font-size: 98.8875px; */
   /* font-size: clamp(2.65rem, 1rem + 8.6vw, 8rem); 98.8875px */
-  font-size: clamp(2.65rem, 1rem + 8.6vw, 6.17969rem);
+  /* font-size: clamp(2.65rem, 1rem + 8.6vw, 6.17969rem); */
+  /* changing o fit the recipe heading without wrapping */
+  font-size: clamp(2.65rem, 1rem + 4.6vw, 6.17969rem);
   line-height: 1;
 }
 .display-smaller {
   /* font-size: 61.1171199px; */
-  font-size: clamp(2.65rem, 1rem + 8.6vw, 3.77969rem);
+  /* font-size: clamp(2.65rem, 1rem + 8.6vw, 3.77969rem); */
+  /* changing o fit the method and ingredients heading without wrapping */
+  font-size: clamp(2.65rem, 1rem + 2.7vw, 6.17969rem);
   line-height: 1;
   font-weight: 800;
   text-transform: uppercase;
