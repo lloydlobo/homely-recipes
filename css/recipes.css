@@ -17,6 +17,9 @@ header {
 
 main {
   grid-area: main;
+  display: grid;
+  /* max-width: 800px; */
+  /* overflow-x: hidden; */
 }
 
 aside {
