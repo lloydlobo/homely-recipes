@@ -1,8 +1,8 @@
 // create a constant for sidebar <aside> innerHTML
 // this is used inside the shadowDOM constructor() function below
 const sidebarInnerHTML = `
-      <link rel="stylesheet" href="/css/style.css">
-      <link rel="stylesheet" href="/css/sidebar.css">
+      <link rel="stylesheet" href="../../css/style.css">
+      <link rel="stylesheet" href="../../css/sidebar.css">
 
       <div class="sidebar | gap-top-1000">
         <div class="category | flow">
@@ -19,12 +19,11 @@ const sidebarInnerHTML = `
             class="category__select"
           >
             <option value="fish">Select by collections</option>
-            <option value="fish">Fish Curry</option>
-            <option value="chicken">Chicken</option>
-            <option value="dosa">Dosa</option>
-            <option value="ladoo">Ladoo</option>
-            <option value="dessert">Dessert</option>
-            <option value="pudding">Pudding</option>
+            <option value="fish"><a href="../../collections/fish-curry/fish-curry-special.html">Fish Curry</a></option>
+            <option value="chicken"><a href="../../collections/chicken-curry/chicken-coorg-curry.html">Chicken</a></option>
+            <option value="dosa"><a href="../../collections/rice-dosas/rice-neer-dosa.html">Dosa</a></option>
+            <option value="ladoo"><a href="../../collections/sooji/sooji-laddu.html">Sooji</a></option>
+            <option value="pudding"><a href="../../collections/dessert/bread-butter-pudding.html">Dessert</a></option>
           </select>
         </div>
         <div class="popular-recipes | flow">
@@ -33,40 +32,46 @@ const sidebarInnerHTML = `
           >
           <div class="popular-recipes__cards">
             <div class="popular-recipes__card">
+              <a href="../../collections/fish-curry/fish-curry-special.html">
+                <img
+                    src="../../assets/images/homepage/hero-img-0--333x460.png"
+                    alt=""
+                    class="popular-recipes__card__img"
+                    width="80"
+                    height="80"
+                  />
+              </a>
+              <h2 class="popular-recipes__card__heading | body-small">
+                <a href="../../collections/fish-curry/fish-curry-special.html">Fish Curry Special</a>
+              </h2>
+            </div>
+          </div>
+          <div class="popular-recipes__card">
+            <a href="../../collections/chicken-curry/chicken-coorg-curry.html">
               <img
-                src="/assets/images/homepage/hero-img-0--333x460.png"
+                src="../../assets/images/homepage/hero-img-0--333x460.png"
                 alt=""
                 class="popular-recipes__card__img"
                 width="80"
                 height="80"
               />
-              <h2 class="popular-recipes__card__heading | body-small">
-                Lorem, ipsum dolor.
-              </h2>
-            </div>
-          </div>
-          <div class="popular-recipes__card">
-            <img
-              src="/assets/images/homepage/hero-img-0--333x460.png"
-              alt=""
-              class="popular-recipes__card__img"
-              width="80"
-              height="80"
-            />
+            </a>
             <h2 class="popular-recipes__card__heading | body-small">
-              Lorem, ipsum dolor.
+              <a href="../../collections/chicken-curry/chicken-coorg-curry.html">Chicken Coorg Curry</a>
             </h2>
           </div>
           <div class="popular-recipes__card">
-            <img
-              src="/assets/images/homepage/hero-img-0--333x460.png"
-              alt=""
-              class="popular-recipes__card__img"
-              width="80"
-              height="80"
-            />
+            <a href="../../collections/dessert/bread-butter-pudding.html">
+              <img
+                src="../../assets/images/homepage/hero-img-0--333x460.png"
+                alt=""
+                class="popular-recipes__card__img"
+                width="80"
+                height="80"
+              />
+            </a>
             <h2 class="popular-recipes__card__heading | body-small">
-              Lorem, ipsum dolor.
+              <a href="../../collections/dessert/bread-butter-pudding.html">Bread & Butter Pudding</a>
             </h2>
           </div>
         </div>
