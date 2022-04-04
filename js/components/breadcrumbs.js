@@ -53,4 +53,6 @@ class Breadcrumbs extends HTMLElement {
     this.shadowRoot.innerHTML = breadcrumbsInnerHTML;
   }
 }
+// register customElement with the browser
+// naming it <breadcrumbs-component>
 window.customElements.define("breadcrumbs-component", Breadcrumbs);

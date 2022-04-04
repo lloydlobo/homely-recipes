@@ -58,6 +58,7 @@ const recipeInfoInnerHTML = `
     </div>
   </div>
 `;
+
 // add a shadowDOM root customElement class
 class RecipeInfo extends HTMLElement {
   constructor() {
