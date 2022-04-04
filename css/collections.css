@@ -31,10 +31,11 @@ footer {
 /* hero section collections */
 .hero-collections__heading {
   filter: alpha(opacity=50);
+  text-align: start;
 }
 
 .hero-collections__para {
-  text-align: center;
+  text-align: start;
 }
 
 .recipes-collections__cards {
