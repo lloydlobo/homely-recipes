@@ -1,10 +1,56 @@
-// minify code - create customELement shadowDom Breadcrumbs
+// declare constant breadcrumbsInnerHTML to hold the innerHTML of the breadcrumbs
+const breadcrumbsInnerHTML = `
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/breadcrumbs.css">
+  <div class="recipe-action-container | gap-top-1000">
+    <div class=" flex |">
+      <button class="button action has-icon sidebar-button" type="button">
+        <span class="button-wrap"
+          ><span class="icon icon-sidebar"></span
+        ></span>
+      </button>
+      <nav
+        class="breadcrumbs-container | flex | align-items--center | gap-top-400 "
+        aria-label="Breadcrumb navigation"
+      >
+        <ol
+          aria-label="breadcrumbs" class=" | flex flex--wrap | body-small "
+          data-state="list"
+          role="list"
+        >
+        <li property="itemListElement" typeof="ListItem">
+          <slot name="breadcrumb-1--link"><a href="../../index.html" class="breadcrumb"><slot property="name" name="breadcrumb-1--name"><span name="property"></span></slot></a>
+          </slot>
+          <meta property="position" content="1" />
+        </li>
+        <li property="itemListElement" typeof="ListItem">
+          <slot name="breadcrumb-2--link"><a href="../../collections.html" class="breadcrumb"><slot property="name" name="breadcrumb-2--name"><span name="property"></span></slot></a>
+          </slot>
+          <meta property="position" content="2" />
+        </li>
+        <li property="itemListElement" typeof="ListItem">
+          <slot name="breadcrumb-3--link"><a href="" class="breadcrumb"><slot property="name" name="breadcrumb-3--name"><span name="property"></span></slot></a>
+          </slot>
+          <meta property="position" content="3" />
+        </li>
+        <li property="itemListElement" typeof="ListItem">
+          <slot name="breadcrumb-4--link"><a href="" class="breadcrumb"><slot property="name" name="breadcrumb-4--name"><span name="property"></span></slot></a>
+          </slot>
+          <meta property="position" content="4" />
+        </li>
+
+        </ol>
+      </nav>
+    </div>
+  </div>
+`;
+
+// create customELement shadowDom Breadcrumbs
 class Breadcrumbs extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-    this.shadowRoot.innerHTML =
-      '\n      <link rel="stylesheet" href="./css/style.css">\n      <link rel="stylesheet" href="./css/breadcrumbs.css">\n      <link rel="stylesheet" href="../../css/style.css">\n       <link rel="stylesheet" href="../../css/breadcrumbs.css">\n\n       <div class="recipe-action-container | gap-top-1000">\n        <div class=" flex |">\n          <button class="button action has-icon sidebar-button" type="button">\n            <span class="button-wrap"\n              ><span class="icon icon-sidebar"></span\n            ></span>\n          </button>\n          <nav\n            class="breadcrumbs-container | flex | align-items--center | gap-top-400 "\n            aria-label="Breadcrumb navigation"\n          >\n            <ol\n              aria-label="breadcrumbs" class=" | flex flex--wrap | body-small "\n              data-state="list"\n              role="list"\n            >\n            <li property="itemListElement" typeof="ListItem">\n              <slot name="breadcrumb-1--link"><a href="../../index.html" class="breadcrumb"><slot property="name" name="breadcrumb-1--name"><span name="property"></span></slot></a>\n              </slot>\n              <meta property="position" content="1" />\n            </li>\n            <li property="itemListElement" typeof="ListItem">\n              <slot name="breadcrumb-2--link"><a href="../../collections.html" class="breadcrumb"><slot property="name" name="breadcrumb-2--name"><span name="property"></span></slot></a>\n              </slot>\n              <meta property="position" content="2" />\n            </li>\n            <li property="itemListElement" typeof="ListItem">\n              <slot name="breadcrumb-3--link"><a href="" class="breadcrumb"><slot property="name" name="breadcrumb-3--name"><span name="property"></span></slot></a>\n              </slot>\n              <meta property="position" content="3" />\n            </li>\n            <li property="itemListElement" typeof="ListItem">\n              <slot name="breadcrumb-4--link"><a href="" class="breadcrumb"><slot property="name" name="breadcrumb-4--name"><span name="property"></span></slot></a>\n              </slot>\n              <meta property="position" content="4" />\n            </li>\n\n            </ol>\n          </nav>\n        </div>\n      </div>\n    ';
+    this.shadowRoot.innerHTML = breadcrumbsInnerHTML;
   }
 }
 window.customElements.define("breadcrumbs-component", Breadcrumbs);
