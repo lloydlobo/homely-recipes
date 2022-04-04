@@ -20,8 +20,15 @@ main {
   grid-area: main;
 }
 
+/* * aside sidebar */
 aside {
   grid-area: aside;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 footer {
@@ -63,16 +70,6 @@ footer {
   /* box-shadow: var(--mdc-theme-shadow); */
   /* --flow-space-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem); */
   /* padding: 0.5em; */
-}
-
-/* * aside sidebar */
-
-aside {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  align-items: center;
-  /* justify-content: center; */
 }
 
 .category {
