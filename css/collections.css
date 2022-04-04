@@ -59,10 +59,10 @@ footer {
   display: grid;
   gap: 1em;
   place-items: center;
-  background-color: var(--mdc-theme-surface);
-  box-shadow: var(--mdc-theme-shadow);
-  --flow-space-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
-  padding: 1em;
+  /* background-color: var(--mdc-theme-surface); */
+  /* box-shadow: var(--mdc-theme-shadow); */
+  /* --flow-space-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem); */
+  /* padding: 0.5em; */
 }
 
 /* * aside sidebar */
