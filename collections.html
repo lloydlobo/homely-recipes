@@ -157,19 +157,21 @@
     </main>
     <aside class="gap-top-1000">
       <article>
-        <div class="category">
+        <div class="category | flow">
           <!-- ? should this be h3? -->
           <label
             for="recipe-collection-select"
             class="category__heading | body-medium"
-            >Choose recipes by category</label
+            aria-label="Choose recipes by collections"
+            >Recipes by collections</label
           >
           <select
             name=""
             id="recipe-collection-select"
-            autofocus=" "
+            autofocus="true"
             class="category__select"
           >
+            <option value="fish">Select by collections</option>
             <option value="fish">Fish Curry</option>
             <option value="chicken">Chicken</option>
             <option value="dosa">Dosa</option>
@@ -178,10 +180,16 @@
             <option value="pudding">Pudding</option>
           </select>
         </div>
-        <div class="popular-recipes">
-          <h2 class="popular-recipesy__heading | body-medium">
+        <div class="popular-recipes | flow">
+          <label
+            for=""
+            class="category__heading | body-medium"
+            aria-label="Popular Recipes"
+            >Popular Recipes</label
+          >
+          <!-- <h2 class="popular-recipesy__heading | body-medium">
             Recipes by category
-          </h2>
+          </h2> -->
           <div class="popular-recipes__card">
             <img
               src="./assets/images/homepage/hero-img-0--333x460.png"
@@ -213,7 +221,7 @@
             Lorem, ipsum dolor.
           </h2>
         </div>
-        <input type="search" name="" id="" />
+        <input type="search" name="" id="" placeholder="Search a recipe..." />
       </article>
     </aside>
     <footer>
