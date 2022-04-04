@@ -68,8 +68,17 @@
     </header>
     <main>
       <!-- breadcrumb -->
-      <breadcrumbs-component></breadcrumbs-component>
 
+      <breadcrumbs-component>
+        <span slot="breadcrumb-1--name">Home</span>
+        <span slot="breadcrumb-2--name">Collections</span>
+        <a slot="breadcrumb-3--link" href=""
+          ><span slot="breadcrumb-3--name">Fish Curry</span></a
+        >
+        <a slot="breadcrumb-4--link" href=""
+          ><span slot="breadcrumb-4--name">Fish Curry Special</span></a
+        >
+      </breadcrumbs-component>
       <article>
         <section>
           <div

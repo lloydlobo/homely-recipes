@@ -11,7 +11,9 @@ class Breadcrumbs extends HTMLElement {
     // create a shadow root
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="./css/style.css">
-       <link rel="stylesheet" href="./css/breadcrumbs.css">
+      <link rel="stylesheet" href="./css/breadcrumbs.css">
+      <link rel="stylesheet" href="../../css/style.css">
+       <link rel="stylesheet" href="../../css/breadcrumbs.css">
 
        <div class="recipe-action-container | gap-top-1000">
         <div class="container | flex |">
@@ -29,30 +31,27 @@ class Breadcrumbs extends HTMLElement {
               data-state="list"
               role="list"
             >
-              <li property="itemListElement" typeof="ListItem">
-                <a href="" class="breadcrumb"
-                  ><span property="name">Home</span></a
-                >
-                <meta property="position" content="1" />
-              </li>
-              <li property="itemListElement" typeof="ListItem">
-                <a href="" class="breadcrumb"
-                  ><span property="name">Collections</span></a
-                >
-                <meta property="position" content="2" />
-              </li>
-              <li property="itemListElement" typeof="ListItem">
-                <a href="" class="breadcrumb"
-                  ><span property="name">Fish Curry</span></a
-                >
-                <meta property="position" content="3" />
-              </li>
-              <li property="itemListElement" typeof="ListItem">
-                <a href="" class="breadcrumb"
-                  ><span property="name">Fish Curry Special</span></a
-                >
-                <meta property="position" content="4" />
-              </li>
+            <li property="itemListElement" typeof="ListItem">
+              <slot name="breadcrumb-1--link"><a href="../../index.html" class="breadcrumb"><slot property="name" name="breadcrumb-1--name"><span name="property"></span></slot></a>
+              </slot>
+              <meta property="position" content="1" />
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+              <slot name="breadcrumb-2--link"><a href="../../collections.html" class="breadcrumb"><slot property="name" name="breadcrumb-2--name"><span name="property"></span></slot></a>
+              </slot>
+              <meta property="position" content="2" />
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+              <slot name="breadcrumb-3--link"><a href="" class="breadcrumb"><slot property="name" name="breadcrumb-3--name"><span name="property"></span></slot></a>
+              </slot>
+              <meta property="position" content="3" />
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+              <slot name="breadcrumb-4--link"><a href="" class="breadcrumb"><slot property="name" name="breadcrumb-4--name"><span name="property"></span></slot></a>
+              </slot>
+              <meta property="position" content="4" />
+            </li>
+
             </ol>
           </nav>
         </div>

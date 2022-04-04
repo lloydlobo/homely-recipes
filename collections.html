@@ -12,10 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/collections.css" />
     <script src="./js/components/logo.js" defer></script>
     <script src="./js/components/navigation.js" defer></script>
     <script src="./js/components/breadcrumbs.js" defer></script>
+    <script src="./js/script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/8eeda7b9a9.js"
       crossorigin="anonymous"
@@ -63,38 +64,134 @@
       </nav>
     </header>
     <main>
-      <breadcrumbs-component></breadcrumbs-component>
-      <section class="hero |">
-        <div class="hero | container">
-          <div class="hero__content | gap-top-400 | flow flow-space-500">
-            <h1 class="hero__content__heading | headline-medium">
-              Hi there! I'm <strong>Homely</strong>.
-            </h1>
-            <p class="hero__content__body | body-medium">
-              I like curating and sharing recipes which I enjoy preparing and
-              serving to my loved ones.<br />
-              <br />
-              Welcome and have a look around. This journey of cooking has been a
-              great one. Hope you have a good one too.
-            </p>
-            <!-- <favorite-component></favorite-component> -->
-            <!--  add a link to a button-->
-            <div class="sub">
-              <sub>Got a suggestion or an idea? Leave me a message </sub>
-            </div>
-            <br />
-            <a href="contact.html">
-              <button class="btn-secondary">Contact Now</button>
-            </a>
+      <section>
+        <div class="container">
+          <h1 class="collections | gap-top-1000 flow | display-small">
+            Collections
+          </h1>
+          <p>
+            A visual view of all of the latest and greatest recipes, organized
+            in chronological order for your viewing pleasure.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="container | gap-top-600 flow">
+          <div class="recipes-category">
+            <h2 class="recipes-category__headline">Recipes by category:</h2>
+            <select name="" id="" class="recipes-category__select"></select>
+            <hr />
           </div>
-          <div class="hero__images--about"">
-          <img
-            src="assets/images/7187-hello-animated-loading-screen.gif"
-            alt=""
-          />
+          <div class="recipes-collections">
+            <div class="recipes-collections__cards">
+              <div class="recipes-collections__cards__card">
+                <img
+                  src="./assets/images/homepage/hero-img-1--333x460.png"
+                  alt=""
+                  srcset=""
+                  class="recipes-collections__cards__card__img"
+                />
+                <h3 class="recipes-collections__cards__card__headline">
+                  Fish Curry
+                </h3>
+              </div>
+              <div class="recipes-collections__cards__card">
+                <img
+                  src="./assets/images/homepage/hero-img-1--333x460.png"
+                  alt=""
+                  srcset=""
+                  class="recipes-collections__cards__card__img"
+                />
+                <h3 class="recipes-collections__cards__card__headline">
+                  Chicken Recipes
+                </h3>
+              </div>
+              <div class="recipes-collections__cards__card">
+                <img
+                  src="./assets/images/homepage/hero-img-1--333x460.png"
+                  alt=""
+                  srcset=""
+                  class="recipes-collections__cards__card__img"
+                />
+                <h3 class="recipes-collections__cards__card__headline">
+                  Neer Dosas
+                </h3>
+              </div>
+              <div class="recipes-collections__cards__card">
+                <img
+                  src="./assets/images/homepage/hero-img-1--333x460.png"
+                  alt=""
+                  srcset=""
+                  class="recipes-collections__cards__card__img"
+                />
+                <h3 class="recipes-collections__cards__card__headline">
+                  Sooji Rava Recipes
+                </h3>
+              </div>
+              <div class="recipes-collections__cards__card">
+                <img
+                  src="./assets/images/homepage/hero-img-1--333x460.png"
+                  alt=""
+                  srcset=""
+                  class="recipes-collections__cards__card__img"
+                />
+                <h3 class="recipes-collections__cards__card__headline">
+                  Desserts
+                </h3>
+              </div>
+              <div class="recipes-collections__cards__card">
+                <img
+                  src="./assets/images/homepage/hero-img-1--333x460.png"
+                  alt=""
+                  srcset=""
+                  class="recipes-collections__cards__card__img"
+                />
+                <h3 class="recipes-collections__cards__card__headline">
+                  Snacks
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <aside>
+      <article>
+        <div class="category">
+          <!-- ? should this be h3? -->
+          <h2 class="category__heading">Recipes by category</h2>
+          <select name="" id="" class="category__select"></select>
+        </div>
+        <div class="popular-recipes">
+          <h2 class="popular-recipesy__heading">Recipes by category</h2>
+          <div class="popular-recipes__card">
+            <h2 class="popular-recipes__card__heading">Lorem, ipsum dolor.</h2>
+            <img
+              src="./assets/images/homepage/hero-img-0--333x460.png"
+              alt=""
+              class="popular-recipes__card__img"
+            />
+          </div>
+        </div>
+        <div class="popular-recipes__card">
+          <h2 class="popular-recipes__card__heading">Lorem, ipsum dolor.</h2>
+          <img
+            src="./assets/images/homepage/hero-img-0--333x460.png"
+            alt=""
+            class="popular-recipes__card__img"
+          />
+        </div>
+        <div class="popular-recipes__card">
+          <h2 class="popular-recipes__card__heading">Lorem, ipsum dolor.</h2>
+          <img
+            src="./assets/images/homepage/hero-img-0--333x460.png"
+            alt=""
+            class="popular-recipes__card__img"
+          />
+        </div>
+        <input type="search" name="" id="" />
+      </article>
+    </aside>
     <footer>
       <div class="container">
         <div class="footer__primary">
