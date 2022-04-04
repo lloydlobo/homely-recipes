@@ -22,7 +22,7 @@ const sidebarInnerHTML = `
             <option value="fish"><a href="../../collections/fish-curry/fish-curry-special.html">Fish Curry</a></option>
             <option value="chicken"><a href="../../collections/chicken-curry/chicken-coorg-curry.html">Chicken</a></option>
             <option value="dosa"><a href="../../collections/rice-dosas/rice-neer-dosa.html">Dosa</a></option>
-            <option value="ladoo"><a href="../../collections/sooji/sooji-laddu.html">Sooji</a></option>
+            <option value="soooji"><a href="../../collections/sooji/sooji-laddu.html">Sooji</a></option>
             <option value="pudding"><a href="../../collections/dessert/bread-butter-pudding.html">Dessert</a></option>
           </select>
         </div>
