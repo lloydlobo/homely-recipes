@@ -58,7 +58,7 @@ const recipeInfoInnerHTML = `
     </div>
   </div>
 `;
-
+// add a shadowDOM root customElement class
 class RecipeInfo extends HTMLElement {
   constructor() {
     super();
@@ -70,4 +70,5 @@ class RecipeInfo extends HTMLElement {
   }
 }
 
+// Register the new element with the browser.
 window.customElements.define("recipeinfo-component", RecipeInfo);
