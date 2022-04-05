@@ -1768,7 +1768,9 @@ footer {
   /* grid-template-columns: 6.18fr 3.82fr; */
   grid-template-rows: auto 1fr auto;
   row-gap: 1em;
+  position: relative;
 }
+
 @media screen and (min-width: 40em) {
   .recipes__recipe-wrapper {
     display: grid;
