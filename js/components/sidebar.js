@@ -74,9 +74,11 @@ const sidebarInnerHTML = `
             </h2>
           </div>
         </div>
-        <input type="search" name="" id="" placeholder="Search a recipe..." />
+        <div class="sidebar__search | flow">
+          <input type="search" name="" id="" placeholder="Search a recipe..." />
         </div>
       </div>
+    </div>
 `;
 
 // create a class Sidebar extends DOM HTMLElement
