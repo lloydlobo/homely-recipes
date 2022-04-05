@@ -3,9 +3,9 @@
 
 /* * {box-sizing: border-box;border: 1px solid hsla(0, 0%, 7%, 0.111);} */
 
-* {
+/* * {
   border: 1px solid rgba(165, 0, 225, 0.797);
-}
+} */
 
 :root {
   --flow-space-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
@@ -1811,7 +1811,7 @@ button[data-state="fa-search-icon"].btn-fa-search i:hover {
 
 /* footer */
 
-.footer {
+footer {
   background-color: var(--mdc-theme-neutral-100);
   z-index: -1;
 }

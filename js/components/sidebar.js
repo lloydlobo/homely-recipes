@@ -44,7 +44,6 @@ const sidebarInnerHTML = `
                 <a href="../../collections/fish-curry/fish-curry-special.html">Fish Curry Special</a>
               </h2>
             </div>
-          </div>
           <div class="popular-recipes__card">
             <a href="../../collections/chicken-curry/chicken-coorg-curry.html">
               <img
@@ -74,9 +73,13 @@ const sidebarInnerHTML = `
             </h2>
           </div>
         </div>
-        <input type="search" name="" id="" placeholder="Search a recipe..." />
         </div>
-      </div>
+        <div class="sidebar__search | flow">
+          <input type="search" name="" id="" placeholder="Search a recipe..." />
+        </div>
+    </div>
+  </div>
+
 `;
 
 // create a class Sidebar extends DOM HTMLElement
