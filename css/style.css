@@ -1813,5 +1813,4 @@ button[data-state="fa-search-icon"].btn-fa-search i:hover {
 
 footer {
   background-color: var(--mdc-theme-neutral-100);
-  z-index: -1;
 }
