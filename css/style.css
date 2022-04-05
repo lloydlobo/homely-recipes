@@ -997,6 +997,8 @@ ul.recipes__navigation {
   flex-wrap: wrap;
   gap: 0.5em;
   align-items: center;
+  row-gap: 0.1em;
+  line-height: 1;
 }
 
 .active--link {
