@@ -1813,4 +1813,6 @@ button[data-state="fa-search-icon"].btn-fa-search i:hover {
 
 footer {
   background-color: var(--mdc-theme-neutral-100);
+  padding-bottom: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+  padding-top: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
 }
