@@ -12,19 +12,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="./css/collections.css" />
+    <link rel="stylesheet" href="../../css/collections.css" />
     <script src="./js/components/logo.js" defer></script>
     <script src="./js/components/navigation.js" defer></script>
-    <script src="./js/components/breadcrumbs.js" defer></script>
-    <script src="./js/components/sidebar.js" defer></script>
     <script src="./js/script.js" defer></script>
+    <script src="./js/components/sidebar.js" defer></script>
+    <script src="./js/components/breadcrumbs.js" defer></script>
     <script
       src="https://kit.fontawesome.com/8eeda7b9a9.js"
       crossorigin="anonymous"
       defer
     ></script>
   </head>
-  <body class="container">
+  <body>
     <header>
       <nav>
         <div class="navigation container">
@@ -64,105 +66,113 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section>
-        <div class="hero-collections">
-          <h1
-            class="hero-collections__heading | gap-top-1000 flow | display-small"
-          >
-            Collections
-          </h1>
-          <p class="hero-collections__para">
-            A visual view of all of the latest and greatest recipes, organized
-            in chronological order for your viewing pleasure.
-          </p>
-        </div>
-      </section>
-      <section>
-        <div class="recipes-collections | flow">
-          <div class="recipes-collections__cards">
-            <div class="recipes-collections__cards__card">
-              <img
-                src="./assets/images/homepage/hero-img-1--333x460.png"
-                alt=""
-                srcset=""
-                class="recipes-collections__cards__card__img"
-              />
-              <h3 class="recipes-collections__cards__card__headline">
-                <a href="../../collections/fish-curry/fish-curry-special.html"
-                  >Fish Curry</a
-                >
-              </h3>
-            </div>
-            <div class="recipes-collections__cards__card">
-              <img
-                src="./assets/images/homepage/hero-img-1--333x460.png"
-                alt=""
-                srcset=""
-                class="recipes-collections__cards__card__img"
-              />
-              <h3 class="recipes-collections__cards__card__headline">
-                <a
-                  href="../../collections/chicken-curry/chicken-coorg-curry.html"
-                  >Chicken Curry</a
-                >
-              </h3>
-            </div>
-            <div class="recipes-collections__cards__card">
-              <img
-                src="./assets/images/homepage/hero-img-1--333x460.png"
-                alt=""
-                srcset=""
-                class="recipes-collections__cards__card__img"
-              />
-              <h3 class="recipes-collections__cards__card__headline">
-                <a href="../../collections/rice-dosas/rice-neer-dosa.html"
-                  >Rice Dosas</a
-                >
-              </h3>
-            </div>
-            <div class="recipes-collections__cards__card">
-              <img
-                src="./assets/images/homepage/hero-img-1--333x460.png"
-                alt=""
-                srcset=""
-                class="recipes-collections__cards__card__img"
-              />
-              <h3 class="recipes-collections__cards__card__headline">
-                <a href="../../collections/sooji/sooji-laddu.html">Sooji</a>
-              </h3>
-            </div>
-            <div class="recipes-collections__cards__card">
-              <img
-                src="./assets/images/homepage/hero-img-1--333x460.png"
-                alt=""
-                srcset=""
-                class="recipes-collections__cards__card__img"
-              />
-              <h3 class="recipes-collections__cards__card__headline">
-                <a href="../../collections/dessert/bread-butter-pudding.html"
-                  >Dessert</a
-                >
-              </h3>
-            </div>
-            <div class="recipes-collections__cards__card">
-              <img
-                src="./assets/images/homepage/hero-img-1--333x460.png"
-                alt=""
-                srcset=""
-                class="recipes-collections__cards__card__img"
-              />
-              <h3 class="recipes-collections__cards__card__headline">Snacks</h3>
+    <div class="wrapper__collections-aside | container">
+      <main>
+        <section>
+          <div class="hero-collections">
+            <h1
+              class="hero-collections__heading | gap-top-1000 flow | display-small"
+            >
+              Collections
+            </h1>
+            <p class="hero-collections__para">
+              A visual view of all of the latest and greatest recipes, organized
+              in chronological order for your viewing pleasure.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="recipes-collections | flow">
+            <div class="recipes-collections__cards">
+              <div class="recipes-collections__cards__card">
+                <a href="./collections/fish-curry/fish-curry-special.html">
+                  <img
+                    src="./assets/images/homepage/hero-img-1--333x460.png"
+                    alt=""
+                    srcset=""
+                    class="recipes-collections__cards__card__img"
+                /></a>
+                <h3 class="recipes-collections__cards__card__headline">
+                  <a href="./collections/fish-curry/fish-curry-special.html"
+                    >Fish Curry</a
+                  >
+                </h3>
+              </div>
+              <div class="recipes-collections__cards__card">
+                <a href="./collections/chicken-curry/chicken-coorg-curry.html"
+                  ><img
+                    src="./assets/images/homepage/hero-img-1--333x460.png"
+                    alt=""
+                    srcset=""
+                    class="recipes-collections__cards__card__img"
+                /></a>
+                <h3 class="recipes-collections__cards__card__headline">
+                  <a href="./collections/chicken-curry/chicken-coorg-curry.html"
+                    >Chicken Curry</a
+                  >
+                </h3>
+              </div>
+              <div class="recipes-collections__cards__card">
+                <a href="./collections/rice-dosas/rice-neer-dosa.html"
+                  ><img
+                    src="./assets/images/homepage/hero-img-1--333x460.png"
+                    alt=""
+                    srcset=""
+                    class="recipes-collections__cards__card__img"
+                /></a>
+                <h3 class="recipes-collections__cards__card__headline">
+                  <a href="./collections/rice-dosas/rice-neer-dosa.html"
+                    >Rice Dosas</a
+                  >
+                </h3>
+              </div>
+              <div class="recipes-collections__cards__card">
+                <a href="./collections/sooji/sooji-laddu.html"
+                  ><img
+                    src="./assets/images/homepage/hero-img-1--333x460.png"
+                    alt=""
+                    srcset=""
+                    class="recipes-collections__cards__card__img"
+                /></a>
+                <h3 class="recipes-collections__cards__card__headline">
+                  <a href="./collections/sooji/sooji-laddu.html">Sooji</a>
+                </h3>
+              </div>
+              <div class="recipes-collections__cards__card">
+                <a href="./collections/dessert/bread-butter-pudding.html"
+                  ><img
+                    src="./assets/images/homepage/hero-img-1--333x460.png"
+                    alt=""
+                    srcset=""
+                    class="recipes-collections__cards__card__img"
+                /></a>
+                <h3 class="recipes-collections__cards__card__headline">
+                  <a href="./collections/dessert/bread-butter-pudding.html"
+                    >Dessert</a
+                  >
+                </h3>
+              </div>
+              <div class="recipes-collections__cards__card">
+                <img
+                  src="./assets/images/homepage/hero-img-1--333x460.png"
+                  alt=""
+                  srcset=""
+                  class="recipes-collections__cards__card__img"
+                />
+                <h3 class="recipes-collections__cards__card__headline">
+                  Snacks
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-    <aside>
-      <sidebar-component></sidebar-component>
-    </aside>
+        </section>
+      </main>
+      <aside>
+        <sidebar-component></sidebar-component>
+      </aside>
+    </div>
     <footer>
-      <div class="">
+      <div class="container">
         <div class="footer__primary">
           <logo-component></logo-component>
           <navigation-component></navigation-component>

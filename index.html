@@ -13,8 +13,8 @@
     <title>Octavia Recipes</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
-    <script src="./js//components/navigation.js" defer></script>
-    <script src="./js//components/logo.js" defer></script>
+    <script src="./js/components/navigation.js" defer></script>
+    <script src="./js/components/logo.js" defer></script>
     <script
       src="https://kit.fontawesome.com/8eeda7b9a9.js"
       crossorigin="anonymous"
@@ -25,7 +25,7 @@
     <header>
       <nav>
         <div class="navigation container">
-          <a href="#">
+          <a href="">
             <div class="logo__wrapper">
               <span class="logo | mdc-theme--primary"
                 ><strong>Octavia</strong></span
@@ -599,9 +599,9 @@
         <div class="banner | gap-top-1000 | mdc-theme--on-primary-bg-inverse">
           <div class="banner__wrapper | container | grid">
             <div
-              class="banner__wrapper__start | mdc-theme--on-primary-bg-inverse"
+              class="banner__wrapper__start | flow |W mdc-theme--on-primary-bg-inverse"
             >
-              <div class="banner__quote |">
+              <div class="banner__quote | body-small">
                 <blockquote>
                   <span class="strong">Food brings people together</span> on
                   many different levels.
@@ -620,6 +620,32 @@
                   ></cite
                 >
               </div>
+              <div class="banner__quote | body-small">
+                <blockquote>
+                  <span class="strong"
+                    >... The process of creativity and genius</span
+                  >
+                  is inherent in human consciousness. As every human has within
+                  himself the same essence of consciousness, so is genius a
+                  potential that resides within everyone.
+                  <div>
+                    It
+                    <span class="strong"
+                      >awaits only the right circumstances</span
+                    >
+                    to express it.
+                  </div>
+                </blockquote>
+                <cite class="font-family--cursive"
+                  ><a
+                    href="https://veritaspub.com/dr-hawkins/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    – Dr. David R. Hawkins</a
+                  ></cite
+                >
+              </div>
               <!-- <div class="title-small title--small">Spreading lorem</div> -->
             </div>
             <div class="banner__wrapper__end | flex flex--column | flow |">
@@ -631,13 +657,21 @@
                 here, with you.
               </div>
               <p class="body-small">
-                Every part of Octavia Recipes (recipes, collections, tips and
-                the site itself) springs from our incredible open community of
-                food loving contributors. Please join us!
+                <<<<<<< HEAD Every part of Octavia Recipes (recipes,
+                collections, tips and the site itself) springs from our
+                incredible open community of food loving contributors. Please
+                join us!
                 <a href="" class="get-involved-cta | body-medium"
                   >Get Involved →</a
                 >
+                ======= Every part of Homely Recipes (recipes, collections, tips
+                and the site itself) springs from our incredible open community
+                of food loving contributors. Please join us! >>>>>>>
+                upstream/main
               </p>
+              <a href="./contact.html" class="get-involved-cta"
+                >Get Involved →</a
+              >
               <div class="banner__wrapper__end__blob"></div>
             </div>
           </div>
@@ -646,7 +680,7 @@
     </main>
 
     <footer>
-      <div class="container">
+      <div class="container | gap-top-400 gap-bottom-400">
         <div class="footer__primary">
           <logo-component></logo-component>
           <navigation-component></navigation-component>

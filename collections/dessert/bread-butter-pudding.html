@@ -11,19 +11,19 @@
       rel="stylesheet"
     />
     <title>Bread & Butter Pudding</title>
-    <!-- <link rel="stylesheet" href="./Users/machd/Documents/GitHub/homely-recipes/css/style.css" /> -->
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/recipes.css" />
     <link rel="stylesheet" href="../../css/breadcrumbs.css" />
     <script src="../../js/script.js" defer></script>
-    <script src="../../js/components/navigation.js" defer></script>
+    <script src="../../js/components/navigation-recipe.js" defer></script>
     <script src="../../js/components/breadcrumbs.js" defer></script>
-    <script src="../../js/components/sidebar.js" defer></script>
+    <script src="../../js/components/sidebar-recipe.js" defer></script>
     <script src="../../js/components/logo.js" defer></script>
     <script src="../../js/components/recipeinfo.js" defer></script>
     <script src="../../js/components/footer.js" defer></script>
   </head>
-  <body class="container">
+  <body>
     <header>
       <nav>
         <div class="navigation | container">
@@ -42,7 +42,7 @@
             Recipes
           </div>
           <!-- Add navigation component from navigation.js -->
-          <navigation-component></navigation-component>
+          <navigation-recipe-component></navigation-recipe-component>
           <div class="search-wrapper-placeholder">
             <div class="wrapper">
               <input
@@ -62,134 +62,140 @@
         </div>
       </nav>
     </header>
-    <main>
-      <!-- breadcrumb -->
+    <div class="wrapper__collections-aside | container">
+      <main>
+        <!-- breadcrumb -->
 
-      <breadcrumbs-component>
-        <span slot="breadcrumb-1--name">Home</span>
-        <span slot="breadcrumb-2--name">Collections</span>
-        <a slot="breadcrumb-3--link" href=""
-          ><span slot="breadcrumb-3--name">Dessert</span></a
-        >
-        <a slot="breadcrumb-4--link" href=""
-          ><span slot="breadcrumb-4--name">Bread & Butter Pudding</span></a
-        >
-      </breadcrumbs-component>
+        <breadcrumbs-component>
+          <span slot="breadcrumb-1--name">Home</span>
+          <span slot="breadcrumb-2--name">Collections</span>
+          <a slot="breadcrumb-3--link" href=""
+            ><span slot="breadcrumb-3--name">Dessert</span></a
+          >
+          <a slot="breadcrumb-4--link" href=""
+            ><span slot="breadcrumb-4--name">Bread & Butter Pudding</span></a
+          >
+        </breadcrumbs-component>
 
-      <article>
-        <section>
-          <div class="recipe-hero | | gap-top-600 flow flow-space-600">
-            <h1 class="recipe-hero__title | | display-small mdc-theme--primary">
-              Bread & Butter Pudding
-            </h1>
-            <div class="recipe-hero__wrapper | grid">
-              <picture>
-                <source
-                  media="(min-width:40em)"
-                  srcset="/assets/images/homepage/hero-img-2--333x460.png"
-                />
-                <source
-                  media="(max-width:41em)"
-                  srcset="/assets/images/homepage/hero-img-2--206x284.png"
-                />
-                <img
-                  src="/assets/images/homepage/hero-img-2--333x460.png"
-                  width="333"
-                  height="460"
-                  alt=""
-                />
-              </picture>
-              <div class="recipe-hero__wrapper__content | grid">
-                <div class="recipe-description | grid">
-                  <div class="recipe-description-preparation">
-                    <div class="recipe-preparation">Preparation</div>
-                    <span class="recipe-preparation-value">45 min</span>
+        <article>
+          <section>
+            <div class="recipe-hero | | gap-top-600 flow flow-space-600">
+              <h1
+                class="recipe-hero__title | | display-small mdc-theme--primary"
+              >
+                Bread & Butter Pudding
+              </h1>
+              <div class="recipe-hero__wrapper | grid">
+                <picture>
+                  <source
+                    media="(min-width:40em)"
+                    srcset="/assets/images/homepage/hero-img-2--333x460.png"
+                  />
+                  <source
+                    media="(max-width:41em)"
+                    srcset="/assets/images/homepage/hero-img-2--206x284.png"
+                  />
+                  <img
+                    src="/assets/images/homepage/hero-img-2--333x460.png"
+                    width="333"
+                    height="460"
+                    alt=""
+                  />
+                </picture>
+                <div class="recipe-hero__wrapper__content | grid">
+                  <div class="recipe-description | grid">
+                    <div class="recipe-description-preparation">
+                      <div class="recipe-preparation">Preparation</div>
+                      <span class="recipe-preparation-value">45 min</span>
+                    </div>
+                    <div class="recipe-description-total-time">
+                      <div class="recipe-total-time">Total Time</div>
+                      <span class="recipe-total-time-value">45 min</span>
+                    </div>
+                    <div class="recipe-description-servings">
+                      <div class="recipe-servings">Servings</div>
+                      <span class="recipe-servings-value"
+                        >6 servings, about 2 Tbsp. each
+                      </span>
+                    </div>
                   </div>
-                  <div class="recipe-description-total-time">
-                    <div class="recipe-total-time">Total Time</div>
-                    <span class="recipe-total-time-value">45 min</span>
+                  <div class="recipe-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ab repellendus inventore nobis consectetur? Consectetur
+                      nostrum quos ut tempore eum unde facilis, odit placeat
+                      alias possimus nesciunt aut excepturi dolores voluptas!
+                    </p>
                   </div>
-                  <div class="recipe-description-servings">
-                    <div class="recipe-servings">Servings</div>
-                    <span class="recipe-servings-value"
-                      >6 servings, about 2 Tbsp. each
-                    </span>
-                  </div>
-                </div>
-                <div class="recipe-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                    repellendus inventore nobis consectetur? Consectetur nostrum
-                    quos ut tempore eum unde facilis, odit placeat alias
-                    possimus nesciunt aut excepturi dolores voluptas!
-                  </p>
                 </div>
               </div>
+              <ul
+                class="recipe-social body-small | flex flex--wrap"
+                role="list"
+              >
+                <li class="pinterest">Pin it</li>
+                <li class="facebook">Facebook</li>
+                <li class="twitter">Twitter</li>
+                <li class="email">Email</li>
+                <li class="print">Print</li>
+                <li class="instagram">Instagram</li>
+              </ul>
             </div>
-            <ul class="recipe-social body-small | flex flex--wrap" role="list">
-              <li class="pinterest">Pin it</li>
-              <li class="facebook">Facebook</li>
-              <li class="twitter">Twitter</li>
-              <li class="email">Email</li>
-              <li class="print">Print</li>
-              <li class="instagram">Instagram</li>
-            </ul>
-          </div>
-        </section>
-        <section>
-          <div class="| gap-top-1000">
-            <div class="recipe-details | grid">
-              <div class="ingredients | flow">
-                <h2 class="ingredients__heading | display-smaller">
-                  Ingredients
-                </h2>
-                <ul class="ingredients__list" role="list" data-state="list">
-                  <li>2 tbsp. seedless raisins </li>
-                  <li>1 egg</li>
-                  <li>2 cups milk </li>
-                  <li>Slices of buttered bread </li>
-                  <li>4 tsp. nutmeg</li>
-                  <li>4 tsp. vanilla essence </li>
-                </ul>
-              </div>
-              <div class="method | flow">
-                <h2 class="method__heading | display-smaller">Method</h2>
-                <ol class="method__list">
-                  <li>
-                    <label for="toggle">
-                      Grease a medium-sized oven-safe dish generously with
-                      butter. </label
-                    ><input id="toggle" type="checkbox" />
-                  </li>
-                  <li>
-                    <label for="toggle">
-                      Spread a layer of buttered bread on the bottom. </label
-                    ><input id="toggle" type="checkbox" />
-                    <!-- <input id="toggle" type="checkbox" checked /> -->
-                  </li>
-                  <li>
-                    <label for="toggle"> Add a few raisins on top. </label
-                    ><input id="toggle" type="checkbox" />
-                  </li>
-                  <li>
-                    <label for="toggle">
-                      Repeat the process, ending with a layer of bread.</label
-                    ><input id="toggle" type="checkbox" />
-                  </li>
-                  <li>
-                    <label for="toggle">
-                      After thoroughly beating the egg, add the milk and vanilla
-                      extract. </label
-                    ><input id="toggle" type="checkbox" />
-                  </li>
-                  <li>
-                    <label for="toggle">
-                      Pour over the bread and bake for an hour or until browned
-                      on top in a moderate oven (175° C).
-                    </label>
-                    <input id="toggle" type="checkbox" />
-                  </li>
-                  <!-- <li>
+          </section>
+          <section>
+            <div class="| gap-top-1000">
+              <div class="recipe-details | grid">
+                <div class="ingredients | flow">
+                  <h2 class="ingredients__heading | display-smaller">
+                    Ingredients
+                  </h2>
+                  <ul class="ingredients__list" role="list" data-state="list">
+                    <li>2 tbsp. seedless raisins </li>
+                    <li>1 egg</li>
+                    <li>2 cups milk </li>
+                    <li>Slices of buttered bread </li>
+                    <li>4 tsp. nutmeg</li>
+                    <li>4 tsp. vanilla essence </li>
+                  </ul>
+                </div>
+                <div class="method | flow">
+                  <h2 class="method__heading | display-smaller">Method</h2>
+                  <ol class="method__list">
+                    <li>
+                      <label for="toggle">
+                        Grease a medium-sized oven-safe dish generously with
+                        butter. </label
+                      ><input id="toggle" type="checkbox" />
+                    </li>
+                    <li>
+                      <label for="toggle">
+                        Spread a layer of buttered bread on the bottom. </label
+                      ><input id="toggle" type="checkbox" />
+                      <!-- <input id="toggle" type="checkbox" checked /> -->
+                    </li>
+                    <li>
+                      <label for="toggle"> Add a few raisins on top. </label
+                      ><input id="toggle" type="checkbox" />
+                    </li>
+                    <li>
+                      <label for="toggle">
+                        Repeat the process, ending with a layer of bread.</label
+                      ><input id="toggle" type="checkbox" />
+                    </li>
+                    <li>
+                      <label for="toggle">
+                        After thoroughly beating the egg, add the milk and
+                        vanilla extract. </label
+                      ><input id="toggle" type="checkbox" />
+                    </li>
+                    <li>
+                      <label for="toggle">
+                        Pour over the bread and bake for an hour or until
+                        browned on top in a moderate oven (175° C).
+                      </label>
+                      <input id="toggle" type="checkbox" />
+                    </li>
+                    <!-- <li>
                     <label for="toggle"> </label>
                     <input id="toggle" type="checkbox" />
                   </li>
@@ -201,24 +207,24 @@
                     <label for="toggle"> </label>
                     <input id="toggle" type="checkbox" />
                   </li> -->
-                </ol>
+                  </ol>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </article>
-    </main>
+          </section>
+        </article>
+      </main>
 
-    <aside>
-      <sidebar-component></sidebar-component>
-      <recipeinfo-component></recipeinfo-component>
-    </aside>
-
+      <aside>
+        <sidebar-recipe-component></sidebar-recipe-component>
+        <recipeinfo-component></recipeinfo-component>
+      </aside>
+    </div>
     <footer>
-      <div class="">
+      <div class="container">
         <div class="footer__primary">
           <logo-component></logo-component>
-          <navigation-component></navigation-component>
+          <navigation-recipe-component></navigation-recipe-component>
         </div>
       </div>
     </footer>

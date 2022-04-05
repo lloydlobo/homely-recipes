@@ -1,6 +1,6 @@
 // create a constant for sidebar <aside> innerHTML
 // this is used inside the shadowDOM constructor() function below
-const sidebarInnerHTML = `
+const sidebarRecipeInnerHTML = `
       <link rel="stylesheet" href="../../css/style.css">
       <link rel="stylesheet" href="./css/style.css">
 
@@ -155,7 +155,7 @@ const sidebarInnerHTML = `
       <div class="popular-recipes__card">
         <a href="../../collections/fish-curry/fish-curry-special.html">
           <img
-            src="./assets/images/homepage/hero-img-0--333x460.png"
+            src="../../assets/images/homepage/hero-img-0--333x460.png"
             alt=""
             class="popular-recipes__card__img"
             width="80"
@@ -171,7 +171,7 @@ const sidebarInnerHTML = `
       <div class="popular-recipes__card">
         <a href="../../collections/chicken-curry/chicken-coorg-curry.html">
           <img
-            src="./assets/images/homepage/hero-img-0--333x460.png"
+            src="../../assets/images/homepage/hero-img-0--333x460.png"
             alt=""
             class="popular-recipes__card__img"
             width="80"
@@ -187,7 +187,7 @@ const sidebarInnerHTML = `
       <div class="popular-recipes__card">
         <a href="../../collections/dessert/bread-butter-pudding.html">
           <img
-            src="./assets/images/homepage/hero-img-0--333x460.png"
+            src="../../assets/images/homepage/hero-img-0--333x460.png"
             alt=""
             class="popular-recipes__card__img"
             width="80"
@@ -210,15 +210,15 @@ const sidebarInnerHTML = `
 `;
 
 // create a class Sidebar extends DOM HTMLElement
-class Sidebar extends HTMLElement {
+class SidebarRecipe extends HTMLElement {
   constructor() {
     super();
 
     this.attachShadow({ mode: "open" });
     // import the innerHTML from the constant above
-    this.shadowRoot.innerHTML = sidebarInnerHTML;
+    this.shadowRoot.innerHTML = sidebarRecipeInnerHTML;
   }
 }
 
 // define customElements to be used in the HTML DOM as <sidebar-component>
-customElements.define("sidebar-component", Sidebar);
+customElements.define("sidebar-recipe-component", SidebarRecipe);

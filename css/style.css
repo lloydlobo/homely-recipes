@@ -3,6 +3,10 @@
 
 /* * {box-sizing: border-box;border: 1px solid hsla(0, 0%, 7%, 0.111);} */
 
+/* * {
+  border: 1px solid rgba(165, 0, 225, 0.797);
+} */
+
 :root {
   --flow-space-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
   --flow-space-900: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
@@ -1000,6 +1004,16 @@ ul.recipes__navigation {
 }
 /* penultimate section */
 
+/* .banner {
+  padding-block: var(--padding-inline-200);
+}
+
+@media screen and (min-width: 40em) {
+  .banner {
+    padding-block: var(--padding-inline-600);
+  }
+} */
+
 .banner__wrapper {
   grid-row-gap: 1em;
 }
@@ -1008,11 +1022,20 @@ ul.recipes__navigation {
 }
 
 .banner__wrapper > * {
-  /* padding-inline-start: var(--padding-inline-800); */
   padding-inline: var(--padding-inline-600, 2rem);
-  padding-block-end: var(--padding-inline-1000);
-  padding-block-start: var(--padding-inline-1000);
+  padding-block-end: var(--padding-inline-600);
+  padding-block-start: var(--padding-inline-600);
   border-radius: var(--corner);
+}
+
+.banner__wrapper__end {
+  padding-inline: 0;
+}
+
+@media screen and (min-width: 40em) {
+  .banner__wrapper__end {
+    padding-inline: var(--padding-inline-600, 2rem);
+  }
 }
 .banner__wrapper > :nth-child(2) {
   border-radius: 0;
@@ -1027,7 +1050,7 @@ ul.recipes__navigation {
     display: grid;
     grid-template-columns: 0.618fr 1fr;
     gap: 0;
-    /* place-items: center; */
+    place-items: center;
   }
 }
 
@@ -1784,4 +1807,10 @@ button[data-state="fa-search-icon"].btn-fa-search i:hover {
   justify-content: center;
   /* grid-auto-rows: max-content; */
   /* place-items: center; */
+}
+
+/* footer */
+
+footer {
+  background-color: var(--mdc-theme-neutral-100);
 }

@@ -1,10 +1,10 @@
-:host * {
+/* :host * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-.logo {
+:host .logo {
   font-size: 1.5rem;
   font-family: Parisienne, cursive;
   transform: rotate(351.65deg);
@@ -12,10 +12,33 @@
   color: var(--mdc-theme-primary);
 }
 
-.logo a {
+:host .logo a {
   text-decoration: none;
 }
 
-.logo:hover {
+:host .logo:hover {
   cursor: pointer;
+} */
+
+.logo__wrapper {
+  overflow: hidden;
+}
+span.logo {
+  font-family: var(--ff-cursive);
+  font-weight: 400;
+  font-size: clamp(3.375rem, 1rem + 3.888888vw, 4.752875rem);
+  transform: rotate(351.65deg);
+  /* ! for demo only */
+  display: grid;
+  place-items: center;
+}
+span.logo.mdc-theme--primary > * {
+  /* text-shadow: var(--mdc-theme-shadow-on-text); */
+  text-shadow: 0 2px 4px rgb(0 0 0 / 12%);
+}
+@media screen and (min-width: 40em) {
+  span.logo.footer {
+    display: inline-block;
+    place-items: flex-start;
+  }
 }
