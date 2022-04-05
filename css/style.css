@@ -1366,9 +1366,7 @@ h1.nav__heading {
 /* [ ] grid area */
 /* * */
 /* * section - recipes - kitchen */
-.recipes__recipe-wrapper {
-  position: relative;
-}
+
 .recipes__wrapper__heading.label-wrapper--full-bleed {
   /* grid-area: "recipe-heading"; */
   --_scale: 1.618em;
