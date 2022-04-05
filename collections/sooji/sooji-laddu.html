@@ -11,19 +11,19 @@
       rel="stylesheet"
     />
     <title>Sooji Laddu</title>
-    <!-- <link rel="stylesheet" href="./Users/machd/Documents/GitHub/homely-recipes/css/style.css" /> -->
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/recipes.css" />
     <link rel="stylesheet" href="../../css/breadcrumbs.css" />
     <script src="../../js/script.js" defer></script>
-    <script src="../../js/components/navigation.js" defer></script>
+    <script src="../../js/components/navigation-recipe.js" defer></script>
     <script src="../../js/components/breadcrumbs.js" defer></script>
-    <script src="../../js/components/sidebar.js" defer></script>
+    <script src="../../js/components/sidebar-recipe.js" defer></script>
     <script src="../../js/components/logo.js" defer></script>
     <script src="../../js/components/recipeinfo.js" defer></script>
     <script src="../../js/components/footer.js" defer></script>
   </head>
-  <body class="container">
+  <body>
     <header>
       <nav>
         <div class="navigation | container">
@@ -42,7 +42,7 @@
             Recipes
           </div>
           <!-- Add navigation component from navigation.js -->
-          <navigation-component></navigation-component>
+          <navigation-recipe-component></navigation-recipe-component>
           <div class="search-wrapper-placeholder">
             <div class="wrapper">
               <input
@@ -62,167 +62,146 @@
         </div>
       </nav>
     </header>
-    <main>
-      <!-- breadcrumb -->
+    <div class="wrapper__collections-aside | container">
+      <main>
+        <!-- breadcrumb -->
+        <breadcrumbs-component>
+          <span slot="breadcrumb-1--name">Home</span>
+          <span slot="breadcrumb-2--name">Collections</span>
+          <a slot="breadcrumb-3--link" href=""
+            ><span slot="breadcrumb-3--name">Sooji</span></a
+          >
+          <a slot="breadcrumb-4--link" href=""
+            ><span slot="breadcrumb-4--name">Sooji Laddu</span></a
+          >
+        </breadcrumbs-component>
 
-      <breadcrumbs-component>
-        <span slot="breadcrumb-1--name">Home</span>
-        <span slot="breadcrumb-2--name">Collections</span>
-        <a slot="breadcrumb-3--link" href=""
-          ><span slot="breadcrumb-3--name">Sooji</span></a
-        >
-        <a slot="breadcrumb-4--link" href=""
-          ><span slot="breadcrumb-4--name">Sooji Laddu</span></a
-        >
-      </breadcrumbs-component>
-
-      <article>
-        <section>
-          <div class="recipe-hero | | gap-top-600 flow flow-space-600">
-            <h1 class="recipe-hero__title | | display-small mdc-theme--primary">
-              Sooji Laddu
-            </h1>
-            <div class="recipe-hero__wrapper | grid">
-              <picture>
-                <source
-                  media="(min-width:40em)"
-                  srcset="/assets/images/homepage/hero-img-2--333x460.png"
-                />
-                <source
-                  media="(max-width:41em)"
-                  srcset="/assets/images/homepage/hero-img-2--206x284.png"
-                />
-                <img
-                  src="/assets/images/homepage/hero-img-2--333x460.png"
-                  width="333"
-                  height="460"
-                  alt=""
-                />
-              </picture>
-              <div class="recipe-hero__wrapper__content | grid">
-                <div class="recipe-description | grid">
-                  <div class="recipe-description-preparation">
-                    <div class="recipe-preparation">Preparation</div>
-                    <span class="recipe-preparation-value">45 min</span>
+        <article>
+          <section>
+            <div class="recipe-hero | | gap-top-600 flow flow-space-600">
+              <h1
+                class="recipe-hero__title | | display-small mdc-theme--primary"
+              >
+                Sooji Laddu
+              </h1>
+              <div class="recipe-hero__wrapper | grid">
+                <picture>
+                  <source
+                    media="(min-width:40em)"
+                    srcset="/assets/images/homepage/hero-img-2--333x460.png"
+                  />
+                  <source
+                    media="(max-width:41em)"
+                    srcset="/assets/images/homepage/hero-img-2--206x284.png"
+                  />
+                  <img
+                    src="/assets/images/homepage/hero-img-2--333x460.png"
+                    width="333"
+                    height="460"
+                    alt=""
+                  />
+                </picture>
+                <div class="recipe-hero__wrapper__content | grid">
+                  <div class="recipe-description | grid">
+                    <div class="recipe-description-preparation">
+                      <div class="recipe-preparation">Preparation</div>
+                      <span class="recipe-preparation-value">45 min</span>
+                    </div>
+                    <div class="recipe-description-total-time">
+                      <div class="recipe-total-time">Total Time</div>
+                      <span class="recipe-total-time-value">45 min</span>
+                    </div>
+                    <div class="recipe-description-servings">
+                      <div class="recipe-servings">Servings</div>
+                      <span class="recipe-servings-value"
+                        >6 servings, about 2 Tbsp. each
+                      </span>
+                    </div>
                   </div>
-                  <div class="recipe-description-total-time">
-                    <div class="recipe-total-time">Total Time</div>
-                    <span class="recipe-total-time-value">45 min</span>
-                  </div>
-                  <div class="recipe-description-servings">
-                    <div class="recipe-servings">Servings</div>
-                    <span class="recipe-servings-value"
-                      >6 servings, about 2 Tbsp. each
-                    </span>
+                  <div class="recipe-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ab repellendus inventore nobis consectetur? Consectetur
+                      nostrum quos ut tempore eum unde facilis, odit placeat
+                      alias possimus nesciunt aut excepturi dolores voluptas!
+                    </p>
                   </div>
                 </div>
-                <div class="recipe-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                    repellendus inventore nobis consectetur? Consectetur nostrum
-                    quos ut tempore eum unde facilis, odit placeat alias
-                    possimus nesciunt aut excepturi dolores voluptas!
-                  </p>
+              </div>
+              <ul
+                class="recipe-social body-small | flex flex--wrap"
+                role="list"
+              >
+                <li class="pinterest">Pin it</li>
+                <li class="facebook">Facebook</li>
+                <li class="twitter">Twitter</li>
+                <li class="email">Email</li>
+                <li class="print">Print</li>
+                <li class="instagram">Instagram</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div class="| gap-top-1000">
+              <div class="recipe-details | grid">
+                <div class="ingredients | flow">
+                  <h2 class="ingredients__heading | display-smaller">
+                    Ingredients
+                  </h2>
+                  <ul class="ingredients__list" role="list" data-state="list">
+                    <li>500g soji</li>
+                    <li>2 tbsp ghee</li>
+                    <li>2 cups milk</li>
+                    <li>1 cup currants</li>
+                    <li>12 cups fried cashews</li>
+                    <li>500g sugar</li>
+                  </ul>
+                </div>
+                <div class="method | flow">
+                  <h2 class="method__heading | display-smaller">Method</h2>
+                  <ol class="method__list">
+                    <li>
+                      <label for="toggle">
+                        Over low heat fry Sooji until it gets slightly brown in
+                        a saucepan over low heat. </label
+                      ><input id="toggle" type="checkbox" />
+                    </li>
+                    <li>
+                      <label for="toggle">
+                        Continue to heat until the mixture becomes sticky,
+                        adding the sugar, ghee, and milk as needed. </label
+                      ><input id="toggle" type="checkbox" />
+                    </li>
+                    <li>
+                      <label for="toggle">
+                        In a mixing dish, break the nuts into small pieces and
+                        blend with the currants. </label
+                      ><input id="toggle" type="checkbox" />
+                    </li>
+                    <li>
+                      <label for="toggle">
+                        When the mixture is cool enough to handle remove it from
+                        the fire and roll it into even-sized laddoos. </label
+                      ><input id="toggle" type="checkbox" />
+                    </li>
+                  </ol>
                 </div>
               </div>
             </div>
-            <ul class="recipe-social body-small | flex flex--wrap" role="list">
-              <li class="pinterest">Pin it</li>
-              <li class="facebook">Facebook</li>
-              <li class="twitter">Twitter</li>
-              <li class="email">Email</li>
-              <li class="print">Print</li>
-              <li class="instagram">Instagram</li>
-            </ul>
-          </div>
-        </section>
-        <section>
-          <div class="| gap-top-1000">
-            <div class="recipe-details | grid">
-              <div class="ingredients | flow">
-                <h2 class="ingredients__heading | display-smaller">
-                  Ingredients
-                </h2>
-                <ul class="ingredients__list" role="list" data-state="list">
-                  <li>500g soji</li>
-                  <li>2 tbsp ghee</li>
-                  <li>2 cups milk</li>
-                  <li>1 cup currants</li>
-                  <li>12 cups fried cashews</li>
-                  <li>500g sugar</li>
-                </ul>
-              </div>
-              <div class="method | flow">
-                <h2 class="method__heading | display-smaller">Method</h2>
-                <ol class="method__list">
-                  <li>
-                    <label for="toggle">
-                      Over low heat fry Sooji until it gets slightly brown in a
-                      saucepan over low heat. </label
-                    ><input id="toggle" type="checkbox" />
-                  </li>
-                  <li>
-                    <label for="toggle">
-                      Continue to heat until the mixture becomes sticky, adding
-                      the sugar, ghee, and milk as needed. </label
-                    ><input id="toggle" type="checkbox" />
-                    <!-- <input id="toggle" type="checkbox" checked /> -->
-                  </li>
-                  <li>
-                    <label for="toggle">
-                      In a mixing dish, break the nuts into small pieces and
-                      blend with the currants. </label
-                    ><input id="toggle" type="checkbox" />
-                  </li>
-                  <li>
-                    <label for="toggle">
-                      When the mixture is cool enough to handle remove it from
-                      the fire and roll it into even-sized laddoos. </label
-                    ><input id="toggle" type="checkbox" />
-                  </li>
-                  <!-- <li>
-                    <label for="toggle"
-                      ></label
-                    ><input id="toggle" type="checkbox" />
-                  </li>
-                  <li>
-                    <label for="toggle">
-                    </label>
-                    <input id="toggle" type="checkbox" />
-                  </li>
-                  <li>
-                    <label for="toggle">
-                    </label>
-                    <input id="toggle" type="checkbox" />
-                  </li>
-                  <li>
-                    <label for="toggle">
-                      </label
-                    ><input id="toggle" type="checkbox" />
-                  </li>
-                  <li>
-                    <label for="toggle">
-                    </label>
-                    <input id="toggle" type="checkbox" />
-                  </li> -->
-                </ol>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
-    </main>
+          </section>
+        </article>
+      </main>
 
-    <aside>
-      <sidebar-component></sidebar-component>
-      <recipeinfo-component></recipeinfo-component>
-    </aside>
-
+      <aside>
+        <sidebar-recipe-component></sidebar-recipe-component>
+        <recipeinfo-component></recipeinfo-component>
+      </aside>
+    </div>
     <footer>
-      <div class="">
+      <div class="container">
         <div class="footer__primary">
           <logo-component></logo-component>
-          <navigation-component></navigation-component>
+          <navigation-recipe-component></navigation-recipe-component>
         </div>
       </div>
     </footer>
