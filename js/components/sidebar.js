@@ -2,6 +2,7 @@
 // this is used inside the shadowDOM constructor() function below
 const sidebarInnerHTML = `
       <link rel="stylesheet" href="../../css/style.css">
+      <link rel="stylesheet" href="./css/style.css">
 
 <style>
   /* * aside sidebar */
@@ -124,23 +125,23 @@ const sidebarInnerHTML = `
     <select name="" id="recipe-collection-select" class="category__select">
       <option value="fish">Select by collections</option>
       <option value="fish">
-        <a href="../../collections/fish-curry/fish-curry-special.html"
+        <a href="./collections/fish-curry/fish-curry-special.html"
           >Fish Curry</a
         >
       </option>
       <option value="chicken">
-        <a href="../../collections/chicken-curry/chicken-coorg-curry.html"
+        <a href="./collections/chicken-curry/chicken-coorg-curry.html"
           >Chicken</a
         >
       </option>
       <option value="dosa">
-        <a href="../../collections/rice-dosas/rice-neer-dosa.html">Dosa</a>
+        <a href="./collections/rice-dosas/rice-neer-dosa.html">Dosa</a>
       </option>
       <option value="soooji">
-        <a href="../../collections/sooji/sooji-laddu.html">Sooji</a>
+        <a href="./collections/sooji/sooji-laddu.html">Sooji</a>
       </option>
       <option value="pudding">
-        <a href="../../collections/dessert/bread-butter-pudding.html"
+        <a href="./collections/dessert/bread-butter-pudding.html"
           >Dessert</a
         >
       </option>
