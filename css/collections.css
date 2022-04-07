@@ -77,67 +77,41 @@ footer {
   text-align: start;
 }
 
+img.recipes-collections__cards__card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  max-height: -webkit-fill-available;
+}
 .recipes-collections__cards {
   display: grid;
-  /* grid-template-rows: repeat(3, 1fr); */
-  /* grid-auto-flow: column; */
-  gap: 1em;
-  place-items: center;
+  grid-template-rows: minmax(139px, 0.618fr);
+  gap: 2em;
+  align-items: start;
 }
 
+.recipes-collections__cards__card {
+  display: grid;
+  /* grid-template-rows: 147px auto; */
+  grid-template-rows: minmax(139px, 0.228fr) auto;
+  gap: 1em;
+  overflow: hidden;
+}
 @media screen and (min-width: 40em) {
   .recipes-collections__cards {
     display: grid;
-    grid-template-columns: repeat(3, 0.618fr);
-    /* grid-auto-flow: column; */
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(224px, 0.328fr));
     gap: 1em;
-    place-items: center;
+    align-items: start;
   }
 }
-.recipes-collections__cards__card {
-  display: grid;
-  gap: 1em;
-  place-items: center;
-  /* background-color: var(--mdc-theme-surface); */
-  /* box-shadow: var(--mdc-theme-shadow); */
-  /* --flow-space-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem); */
-  /* padding: 0.5em; */
-}
-
-/* ?sidebar aside */
-/* .category {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
-/* popular recipe card  */
-/* .popular-recipes {
-  display: flex;
-  flex-direction: column;
+/* .recipes-collections__cards > * {
+  height: min-content;
 } */
 
-/* .popular-recipes__cards {
-  display: grid;
-  row-gap: 1em;
+/* * {
+  border: 1px solid red;
 } */
-
-/* .popular-recipes__card {
-  display: flex;
-  gap: 1em;
-} */
-
-/* label {
-  background-color: var(--mdc-theme-inverse-primary);
-  color: var(--mdc-theme-on-inverse-primary);
-  padding-block: 0.3em;
-  padding-inline: 0.5em;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 0.8em;
-  font-weight: 500;
-  text-transform: uppercase;
-} */
-
-/* // end of sidebar */
