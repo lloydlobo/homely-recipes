@@ -93,7 +93,9 @@ img.recipes-collections__cards__card__img {
   .recipes-collections__cards {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(224px, 0.328fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(224px, 0.328fr)); */
+    /* grid-template-columns: repeat(auto-fit, minmax(170px, 0.328fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(min(170px, 15vw), 0.328fr));
     gap: 1em;
     align-items: start;
   }
