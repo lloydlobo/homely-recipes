@@ -46,6 +46,10 @@
 
 We encourage you to contribute to Octavia Recipes! Please check out the [Contributing guide](https://github.com/likeaweb/octavia-recipes/blob/main/CONTRIBUTING.md) for guidelines about how to proceed.
 
+## Releases
+
+**Reference**: [Semantic Versioning 2.0.0](https://semver.org/)
+
 <!-- ## 🍕 Community
 
 Got Questions? Join the conversation in our [Discord](https://discord.gg/<forumlink>).   -->
