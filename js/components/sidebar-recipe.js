@@ -155,7 +155,7 @@ const sidebarRecipeInnerHTML = `
       <div class="popular-recipes__card">
         <a href="../../collections/fish-curry/fish-curry-special.html">
           <img
-            src="../../assets/images/homepage/hero-img-0--333x460.png"
+            src="../../assets/images/recipes/fish-curry-fish-curry-special.jpeg"
             alt=""
             class="popular-recipes__card__img"
             width="80"
@@ -171,7 +171,7 @@ const sidebarRecipeInnerHTML = `
       <div class="popular-recipes__card">
         <a href="../../collections/chicken-curry/chicken-coorg-curry.html">
           <img
-            src="../../assets/images/homepage/hero-img-0--333x460.png"
+            src="../../assets/images/recipes/chicken-curry-chicken-coorg-curry.jpg"
             alt=""
             class="popular-recipes__card__img"
             width="80"
@@ -187,7 +187,7 @@ const sidebarRecipeInnerHTML = `
       <div class="popular-recipes__card">
         <a href="../../collections/dessert/bread-butter-pudding.html">
           <img
-            src="../../assets/images/homepage/hero-img-0--333x460.png"
+            src="../../assets/images/recipes/dessert-bread-and-butter-pudding.jpg"
             alt=""
             class="popular-recipes__card__img"
             width="80"
