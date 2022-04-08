@@ -49,7 +49,7 @@
 
 ## 📰 &nbsp;Documentation
 
-- You'll find the documentation at [docs.homelyrecipes.netlify.app](https://docs.homelyrecipes.netlify.app).
+- Get started with the [documentation](https://lloydlobo.github.io/styleguide-homely-recipes/).
 - For a quick read about the project details, you may want to head over to the [Wiki](https://github.com/lloydlobo/homely-recipes/wiki) section here on GitHub.
 
 ## ⬇️ &nbsp;Downloads
