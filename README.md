@@ -88,7 +88,7 @@ Please check out the [Contributing guide](https://github.com/lloydlobo/homely-re
 
 ## 🍕 &nbsp;Community
 
-Got Questions? Join the conversation in our GitHub [Discussions](https://discord.gg/<forumlink>) area.
+Got Questions? Join the conversation in our GitHub [Discussions](https://github.com/lloydlobo/homely-recipes/discussions) area.
 
 <!-- Got Questions? Join the conversation in our [Discord](https://discord.gg/<forumlink>).   -->
 
