@@ -10,11 +10,12 @@
     <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;"> </a> -->
   
   <a href="https://app.codiga.io/public/project/32333/homely-recipes/dashboard">
-    <img src="https://api.codiga.io/project/32333/score/svg" alt="Code Quality Score" style="max-width: 100%;">
+    <img src="https://api.codiga.io/project/32333/score/svg" alt="Codiga Code Quality Score" style="max-width: 100%;">
   </a>
   <a href="https://app.codiga.io/public/project/32333/homely-recipes/dashboard">
-    <img src="https://api.codiga.io/project/32333/status/svg" alt="Code Grade" style="max-width: 100%;">
+    <img src="https://api.codiga.io/project/32333/status/svg" alt="Codiga Code Grade" style="max-width: 100%;">
   </a>
+   <a href="https://www.codacy.com/gh/lloydlobo/homely-recipes/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lloydlobo/homely-recipes&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/9f3f644bd59a42f1a5b13d0e6b1a8646"/ alt="Codacy Code Quality Score"></a>
   <a href="https://github.com/lloydlobo/homely-recipes/actions/workflows/compliance.yml">
     <img src="https://github.com/lloydlobo/homely-recipes/actions/workflows/compliance.yml/badge.svg" alt="Compliance" style="max-width: 100%;">
   </a>
@@ -24,12 +25,16 @@
   <img src="https://img.shields.io/badge/Dependabot-active-brightgreen.svg" alt="Dependabot Badge">
   <img src="https://img.shields.io/github/languages/code-size/lloydlobo/homely-recipes" alt="GitHub code size in bytes">
   <img src="https://img.shields.io/github/commit-activity/w/lloydlobo/homely-recipes" alt="GitHub commit activity">
+   <a href="https://github.com/lloydlobo/homely-recipes/issues?q=is%3Apr+is%3Aclosed"><img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed/lloydlobo/homely-recipes"></a>
   <a href="https://github.com/lloydlobo/homely-recipes/issues">
-    <img src="https://img.shields.io/github/issues/lloydlobo/homely-recipes" alt="GitHub issues">
+    <img src="https://img.shields.io/github/issues-closed/lloydlobo/homely-recipes" alt="GitHub closed issues">
   </a>
   <a href="https://github.com/lloydlobo/homely-recipes/releases">
     <img src="https://img.shields.io/github/v/release/lloydlobo/homely-recipes.svg?style=flat" alt="GitHub Release">
   </a>
+  <a href="https://github.com/lloydlobo/homely-recipes/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/lloydlobo/homely-recipes"></a>
+  <a href="https://github.com/lloydlobo/homely-recipes/deployments"><img alt="GitHub deployments" src="https://img.shields.io/github/deployments/lloydlobo/homely-recipes/github-pages"></a>
+ 
   <!-- <a href="https://discord.gg/U2peSNf23P">
     <img src="https://img.shields.io/discord/<userid>.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Discord">
   </a> -->
@@ -38,17 +43,32 @@
   </a> -->
 </p>
 
-## 🖱️ &nbsp;Preview
+## 🎥 &nbsp;Preview
 
 [![homely recipes website](https://github.com/lloydlobo/lloydlobo/blob/main/assets/projects/web-development/homely-recipes.gif)](https://lloydlobo.github.io/homely-recipes/)
 
 ## ⬇️ &nbsp;Downloads
 
-- You may want to download the latest Source Files as a ZIP folder [here](https://github.com/lloydlobo/homely-recipes/archive/refs/heads/main.zip) or from the **Code** dropdown icon on the repo's main branch.
-- For those familiar with the command line:
-  - Clone with HTTPS: `git clone https://github.com/lloydlobo/homely-recipes.git`
-  - Clone with SSH: `git clone git@github.com:lloydlobo/homely-recipes.git`
-  - Clone with GitHub CLI: `gh repo clone lloydlobo/homely-recipes`
+You may want to download the latest Source Files as a ZIP folder from [here](https://github.com/lloydlobo/homely-recipes/archive/refs/heads/main.zip) or from the **Code** dropdown icon on the repo's main branch.
+
+### For those familiar with the command line:
+
+#### Clone with HTTPS: 
+
+```bash
+  git clone https://github.com/lloydlobo/homely-recipes.git
+```
+#### Clone with SSH: 
+
+```bash
+  git clone git@github.com:lloydlobo/homely-recipes.git
+```
+
+#### Clone with GitHub CLI: 
+
+```bash
+  gh repo clone lloydlobo/homely-recipes
+```
 
 ## 📂 &nbsp;Releases
 
