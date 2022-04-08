@@ -1,7 +1,5 @@
 ol {
   hyphens: auto;
-  /* line-height: 1.2; */
-  /* line-height: 1.4; */
   padding-inline-start: 0;
 }
 
@@ -25,6 +23,7 @@ ol[role="list"] li:not(:last-child)::after {
   .breadcrumbs-container li {
     display: none;
   }
+
   /* only show first and last child on mobile */
   .breadcrumbs-container li:is(:first-child, :last-child) {
     display: inline-flex;
