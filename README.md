@@ -38,27 +38,43 @@
   </a> -->
 </p>
 
-## 🖱️ Preview
+## 🖱️ &nbsp;Preview
 
 [![homely recipes website](https://github.com/lloydlobo/lloydlobo/blob/main/assets/projects/web-development/homely-recipes.gif)](https://lloydlobo.github.io/homely-recipes/)
 
-## 🤝 Contributing
+## ⬇️ &nbsp;Downloads
 
-We encourage you to contribute to Homely Recipes! Please check out the [Contributing guide](https://github.com/lloydlobo/homely-recipes/blob/main/CONTRIBUTING.md) for guidelines about how to proceed.
+* You may want to download the latest Source Files as a ZIP folder [here](https://github.com/lloydlobo/homely-recipes/archive/refs/heads/main.zip) or from the **Code** dropdown icon on the repo's main branch.
+* For those familiar with the command line: 
+	* Clone with HTTPS: `git clone https://github.com/lloydlobo/homely-recipes.git`
+	* Clone with SSH: `git clone git@github.com:lloydlobo/homely-recipes.git`
+	* Clone with GitHub CLI: `gh repo clone lloydlobo/homely-recipes`
 
-## Releases
+## 📂 &nbsp;Releases
 
-**Reference**: [Semantic Versioning 2.0.0](https://semver.org/)
+* You'll find all 👉 [releases](https://github.com/lloydlobo/homely-recipes/releases) 👈 here. 
+* Also you can learn how [Semantic Versioning 2.0.0](https://semver.org/) works .
 
-<!-- ## 🍕 Community
+## 📰 &nbsp;Documentation
 
-Got Questions? Join the conversation in our [Discord](https://discord.gg/<forumlink>).   -->
+* You'll find the documentation at [docs.homelyrecipes.netlify.app](https://docs.homelyrecipes.netlify.app).
+* For a quick oversight preview, you may want to head over to the [Wiki](https://github.com/lloydlobo/homely-recipes/wiki) section here on GitHub.
+
+## 🤝 &nbsp;Contributing
+
+We encourage you to contribute to Homely Recipes! 
+Please check out the [Contributing guide](https://github.com/lloydlobo/homely-recipes/blob/main/CONTRIBUTING.md) for guidelines about how to proceed.
+
+## 🍕 &nbsp;Community
+
+Got Questions? Join the conversation in our GitHub [Discussions](https://discord.gg/<forumlink>) area.  
+<!-- Got Questions? Join the conversation in our [Discord](https://discord.gg/<forumlink>).   -->
+
+## ⚖️ &nbsp;LICENSE
+
+MIT © [Homely Recipes](LICENSE)
 
 <!-- ## 🎦 Repository Visualization
 
 [![Visualization of this repository](./public/diagram.svg)
 ](./src) -->
-
-## ⚖️ LICENSE
-
-MIT © [Homely Recipes](LICENSE)
