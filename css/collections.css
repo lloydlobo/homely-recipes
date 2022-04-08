@@ -6,7 +6,6 @@ body {
     "wrapper"
     "footer";
   gap: 1em;
-  /* grid-template-columns: 0.309fr 0.309fr 0.382fr; */
   grid-template-rows: auto 1fr auto;
 }
 
@@ -21,6 +20,7 @@ body {
       "footer";
   }
 }
+
 /* this wraps main and aside */
 .wrapper__collections-aside {
   grid-area: wrapper;
@@ -29,8 +29,6 @@ body {
   grid-template-areas:
     "main"
     "aside";
-  /* grid-template-columns: 1.618fr 0.382fr; */
-  /* grid-template-columns: 3.09fr 3.09fr 3.82fr; */
   grid-template-rows: 1fr auto;
 }
 @media screen and (min-width: 60em) {
@@ -39,7 +37,6 @@ body {
     display: grid;
     gap: 1em;
     grid-template-areas: "main main aside";
-    /* grid-template-columns: 1.618fr 0.382fr; */
     grid-template-columns: 3.09fr 3.09fr 3.82fr;
     grid-template-rows: 1fr auto;
   }
@@ -83,8 +80,10 @@ img.recipes-collections__cards__card__img {
 }
 .recipes-collections__cards {
   display: grid;
-  /* grid-template-rows: minmax(139px, 0.618fr); */
-  grid-template-rows: minmax(208px, 0.618fr);
+  grid-template-rows: minmax(
+    208px,
+    0.618fr
+  ); /* grid-template-rows: minmax(139px, 0.618fr); */
   gap: 2em;
   align-items: start;
 }
@@ -92,9 +91,6 @@ img.recipes-collections__cards__card__img {
 @media screen and (min-width: 40em) {
   .recipes-collections__cards {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-    /* grid-template-columns: repeat(auto-fit, minmax(224px, 0.328fr)); */
-    /* grid-template-columns: repeat(auto-fit, minmax(170px, 0.328fr)); */
     grid-template-columns: repeat(auto-fit, minmax(min(170px, 15vw), 0.328fr));
     gap: 1em;
     align-items: start;
@@ -104,11 +100,8 @@ img.recipes-collections__cards__card__img {
 .recipes-collections__cards__card {
   display: grid;
   grid-template-rows: 147px auto;
-  /* grid-template-rows: minmax(139px, 0.228fr) auto; */
-  /* gap: 2em; */
   overflow: hidden;
   gap: var(--fs-300);
-  /* align-items: center; */
 }
 
 @media screen and (min-width: 40em) {
@@ -116,7 +109,3 @@ img.recipes-collections__cards__card__img {
     align-items: unset;
   }
 }
-
-/* * {
-  border: 1px solid red;
-} */
