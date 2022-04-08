@@ -47,6 +47,11 @@
 
 [![homely recipes website](https://github.com/lloydlobo/lloydlobo/blob/main/assets/projects/web-development/homely-recipes.gif)](https://lloydlobo.github.io/homely-recipes/)
 
+## 📰 &nbsp;Documentation
+
+- You'll find the documentation at [docs.homelyrecipes.netlify.app](https://docs.homelyrecipes.netlify.app).
+- For a quick read about the project details, you may want to head over to the [Wiki](https://github.com/lloydlobo/homely-recipes/wiki) section here on GitHub.
+
 ## ⬇️ &nbsp;Downloads
 
 You may want to download the latest Source Files as a ZIP folder from [here](https://github.com/lloydlobo/homely-recipes/archive/refs/heads/main.zip) or from the `Code ⬇️ ` &nbsp;dropdown icon on this repository's main branch.
@@ -76,10 +81,7 @@ You may want to download the latest Source Files as a ZIP folder from [here](htt
 - You'll find all 👉 [releases](https://github.com/lloydlobo/homely-recipes/releases) 👈 here.
 - Also you can learn how [Semantic Versioning 2.0.0](https://semver.org/) works .
 
-## 📰 &nbsp;Documentation
 
-- You'll find the documentation at [docs.homelyrecipes.netlify.app](https://docs.homelyrecipes.netlify.app).
-- For a quick oversight preview, you may want to head over to the [Wiki](https://github.com/lloydlobo/homely-recipes/wiki) section here on GitHub.
 
 ## 🤝 &nbsp;Contributing
 
