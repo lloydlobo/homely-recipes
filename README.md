@@ -40,6 +40,7 @@
 
 ## 🖱️ &nbsp;Preview
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a291ab16357b4342813de61712f058c2)](https://app.codacy.com/gh/lloydlobo/homely-recipes?utm_source=github.com&utm_medium=referral&utm_content=lloydlobo/homely-recipes&utm_campaign=Badge_Grade_Settings)
 [![homely recipes website](https://github.com/lloydlobo/lloydlobo/blob/main/assets/projects/web-development/homely-recipes.gif)](https://lloydlobo.github.io/homely-recipes/)
 
 ## ⬇️ &nbsp;Downloads
