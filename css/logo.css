@@ -23,6 +23,7 @@
 .logo__wrapper {
   overflow: hidden;
 }
+
 span.logo {
   font-family: var(--ff-cursive);
   font-weight: 400;
@@ -32,10 +33,11 @@ span.logo {
   display: grid;
   place-items: center;
 }
+
 span.logo.mdc-theme--primary > * {
-  /* text-shadow: var(--mdc-theme-shadow-on-text); */
   text-shadow: 0 2px 4px rgb(0 0 0 / 12%);
 }
+
 @media screen and (min-width: 40em) {
   span.logo.footer {
     display: inline-block;
