@@ -81,8 +81,6 @@ You may want to download the latest Source Files as a ZIP folder from [here](htt
 - You'll find all 👉 [releases](https://github.com/lloydlobo/homely-recipes/releases) 👈 here.
 - Also you can learn how [Semantic Versioning 2.0.0](https://semver.org/) works .
 
-
-
 ## 🤝 &nbsp;Contributing
 
 We encourage you to contribute to Homely Recipes!
