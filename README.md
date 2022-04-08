@@ -53,18 +53,19 @@ You may want to download the latest Source Files as a ZIP folder from [here](htt
 
 ### For those familiar with the command line:
 
-#### Clone with HTTPS: 
+#### Clone with HTTPS:
 
 ```bash
   git clone https://github.com/lloydlobo/homely-recipes.git
 ```
-#### Clone with SSH: 
+
+#### Clone with SSH:
 
 ```bash
   git clone git@github.com:lloydlobo/homely-recipes.git
 ```
 
-#### Clone with GitHub CLI: 
+#### Clone with GitHub CLI:
 
 ```bash
   gh repo clone lloydlobo/homely-recipes
