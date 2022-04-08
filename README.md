@@ -49,7 +49,7 @@
 
 ## ⬇️ &nbsp;Downloads
 
-You may want to download the latest Source Files as a ZIP folder from [here](https://github.com/lloydlobo/homely-recipes/archive/refs/heads/main.zip) or from the **Code** dropdown icon on the repo's main branch.
+You may want to download the latest Source Files as a ZIP folder from [here](https://github.com/lloydlobo/homely-recipes/archive/refs/heads/main.zip) or from the `Code ⬇️ ` &nbsp;dropdown icon on this repository's main branch.
 
 ### For those familiar with the command line:
 
