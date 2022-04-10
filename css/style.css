@@ -668,10 +668,12 @@ input:valid ~ span:after {
   line-height: 120px;
   letter-spacing: -0.25px;
 }
+
 .title-medium {
   font-size: 90px;
   line-height: 72px;
 }
+
 .title-small {
   font-size: clamp(1.68056rem, 1rem + 2.75167vw, 3.4765rem); /* 55.6242 */
   line-height: 1.2;
