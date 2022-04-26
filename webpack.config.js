@@ -9,6 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash].js",
+    clean: true,
   },
   devServer: {
     // tell it what to serve - static object and directory
@@ -44,8 +45,28 @@ module.exports = {
   ],
 };
 
+// 20220426200358
+/* build adds up duplicate files with unique hash ids in dist folder
+    => resolve this issue with this prevention method:
+1. Under filename under output:
+    clean: true,
+2. output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name].[contenthash].js",
+    clean: true,
+  },
+3.Delete the dist folder before running the build command
+4. npm run build
+    > npm run build
+    asset bundle.5fc9598629e32388fc84.js 26.4 KiB [emitted] [immutable] (name: bundle)
+    asset index.html 515 bytes [emitted]
+    runtime modules 937 bytes 4 modules
+    cacheable modules 11.8 KiB
+
+*/
+
 // 20220426194439
-/* devServer
+/* devServer (runs from memory not dist folder)
 1.  devServer: {
     static: {
       directory: path.resolve(__dirname, "dist"),
@@ -77,6 +98,10 @@ module.exports = {
     asset bundle.40b40341f618f94f9a7e.js 265 KiB [emitted] [immutable] (name: bundle)
     asset index.html 515 bytes [emitted]
 4. Now stop Live Server - disposed
+5. In the localhost:3000, you can see in the console
+    [HMR] Waiting for update signal from WDS...
+    index.js:551 [webpack-dev-server] Hot Module Replacement enabled.
+    index.js:551 [webpack-dev-server] Live Reloading enabled.
 // 4. npm run build - creates a production build
 */
 
