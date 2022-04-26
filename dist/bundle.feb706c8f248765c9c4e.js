@@ -2,6 +2,27 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/generateJokes.js":
+/*!******************************!*\
+  !*** ./src/generateJokes.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// eslint ./node_modules/.bin/eslint --fix
+// * generate jokes
+function generateJokes() {
+  return "I don't trust stairs. They're always up to something.";
+} // export default generateJokes; script npm run build makes webpack build main.js in /dist
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateJokes);
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss":
 /*!***********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
@@ -529,29 +550,6 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
-/***/ }),
-
-/***/ "./src/generateJokes.js":
-/*!******************************!*\
-  !*** ./src/generateJokes.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-// eslint ./node_modules/.bin/eslint --fix
-
-// * generate jokes
-function generateJokes() {
-  return "I don't trust stairs. They're always up to something.";
-}
-
-// export default generateJokes; script npm run build makes webpack build main.js in /dist
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateJokes);
-
-
 /***/ })
 
 /******/ 	});
@@ -632,26 +630,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _generateJokes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./generateJokes */ "./src/generateJokes.js");
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 
- /* You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders */
+
+/* You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders */
 // add loader in webpack.config.js
+// eslint-disable-next-line no-console
 
-// eslint-disable-next-line no-console
-console.log("Gloria In Excelsis Deo!");
+console.log("Gloria In Excelsis Deo!"); // eslint-disable-next-line no-console
 
-// eslint-disable-next-line no-console
-console.log((0,_generateJokes__WEBPACK_IMPORTED_MODULE_0__["default"])());
-// eslint-disable-next-line no-console
+console.log((0,_generateJokes__WEBPACK_IMPORTED_MODULE_0__["default"])()); // eslint-disable-next-line no-console
+
 console.log("Change");
-
 /* const newPara = document.createElement("p");
 newPara.classList.add("h1");
 newPara.textContent = "Gloria In Excelsis Deo!";
 // add newPara to the DOM
 document.body.appendChild(newPara);
  */
-
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle.bea95fded53b1696b450.js.map
+//# sourceMappingURL=bundle.feb706c8f248765c9c4e.js.map

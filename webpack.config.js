@@ -29,9 +29,19 @@ module.exports = {
   module: {
     rules: [
       {
-        // test: /\.js$/, /* any files which end with this extension will be used */
+        /* any files which end with this extension will be used */
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
     ],
   },
@@ -46,6 +56,27 @@ module.exports = {
   ],
 };
 
+// -----------------------------------------------------------------------------
+
+// 20220426201824
+/* loaders for backward compatibility with @babel
+1. install babel-loader for webpack as Dev dependency
+    ❯ npm i -D babel-loader @babel/core @babel/preset-env
+    added 88 packages, and audited 929 packages in 12s
+2. add it to webpack config under modules under rules in test
+     {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+3. npm run build
+
+*/
 // 20220426201133
 /* Source maps
 1. Add => devtool: "source-map" to webpack.config.js
