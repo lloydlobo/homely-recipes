@@ -10,6 +10,9 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash].js",
     clean: true,
+    // for images
+    assetModuleFilename: "[name][ext]",
+    /* https://webpack.js.org/guides/asset-management/#output-chunk-filenames */
   },
   devtool: "source-map",
   devServer: {
@@ -43,6 +46,11 @@ module.exports = {
           },
         },
       },
+      {
+        // i => case insensitive
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
     ],
   },
   // devServer: {},
@@ -57,6 +65,31 @@ module.exports = {
 };
 
 // -----------------------------------------------------------------------------
+
+// 20220426203142
+/* images
+1. create folder is src/assets
+2. add laughing.svg to src/assets
+3. in index.js import it ~ index.js
+    import laughing from "./assets/laughing.svg";
+4. Running npm run build will throw an error because loader is not configured to handle svg files.
+5. Add loader in webpack.config.js as webpack comes with asset resource loader
+6. Add this in module > rules >
+    {
+        // i => case insensitive
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+7. Then add under => output:
+        assetModuleFilename: "[name][ext]",
+8. npm run build
+      asset laughing.svg 4.35 KiB [emitted] [from: src/assets/laughing.svg] (auxiliary name: bundle)
+9. add a <img> element with id="laughingImg" in template.html
+10. In index.js =>
+    const laughingImg = document.getElementById("laughingImg");
+11. laughingImg.src = laughing;
+12. npm run dev
+*/
 
 // 20220426201824
 /* loaders for backward compatibility with @babel
