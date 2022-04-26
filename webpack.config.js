@@ -11,6 +11,7 @@ module.exports = {
     filename: "[name].[contenthash].js",
     clean: true,
   },
+  devtool: "source-map",
   devServer: {
     // tell it what to serve - static object and directory
     // contentBase: path.resolve(__dirname, "dist"), /* old way */
@@ -45,6 +46,14 @@ module.exports = {
   ],
 };
 
+// 20220426201133
+/* Source maps
+1. Add => devtool: "source-map" to webpack.config.js
+2. npm run build - generates a source map too
+    bundle.bea95fded53b1696b450.js.map
+3.
+// 2. Add => devServer: {}, to webpack.config.js
+*/
 // 20220426200358
 /* build adds up duplicate files with unique hash ids in dist folder
     => resolve this issue with this prevention method:
