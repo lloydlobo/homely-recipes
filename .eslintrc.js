@@ -10,6 +10,8 @@ module.exports = {
   },
   rules: {
     semi: ["error", "always"],
-    quotes: ["warning", "double"],
+    quotes: ["error", "double"],
   },
 };
+
+// https://eslint.org/docs/user-guide/getting-started
