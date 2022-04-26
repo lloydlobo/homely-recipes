@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "lint:fix": "npm run lint -- --fix",
+    "lint": "eslint src --ext .js,.ts",
+    "test:run": "jest",
+    "test": "run lint && npm run test:run"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,17 @@
   "bugs": {
     "url": "https://github.com/lloydlobo/homely-recipes/issues"
   },
-  "homepage": "https://github.com/lloydlobo/homely-recipes#readme"
+  "homepage": "https://github.com/lloydlobo/homely-recipes#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "cssnano": "^5.1.7",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^28.0.1",
+    "terser": "^5.12.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
