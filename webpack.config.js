@@ -57,7 +57,7 @@ module.exports = {
   // devServer: {},
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Webpack App",
+      title: "Homely Recipes",
       filename: "index.html",
       template: "src/template.html",
       // template: path.resolve(__dirname, "src/index.html"),
