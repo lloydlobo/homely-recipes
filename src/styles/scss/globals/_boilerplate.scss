@@ -18,7 +18,7 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  padding-top: unset;
+  // padding-top: unset; /* enable this */
 
   // font-family: var(--ff-sans);
   font-family: u.$font-sans;
@@ -31,8 +31,8 @@ body {
   color: var(--mdc-theme-on-background);
   background-color: var(--mdc-theme-success-container);
 
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  // display: grid;
+  // grid-template-rows: auto 1fr auto;
 
   // background-color: var(--mdc-theme-background, #fcfcfc); /* enable later */
   /* overflow-x: hidden; */
@@ -46,7 +46,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   padding: 20px;
 }
