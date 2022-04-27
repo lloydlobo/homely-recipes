@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack App</title>
+    <title>Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,71 +14,80 @@
   <script defer src="bundle.b889fa13120b1bab006e.js"></script></head>
   <body class="grid">
     <header>
-      <!-- hello 1 -->
       <nav>
         <div class="navigation container">
-          <a href="">
+          <!-- a href to homepage  -->
+          <a href="index.html">
             <div class="logo__wrapper">
-              <span class="logo mdc-theme--primary"
+              <span class="logo | mdc-theme--primary"
                 ><strong>Homely</strong></span
               >
             </div>
           </a>
           <div
-            class="nav__heading display-large char mdc-theme--inverse-primary"
+            class="nav__heading | display-large char | mdc-theme--inverse-primary"
             data-word="Recipes"
           >
-            Recipes
+            Contact
           </div>
+
           <navigation-component></navigation-component>
+
           <div class="search-wrapper-placeholder">
             <div class="wrapper">
               <input
-                aria-label="search input"
+                type="search"
                 name="search"
                 id="search"
                 placeholder="Type to search"
                 autocomplete="off"
                 data-state="fa-autocomplete"
               />
-              <button
-                data-state="fa-search-icon"
-                title="search"
-                class="btn-fa-search"
-              >
+              <button data-state="fa-search-icon" class="btn-fa-search">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-              <div class="results">
-                <!-- <ul>
-                  <li>Item 1</li>
-                  <li>Item 2</li>
-                  <li>Item 3</li>
-                  <li>Item 4</li>
-                </ul> -->
-              </div>
+              <div class="results"></div>
             </div>
           </div>
-          <p id="recipeList"></p>
         </div>
       </nav>
     </header>
-
-    <div class="grid">
-      <main class="grid__main">
-        <article class="article__jokes">
-          <div class="container">
-            <img src="" alt="" id="laughingImg" />
-            <h1>Don't Laugh Challenge</h1>
-            <div id="joke" class="joke"></div>
-            <button id="btnJoke" class="btn" title="Get Another Joke">
-              Get Another Joke
-            </button>
+    <main>
+      <section class="hero | gap-top-700 gap-bottom-1000">
+        <div class="flow flow-space-500 | container">
+          <h1
+            class="hero__content__heading | body-large | gap-top-1000"
+            style="text-align: center"
+          >
+            Leave me a message below and I'll respond ASAP!
+          </h1>
+          <!-- Netlify Form -->
+          <div class="contact-form | gap-top-800">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              class="contact-form--netlify"
+            >
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button type="submit">Send message</button>
+              </p>
+            </form>
           </div>
-        </article>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
     <footer>
-      <div class="container |">
+      <div class="container">
         <div class="footer__primary">
           <logo-component></logo-component>
           <navigation-component></navigation-component>

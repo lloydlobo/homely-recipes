@@ -62,6 +62,23 @@ module.exports = {
       template: "src/template.html",
       // template: path.resolve(__dirname, "src/index.html"),
     }),
+    new HtmlWebpackPlugin({
+      title: "Recipe Collections",
+      filename: "collections.html",
+      template: path.resolve(__dirname, "src/pages/collections.html"),
+      // template: "src/pages/collections.html",
+      // 'stats.children: true'
+    }),
+    new HtmlWebpackPlugin({
+      title: "About",
+      filename: "about.html",
+      template: path.resolve(__dirname, "src/pages/about.html"),
+    }),
+    new HtmlWebpackPlugin({
+      title: "Contact",
+      filename: "contact.html",
+      template: path.resolve(__dirname, "src/pages/contact.html"),
+    }),
     // new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
   ],
 };

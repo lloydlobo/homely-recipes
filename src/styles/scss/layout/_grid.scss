@@ -6,5 +6,10 @@
 
     &__main {
         display: grid;
+        background-color: hsl(240, 100%, 50%);
+    }
+
+    &__sidebar {
+        color: hsl(300, 100%, 55%);
     }
 }
