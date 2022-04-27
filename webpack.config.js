@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer");
+// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer");
 
 module.exports = {
   mode: "development" /* remove `--mode production` from scripts: build: "webpack ...." package.json config */,
@@ -62,7 +62,7 @@ module.exports = {
       template: "src/template.html",
       // template: path.resolve(__dirname, "src/index.html"),
     }),
-    new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
   ],
 };
 
