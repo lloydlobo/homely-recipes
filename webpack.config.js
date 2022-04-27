@@ -65,6 +65,18 @@ module.exports = {
 };
 
 // -----------------------------------------------------------------------------
+// 20220427082321
+/* Install axios
+1. ❯ npm i axios
+2. import axios in genrateJokes.js
+3. add a config in the genrateJokes()
+4. call axios.get("url", config) in generateJokes()
+5. add a promise to the call of axios.get()
+  axios.get("https://...", config).then((response) => {
+    document.getElementById("joke").textContent = response.data.joke
+  });
+6. In index.js call the function generateJokes()
+*/
 
 // 20220426203142
 /* images
