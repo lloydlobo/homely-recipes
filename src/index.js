@@ -1,6 +1,6 @@
 import laughing from "./assets/laughing.svg";
 import generateJokes from "./generateJokes";
-import "./styles/main.scss";
+import "./styles/scss/main.scss";
 
 // console.log("Gloria In Excelsis Deo!");
 

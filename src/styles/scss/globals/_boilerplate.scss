@@ -1,0 +1,56 @@
+@use "../util" as u; /* namespacing utils as u */
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+/* 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding-top: unset;
+
+  // font-family: var(--ff-sans);
+  font-family: u.$font-sans;
+  font-size: var(--fs-400, 23px);
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+
+  color: var(--mdc-theme-on-background);
+  background-color: var(--mdc-theme-success-container);
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  // background-color: var(--mdc-theme-background, #fcfcfc); /* enable later */
+  /* overflow-x: hidden; */
+}
+
+body {
+  // background-color: $primary-color;
+  // font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
