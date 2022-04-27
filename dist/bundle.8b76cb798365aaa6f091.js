@@ -3186,16 +3186,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 
 
-
-/* You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders */
-// eslint-disable-next-line no-console
-// console.log("Gloria In Excelsis Deo!");
-// add loader in webpack.config.js
-// add a img id element in template.html
+ // console.log("Gloria In Excelsis Deo!");
 
 var laughingImg = document.getElementById("laughingImg");
-laughingImg.src = _assets_laughing_svg__WEBPACK_IMPORTED_MODULE_0__;
 var btnGenerateJokes = document.getElementById("btnJoke");
+laughingImg.src = _assets_laughing_svg__WEBPACK_IMPORTED_MODULE_0__;
 btnGenerateJokes.addEventListener("click", _generateJokes__WEBPACK_IMPORTED_MODULE_1__["default"]); // Call imported function `generateJokes` once from "./generateJokes.js"
 
 (0,_generateJokes__WEBPACK_IMPORTED_MODULE_1__["default"])();
@@ -3203,4 +3198,4 @@ btnGenerateJokes.addEventListener("click", _generateJokes__WEBPACK_IMPORTED_MODU
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle.7085a5919f19a22d5f24.js.map
+//# sourceMappingURL=bundle.8b76cb798365aaa6f091.js.map
