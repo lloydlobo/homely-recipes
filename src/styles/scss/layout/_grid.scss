@@ -1,12 +1,19 @@
+@use "../util" as u; /* namespacing utils as u */
+
 .grid {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: auto;
-    gap: 40px;
+    gap: u.rem(40);
+    backdrop-filter: blur(u.rem(100));
 
     &__main {
         display: grid;
-        background-color: hsl(240, 100%, 50%);
+        filter: grayscale(.5);
+
+        @include u.breakpoint(large) {
+            filter: grayscale(1);
+        }
     }
 
     &__sidebar {
