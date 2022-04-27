@@ -1,21 +1,21 @@
-import axios from "axios";
+import axios from 'axios'
 
 // * generate jokes
-function generateJokes() {
+function generateJokes () {
   const config = {
     headers: {
-      Accept: "application/json",
-    },
-  };
-  axios.get("https://icanhazdadjoke.com/", config).then((response) => {
-    document.getElementById("joke").textContent = response.data.joke;
-  });
+      Accept: 'application/json'
+    }
+  }
+  axios.get('https://icanhazdadjoke.com/', config).then((response) => {
+    document.getElementById('joke').textContent = response.data.joke
+  })
 }
 
 /* joke is api's response data property? */ /* alternative = response.data.joke */
 // console.log({ joke, id, status });
 
-export default generateJokes;
+export default generateJokes
 
 // -------------------------------------FIN-------------------------------------
 

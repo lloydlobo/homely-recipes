@@ -1,25 +1,25 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  mode: "development" /* remove `--mode production` from scripts: build: "webpack ...." package.json config */,
+  mode: 'development' /* remove `--mode production` from scripts: build: "webpack ...." package.json config */,
   entry: {
-    bundle: path.resolve(__dirname, "src/index.js"),
+    bundle: path.resolve(__dirname, 'src/index.js')
   },
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name].[contenthash].js",
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].[contenthash].js',
     clean: true,
     // for images
-    assetModuleFilename: "[name][ext]",
+    assetModuleFilename: '[name][ext]'
     /* https://webpack.js.org/guides/asset-management/#output-chunk-filenames */
   },
-  devtool: "source-map",
+  devtool: 'source-map',
   devServer: {
     // tell it what to serve - static object and directory
     // contentBase: path.resolve(__dirname, "dist"), /* old way */
     static: {
-      directory: path.resolve(__dirname, "dist"),
+      directory: path.resolve(__dirname, 'dist')
     },
     port: 3000,
     // npm run dev - opens it automatically
@@ -27,42 +27,42 @@ module.exports = {
     // hot reloading
     hot: true,
     compress: true,
-    historyApiFallback: true,
+    historyApiFallback: true
   },
   module: {
     rules: [
       {
         /* any files which end with this extension will be used */
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env"],
-          },
-        },
+            presets: ['@babel/preset-env']
+          }
+        }
       },
       {
         // i => case insensitive
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
-      },
-    ],
+        type: 'asset/resource'
+      }
+    ]
   },
   // devServer: {},
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Webpack App",
-      filename: "index.html",
-      template: "src/template.html",
+      title: 'Webpack App',
+      filename: 'index.html',
+      template: 'src/template.html'
       // template: path.resolve(__dirname, "src/index.html"),
-    }),
-  ],
-};
+    })
+  ]
+}
 
 // -----------------------------------------------------------------------------
 // 20220427082321
