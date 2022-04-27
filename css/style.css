@@ -1027,8 +1027,9 @@ color: white;} */
 }
 
 .recipe-card img {
+  height: 100%;
   width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 
 .recipe-card__title {
@@ -1734,10 +1735,4 @@ footer {
   object-fit: cover;
   height: 250px;
   width: 100%;
-}
-
-.recipe-card img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
