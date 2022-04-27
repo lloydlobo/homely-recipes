@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer");
 
 module.exports = {
   mode: "development" /* remove `--mode production` from scripts: build: "webpack ...." package.json config */,
@@ -61,10 +62,28 @@ module.exports = {
       template: "src/template.html",
       // template: path.resolve(__dirname, "src/index.html"),
     }),
+    new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
   ],
 };
 
 // -----------------------------------------------------------------------------
+
+// 20220427120703
+/* bundle-analyzer
+1. npm install -D webpack-bundle-analyzer
+2. add to global variables in webpack.config.js
+    const BundleAnalyzerPlugin = require("webpack-bundle-analyzer");
+3. add in plugins:
+    plugins: [
+      ...,
+          new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
+      ...,
+    ]
+4. npm run build
+5. open http://127.0.0.1:8888/
+
+*/
+
 // 20220427082321
 /* Install axios
 1. ❯ npm i axios
