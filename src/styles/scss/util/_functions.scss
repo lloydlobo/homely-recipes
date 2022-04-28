@@ -4,16 +4,26 @@
 /* math.div($number1, $number2) //=> number  */
 
 /* https://sass-lang.com/documentation/at-rules/function */
-// divide $pixel by 16 to return rems unit
+// divide $pixel by 16 to return rem unit
 @function rem($pixel) {
   // throw an error when parameter includes 'px' string or any unit
   @if math.is-unitless($pixel)  {
     @return math.div($pixel, 16) + rem;
   } @else {
-    @error "Property #{$pixels} must be unitless when using rem function. Only numbers please.";
+    @error "Property #{$pixel} must be unitless when using rem function. Only numbers please.";
     // @return unit($pixel);
   }
+}
 
+// divide $pixel by 16 to return em unit
+@function em($pixel) {
+  // throw an error when parameter includes 'px' string or any unit
+  @if math.is-unitless($pixel)  {
+    @return math.div($pixel, 16) + em;
+  } @else {
+    @error "Property #{$pixel} must be unitless when using em function. Only numbers please.";
+    // @return unit($pixel);
+  }
 }
 
 
