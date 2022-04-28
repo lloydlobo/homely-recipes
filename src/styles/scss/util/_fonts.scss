@@ -1,4 +1,26 @@
 // sass variables - not relevant as css custom variables can be modified with JavaScript
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf") format("truetype");
+}
+
+
+// @font-face {
+//   font-family: "Work Sans";
+//   font-style: italic;
+//   font-weight: normal;
+//   src: url("../fonts/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf") format("truetype");
+// }
+
+@font-face {
+  font-family: "Parisienne";
+  font-style: cursive;
+  font-weight: normal;
+  src: url("../fonts/Parisienne/Parisienne-Regular.ttf") format("truetype");
+}
+
 $font-sans: "Work Sans", Helvetica, Arial, sans-serif;
 $font-cursive: "Parisienne", cursive;
 
