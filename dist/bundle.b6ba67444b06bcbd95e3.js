@@ -2623,8 +2623,10 @@ function extractNutrition() {
     }
   };
   axios.request(options).then(function (response) {
-    console.log(response.data);
-    nutritionResponse.textContent = response.data;
+    console.log(response.data[0]);
+    console.dir(response.data[0]);
+    console.table(response.data);
+    nutritionResponse.textContent = JSON.strigify.response.data[0];
   })["catch"](function (error) {
     console.error(error);
     nutritionResponse.textContent = error;
@@ -3508,4 +3510,4 @@ btnGenerateJokes.addEventListener("click", _functions_generateJokes__WEBPACK_IMP
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle.92654080ea8fae5a48ac.js.map
+//# sourceMappingURL=bundle.b6ba67444b06bcbd95e3.js.map

@@ -13,7 +13,6 @@ inputUserQuery.addEventListener("change", () => {
   return inputUserQueryValue;
 });
 
-
 function extractNutrition() {
   const options = {
     method: "GET",
@@ -26,11 +25,11 @@ function extractNutrition() {
   };
 
   axios.request(options).then((response) => {
-    console.log(response.data);
-    console.dir(response.data);
+    console.log(response.data[0]);
+    console.dir(response.data[0]);
     console.table(response.data);
 
-    nutritionResponse.textContent = response.data;
+    nutritionResponse.textContent = JSON.stringify(response.data);
   }).catch((error) => {
     console.error(error);
     nutritionResponse.textContent = error;
