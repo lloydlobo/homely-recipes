@@ -1,24 +1,24 @@
 @use "../util" as u; /* namespacing utils as u */
 
 .grid {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto;
+  gap: u.rem(40);
+  // backdrop-filter: blur(u.rem(100));
+  width: min(100% - u.rem(40), u.rem(1000));
+  margin-inline: auto;
+
+  &__main {
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto;
-    gap: u.rem(40);
-    // backdrop-filter: blur(u.rem(100));
-    width: min(100% - u.rem(40), u.rem(1000));
-    margin-inline: auto;
+    filter: grayscale(0.5);
 
-    &__main {
-        display: grid;
-        filter: grayscale(.5);
-
-        @include u.breakpoint(large) {
-            filter: grayscale(1);
-        }
+    @include u.breakpoint(large) {
+      filter: grayscale(1);
     }
+  }
 
-    &__sidebar {
-        color: hsl(300, 100%, 55%);
-    }
+  &__sidebar {
+    color: hsl(300, 100%, 55%);
+  }
 }

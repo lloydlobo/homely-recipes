@@ -1,8 +1,6 @@
-@forward "util";
-@forward "globals";
+@forward "base";
 @forward "layout";
-
-// -----------------------------
+@forward "util";
 
 // -----------------------------
 //  * Bring that right into index.js
@@ -54,6 +52,3 @@ img {
     outline: 0;
   }
 }
-
-// $color-primary: #bada66;
-// $color-secondary: #6f268c;
