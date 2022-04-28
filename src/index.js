@@ -6,8 +6,18 @@ import Footer from "./components/footer";
 import Navigation from "./components/navigation";
 // functions
 import generateJokes from "./functions/generateJokes";
+import extractNutrition from "./functions/extractNutrition";
 // styles
 import "./styles/scss/main.scss";
+
+console.log("Hi");
+// extract nutrition
+const btnNutrition = document.querySelector("#btnNutrition");
+
+btnNutrition.addEventListener("click", extractNutrition);
+extractNutrition(); // Call imported function `extractNutrition` once
+
+// console.dir(btnNutrition);
 
 // **** generate jokes card **** /* this can be a component */
 const laughingImg = document.getElementById("laughingImg");

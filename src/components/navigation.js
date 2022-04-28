@@ -116,6 +116,7 @@ const navigationInnerHTML = `
     <ul class="navigation | body-small">
       <li><a href="./collections.html">Collections</a></li>
       <li class="disabled"><a class="disabled" href="./holiday-seasons-recipes.html" aria-disabled="true">Holiday & Seasons</a></li>
+      <li><a href="./jokes.html">Jokes</a></li>
       <li><a href="./about.html">About</a></li>
       <li><a href="./contact.html">Contact</a></li>
     </ul>
