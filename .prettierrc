@@ -3,5 +3,6 @@
   "useTabs": false,
   "singleQuote": false,
   "jsxSingleQuote": false,
-  "trailingComma": "es5"
+  "trailingComma": "all",
+  "object-curly-newline": "all"
 }

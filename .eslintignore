@@ -9,3 +9,6 @@
 !dist
 dist/*
 !dist/test.js
+
+# Storybook
+src/stories
