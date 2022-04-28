@@ -79,6 +79,11 @@ module.exports = {
       filename: "contact.html",
       template: path.resolve(__dirname, "src/pages/contact.html"),
     }),
+    new HtmlWebpackPlugin({
+      title: "Jokes",
+      filename: "jokes.html",
+      template: path.resolve(__dirname, "src/pages/jokes.html"),
+    }),
     // new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
   ],
 };
