@@ -1,32 +1,44 @@
 // Gloria In Excelsis Deo!
+// styles
+import "./styles/scss/main.scss";
 // assets
 import laughing from "./assets/laughing.svg";
 // components
-import Footer from "./components/footer";
-import Navigation from "./components/navigation";
+import Footer from "./components/partials/footer";
+import Navigation from "./components/partials/navigation";
 // functions
-import generateJokes from "./functions/generateJokes";
 import extractNutrition from "./functions/extractNutrition";
-// styles
-import "./styles/scss/main.scss";
+// eslint-disable-next-line no-unused-vars
+import generateJokes from "./functions/generateJokes";
 
-console.log("Hi");
-// extract nutrition
-const btnNutrition = document.querySelector("#btnNutrition");
-
-btnNutrition.addEventListener("click", extractNutrition);
-extractNutrition(); // Call imported function `extractNutrition` once
-
-// console.dir(btnNutrition);
-
-// **** generate jokes card **** /* this can be a component */
+// eslint-disable-next-line no-console
+console.log("Gloria In Ecelsis Deo!");
 const laughingImg = document.getElementById("laughingImg");
-const btnGenerateJokes = document.getElementById("btnJoke");
+
+const btnNutrition = document.getElementById("btnNutrition");
 laughingImg.src = laughing;
 
-btnGenerateJokes.addEventListener("click", generateJokes);
+// extract nutrition
+// const querySelector = document.getElementById("inputUserQueryNutrition");
+/**
+ * @param  {} "click"
+ * @param  {} (
+ * @param  {} =>{extractNutrition(
+ * @param  {} ;}
+ */
+btnNutrition.addEventListener("click", () => {
+  extractNutrition();
+});
+
+// extractNutrition();
+
+const btnGenerateJokes = document.getElementById("btnJoke");
+// // generate jokes card
+btnGenerateJokes.addEventListener("click", () => {
+  generateJokes();
+});
 generateJokes(); // Call imported function `generateJokes` once
-// **** end of generate jokes card ****
 
 // **** shadowDOM Custom Elements ****
-// window.customElements.define("navigation-component", Navigation);
+window.customElements.define("navigation-component", Navigation);
+window.customElements.define("footer-component", Footer);

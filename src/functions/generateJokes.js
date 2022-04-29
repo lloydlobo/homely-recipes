@@ -1,6 +1,11 @@
 import axios from "axios";
 
 // * generate jokes
+/**
+ * @param  {{Accept:"application/json"} {constconfig={headers
+ * @param  {} }
+ * @param  {document.getElementById("joke"} };axios.get("https
+ */
 function generateJokes() {
   const config = {
     headers: {
@@ -8,9 +13,17 @@ function generateJokes() {
     },
   };
   axios.get("https://icanhazdadjoke.com/", config).then((response) => {
-    document.getElementById("joke").textContent = response.data.joke;
+    document.getElementById("joke").innerHTML = response.data.joke;
   });
 }
+generateJokes(); // Call imported function `generateJokes` once
+/**
+ * @param  {} "btnJoke"
+ * @param  {} ;btnGenerateJokes.addEventListener("click"
+ * @param  {} generateJokes
+ */
+const btnGenerateJokes = document.getElementById("btnJoke");
+btnGenerateJokes.addEventListener("click", generateJokes);
 
 /* joke is api's response data property? */ /* alternative = response.data.joke */
 // console.log({ joke, id, status });
