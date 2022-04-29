@@ -1,4 +1,5 @@
 import axios from "axios";
+import laughing from "../assets/laughing.svg";
 
 // * generate jokes
 /**
@@ -6,7 +7,7 @@ import axios from "axios";
  * @param  {} }
  * @param  {document.getElementById("joke"} };axios.get("https
  */
-function generateJokes() {
+export function generateJokes() {
   const config = {
     headers: {
       Accept: "application/json",
@@ -16,17 +17,18 @@ function generateJokes() {
     document.getElementById("joke").innerHTML = response.data.joke;
   });
 }
-generateJokes(); // Call imported function `generateJokes` once
-/**
- * @param  {} "btnJoke"
- * @param  {} ;btnGenerateJokes.addEventListener("click"
- * @param  {} generateJokes
- */
-const btnGenerateJokes = document.getElementById("btnJoke");
-btnGenerateJokes.addEventListener("click", generateJokes);
+generateJokes(); // call the function once
 
-/* joke is api's response data property? */ /* alternative = response.data.joke */
-// console.log({ joke, id, status });
+const btnGenerateJokes = document.getElementById("btnJoke");
+btnGenerateJokes.addEventListener(
+  "click",
+  generateJokes,
+); /* alternative = response.data.joke */
+
+/* Setting the src attribute of the img element with the id of `laughingImg` to
+the value of the variable `laughing` */
+const laughingImg = document.getElementById("laughingImg");
+laughingImg.src = laughing;
 
 export default generateJokes;
 

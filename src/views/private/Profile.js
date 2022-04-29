@@ -1,5 +1,5 @@
-import React from 'react';
+// import React from 'react';
 
-export function ProfileView () {
-  return <div>Profile</div>;
-}
+// export function ProfileView () {
+//   return <div>Profile</div>;
+// }

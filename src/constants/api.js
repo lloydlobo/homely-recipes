@@ -1,7 +1,7 @@
-const LOCAL_API_ENDPOINT = "http://localhost:3000";
+// const LOCAL_API_ENDPOINT = "http://localhost:3000";
 
-const apiConstants = {
-  url: process.env.API || LOCAL_API_ENDPOINT,
-};
+// const apiConstants = {
+//   url: process.env.API || LOCAL_API_ENDPOINT,
+// };
 
-export default apiConstants;
+// export default apiConstants;

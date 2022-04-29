@@ -1,4 +1,4 @@
-<!-- https://github.com/michaelmcshinsky/react-starter/blob/master/src/services/README.md -->
+<!-- https://github.com/michaelmcshinsky/react-starter/blob/master/src/services/README.md
 
 # Services
 
@@ -21,4 +21,4 @@ The services code handles major business logic throughout your app. Various comp
 <small>[1] - This may be here or in the utilities folder depending on how you view the role of hooks in your application.</small>
 <small>[2] - Internationalization</small>
 <small>[3] - Localization</small>
-<small>[4] - Redux or other flavors of global state management</small>
+<small>[4] - Redux or other flavors of global state management</small> -->
