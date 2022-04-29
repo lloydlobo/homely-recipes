@@ -1,8 +1,18 @@
+# VS Code
 .vscode/settings.json
-notes.md
-
-js/script.ts
-archive/
 
 # node_modules
-node_modules
+node_modules/
+
+# environment variables
+.env
+
+# databases
+database.db
+
+# drafting
+notes.md
+archive/
+
+renovate.json
+renovate.json
