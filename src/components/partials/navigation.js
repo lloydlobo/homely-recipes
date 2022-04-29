@@ -138,4 +138,5 @@ class Navigation extends HTMLElement {
 // Register the new element with the browser. /* define in index.js */
 window.customElements.define("navigation-component", Navigation);
 
+/* Exporting the Navigation class to be used in other files. */
 export default Navigation;
