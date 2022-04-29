@@ -17,7 +17,7 @@
     "prebuild": "npm run clean",
     "prepare": "husky install",
     "stats": "cloc . --exclude-dir=node_modules,tmp,.git",
-    "test": "npm run lint && npm run test:run",
+    "test": "npm run lint && npm run test:jest",
     "test:jest": "jest",
     "test:karma": "karma start karma.conf.js",
     "update-schema": "node ./scripts/update-schema"
