@@ -12,3 +12,5 @@ dist/*
 
 # Storybook
 src/stories
+
+netlify/
