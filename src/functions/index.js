@@ -8,3 +8,4 @@
 export * from "./date/index";
 export * from "./tools/index";
 export * as generateJokes from "./generateJokes";
+export { default as sum } from "./sum";

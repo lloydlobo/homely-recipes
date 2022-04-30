@@ -1,14 +1,8 @@
 import axios from "axios";
 
-/**
- * It takes the user's input, sends it to the RapidAPI server, and then displays the response in the
- * browser
- */
+//  Takes the user's input, sends it to the RapidAPI server,
+// and then displays the response in the browser
 export default function extractNutrition() {
-  /* Getting the value of the environment variables. */
-  const apiKey = process.env.RA_API;
-  const apiHost = process.env.RA_HOST;
-
   const querySelector = document.getElementById("inputUserQueryNutrition");
   const btnNutrition = document.getElementById("btnNutrition");
   const nutritionResponse = document.querySelector("#nutritionResponse");
@@ -16,36 +10,39 @@ export default function extractNutrition() {
   /* Getting the value of the input field and storing it in a variable. */
   let queryUserInput = querySelector.value;
 
-  /**
-   * If the user doesn't enter anything in the search box, the default search will be "chicken pork"
-   */
-  function nutritionDefaultValue() {
+  //  If the user doesn't enter anything in the search box,
+  // the default search will be "chicken pork"
+  const nutritionDefaultValue = () => {
     if (queryUserInput === "") {
       queryUserInput = "chicken pork";
     }
-  }
+  };
   nutritionDefaultValue();
+
+  const API_SECRET = process.env;
+  // const URL = `https://dog.ceo/api/breed/${API_SECRET}/images`;
 
   /* A constant variable that is storing the options for the request. */
   const options = {
     method: "GET",
-    url: `https://${apiHost}/v1/nutrition`,
+    // url: "https:/nutrition-by-api-ninjas.p.rapidapi.com/v1/nutrition",
+    url: `${URL}/v1/nutrition`,
     params: {
       query: queryUserInput,
     },
     headers: {
-      "X-RapidAPI-Host": apiHost,
-      "X-RapidAPI-Key": apiKey,
+      "X-RapidAPI-Host": "nutrition-by-api-ninjas.p.rapidapi.com",
+      "X-RapidAPI-Key": API_SECRET,
     },
   };
 
   //  Throw an error if API key is not available
   try {
-    if (!apiKey) {
-      throw new Error("You forgot to set RA_API");
+    if (!API_SECRET) {
+      throw new Error("You forgot to set API_SECRET");
     }
   } catch (err) {
-    nutritionResponse.textContent = "You forgot to set RA_API";
+    nutritionResponse.textContent = "You forgot to set API_SECRET";
   }
 
   /* A promise.  It is a function that is called when the request is successful. */
