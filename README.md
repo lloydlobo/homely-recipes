@@ -45,6 +45,8 @@
 
 ## 🎥 &nbsp;Preview
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/44232e29-9bcb-46b0-a44f-12aca74b35d9/deploy-status)](https://app.netlify.com/sites/homelyrecipes/deploys)
+
 [![homely recipes website](https://github.com/lloydlobo/lloydlobo/blob/main/assets/projects/web-development/homely-recipes.gif)](https://lloydlobo.github.io/homely-recipes/)
 
 ## 📰 &nbsp;Documentation
