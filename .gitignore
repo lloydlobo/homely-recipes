@@ -18,3 +18,4 @@ renovate.json
 # drafting
 notes.md
 archive/
+.scss-lint.yml
