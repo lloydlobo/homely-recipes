@@ -1,0 +1,89 @@
+button {
+  border: 0;
+  border-radius: 1.25rem;
+  background: var(--_btn-bg-clr, var(--mdc-theme-primary, #9c413d));
+  color: var(--_btn-clr, var(--mdc-theme-on-primary, #fff));
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  line-height: 1.2;
+  text-decoration: none;
+  padding: var(--flow-space);
+  margin: 0;
+  cursor: pointer;
+}
+
+/* * add to exception - cube css */
+
+button[data-state="scroll"] {
+  border-radius: 50%;
+  padding: 0;
+  font-size: 2em;
+  max-inline-size: 0.9786em;
+}
+
+button[data-state="btn-link--arrow"] {
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+button.btn-search[data-state="search-icon"] {
+  border-radius: 50%;
+  background: none;
+  max-width: fit-content;
+}
+
+button[data-state="btn-link--arrow"] > svg {
+  fill: var(--mdc-theme-primary);
+  background: var(--mdc-theme-background);
+}
+
+button[data-state="fa-search-icon"].btn-fa-search {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: 0;
+  background: none;
+  top: 0;
+  right: 0;
+  line-height: 50px;
+  padding: 0;
+}
+
+button[data-state="fa-search-icon"].btn-fa-search i {
+  width: 100%;
+  color: var(--mdc-theme-primary-contrast);
+  line-height: 50px;
+  font-size: 22px;
+}
+
+button[data-state="fa-search-icon"].btn-fa-search i:hover {
+  color: var(--mdc-theme-primary);
+}
+
+// traversy media generateJoke webpack crash course
+.btn {
+  background-color: $primary-color;
+  color: $secondary-color;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%), 0 6px 6px rgb(0 0 0 / 10%);
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.btn-secondary {
+  --_btn-clr: var(--mdc-theme-primary, #9c413d);
+  --_btn-bg-clr: var(--mdc-theme-background, #fff);
+
+  border: 2px solid var(--_btn-clr, var(--mdc-theme-primary, #9c413d));
+}

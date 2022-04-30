@@ -1,0 +1,104 @@
+/* * colors material ui */
+.mdc-theme {
+  &--primary {
+    color: var(--mdc-theme-primary);
+
+    &-bg {
+      background-color: var(--mdc-theme-on-primary);
+    }
+
+    &-contrast {
+      color: var(--mdc-theme-primary-contrast, #803431);
+    }
+  }
+
+  &--on-primary {
+    color: var(--mdc-theme-primary-container);
+
+    &-bg {
+      background-color: var(--mdc-theme-on-primary-container);
+    }
+
+    &-bg-inverse {
+      background-color: var(--mdc-theme-primary-container);
+    }
+  }
+
+  &--secondary {
+    color: var(--mdc-theme-secondary);
+
+    &-bg {
+      background-color: var(--mdc-theme-on-secondary);
+    }
+  }
+
+  &--on-secondary {
+    color: var(--mdc-theme-secondary-container);
+
+    &-bg {
+      background-color: var(--mdc-theme-on-secondary-container);
+    }
+  }
+
+  &--tertiary {
+    color: var(--mdc-theme-tertiary);
+
+    &-bg {
+      background-color: var(--mdc-theme-on-tertiary);
+    }
+  }
+
+  &--on-tertiary {
+    color: var(--mdc-theme-tertiary-container);
+
+    &-bg {
+      background-color: var(--mdc-theme-on-tertiary-container);
+    }
+  }
+
+  &--error {
+    color: var(--mdc-theme-error);
+
+    &-bg {
+      background-color: var(--mdc-theme-on-error);
+    }
+  }
+
+  &--on-error {
+    color: var(--mdc-theme-error-container);
+
+    &-bg {
+      background-color: var(--mdc-theme-on-error-container);
+    }
+  }
+
+  &--surface {
+    color: var(--mdc-theme-surface);
+  }
+
+  &--on-surface {
+    background-color: var(--mdc-theme-on-surface);
+  }
+
+  &--background {
+    color: var(--mdc-theme-background);
+  }
+
+  &--on-background {
+    background-color: var(--mdc-theme-on-background);
+  }
+
+  &--inverse {
+    &-primary {
+      color: var(--mdc-theme-inverse-primary);
+    }
+
+    &-on-primary {
+      background-color: var(--mdc-theme-inverse-primary);
+    }
+
+    &-surface {
+      color: var(--mdc-theme-inverse-surface);
+    }
+  }
+}

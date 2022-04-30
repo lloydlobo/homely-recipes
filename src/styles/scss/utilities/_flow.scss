@@ -1,0 +1,40 @@
+.flow > * + *,
+.post blockquote > * + * {
+  margin-top: var(--flow-space, clamp(1.09rem, 1rem + 0.47vw, 1.33rem));
+}
+
+.flow-space-0 {
+  --flow-space: 0;
+}
+
+.flow-space-300 {
+  --flow-space: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+}
+
+.flow-space-400 {
+  --flow-space: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+}
+
+.flow-space-500 {
+  --flow-space: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+}
+
+.flow-space-600 {
+  --flow-space: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+}
+
+.flow-space-700 {
+  --flow-space: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+}
+
+.flow-space-800 {
+  --flow-space: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+}
+
+.flow-space-900 {
+  --flow-space: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+}
+
+.flow-space-1000 {
+  --flow-space: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+}
