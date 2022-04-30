@@ -10,9 +10,11 @@ node_modules/
 # databases
 database.db
 
+# renovate bot dependency management ci
+renovate.json
+
+# ------------------------------------------------------------------------------
+
 # drafting
 notes.md
 archive/
-
-renovate.json
-renovate.json
