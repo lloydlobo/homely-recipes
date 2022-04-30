@@ -1,20 +1,20 @@
-const webpack = require("webpack");
+// const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer");
-const Dotenv = require("dotenv-webpack"); /* https://github.com/dotenv-org/examples/tree/master/dotenv-webpack */
+// const Dotenv = require("dotenv-webpack"); /* https://github.com/dotenv-org/examples/tree/master/dotenv-webpack */
 
 const path = require("path");
 
 // Example: https://github.com/dotenv-org/examples/tree/master/dotenv-webpack2
 /* Https://www.npmjs.com/package/dotenv */
-const dotenv = require("dotenv");
+// const dotenv = require("dotenv");
 
-const env = dotenv.config().parsed;
-const envKeys = Object.keys(env).reduce((prev, next) => {
-  // eslint-disable-next-line no-param-reassign
-  prev[`process.env.${next}`] = JSON.stringify(env[next]);
-  return prev;
-}, {});
+// const env = dotenv.config().parsed;
+// const envKeys = Object.keys(env).reduce((prev, next) => {
+//   // eslint-disable-next-line no-param-reassign
+//   prev[`process.env.${next}`] = JSON.stringify(env[next]);
+//   return prev;
+// }, {});
 
 // copy-plugin
 // const CopyPlugin = require("copy-webpack-plugin");
@@ -76,10 +76,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Homely Recipes",
       filename: "index.html",
+      template: path.resolve(__dirname, "src/index.html"),
+    }),
+    new HtmlWebpackPlugin({
+      title: "Template",
+      filename: "template.html",
       template: path.resolve(__dirname, "src/template.html"),
     }),
-    new Dotenv(),
-    new webpack.DefinePlugin(envKeys),
+    // new Dotenv(),
+    // new webpack.DefinePlugin(envKeys),
     new HtmlWebpackPlugin({
       title: "Recipe Collections",
       filename: "collections.html",
@@ -112,6 +117,7 @@ module.exports = {
         // Will generate: <meta name="theme-color" content="#4285f4">
       },
     }),
+    new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
     // --------
     // new CopyPlugin({
     //   patterns: [
@@ -155,7 +161,5 @@ module.exports = {
     //     },
     //   ],
     // }),
-
-    new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
   ],
 };
