@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body class="grid">
+    <header>
+      <nav>
+        <div class="navigation container">
+          <a href="index.html">
+            <div class="logo__wrapper">
+              <span class="logo mdc-theme--primary"
+                ><strong>Homely</strong></span
+              >
+            </div>
+          </a>
+          <div
+            class="nav__heading display-large char mdc-theme--inverse-primary"
+            data-word="Recipes"
+          >
+            Jokes
+          </div>
+          <navigation-component></navigation-component>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main class="grid__main">
+        <article class="article__jokes">
+          <div class="container">
+            <img src="" alt="" id="laughingImg" />
+            <h1>Don't Laugh Challenge</h1>
+            <div id="joke" class="joke"></div>
+            <button id="btnJoke" class="btn" title="Get Another Joke">
+              Get Another Joke
+            </button>
+          </div>
+        </article>
+      </main>
+    </div>
+    <footer>
+      <div class="container |">
+        <div class="footer__primary">
+          <logo-component></logo-component>
+          <navigation-component></navigation-component>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  <script defer src="bundle.57bf224687573795d4d9.js"></script></head>
+  <body class="grid">
+    <header>
+      <nav>
+        <div class="navigation container">
+          <!-- a href to homepage  -->
+          <a href="index.html">
+            <div class="logo__wrapper">
+              <span class="logo | mdc-theme--primary"
+                ><strong>Homely</strong></span
+              >
+            </div>
+          </a>
+          <div
+            class="nav__heading | display-large char | mdc-theme--inverse-primary"
+            data-word="Recipes"
+          >
+            Contact
+          </div>
+
+          <navigation-component></navigation-component>
+
+          <div class="search-wrapper-placeholder">
+            <div class="wrapper">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Type to search"
+                autocomplete="off"
+                data-state="fa-autocomplete"
+              />
+              <button data-state="fa-search-icon" class="btn-fa-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <div class="results"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero | gap-top-700 gap-bottom-1000">
+        <div class="flow flow-space-500 | container">
+          <h1
+            class="hero__content__heading | body-large | gap-top-1000"
+            style="text-align: center"
+          >
+            Leave me a message below and I'll respond ASAP!
+          </h1>
+          <!-- Netlify Form -->
+          <div class="contact-form | gap-top-800">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              class="contact-form--netlify"
+            >
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button type="submit">Send message</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__primary">
+          <logo-component></logo-component>
+          <navigation-component></navigation-component>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

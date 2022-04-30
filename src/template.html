@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
     <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
-<div class="container">
-    <img src="" alt="" id="laughingImg" />
-    <h1>Don't Laugh Challenge</h1>
-    <div id="joke" class="joke"></div>
-    <button id="btnJoke" class="btn" title="Get Another Joke">Get Another Joke</button>
-</div>
-</body>
+  </head>
+  <body class="grid">
+        <noscript>You need to enable JavaScript to run this web application.</noscript>
+
+    <footer>
+      <div class="container">
+        <div class="footer__primary">
+          <logo-component></logo-component>
+          <navigation-component></navigation-component>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
