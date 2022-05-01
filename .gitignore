@@ -19,3 +19,7 @@ renovate.json
 notes.md
 archive/
 .scss-lint.yml
+callbacks.css
+callbacks.js
+index.html
+promises.js
